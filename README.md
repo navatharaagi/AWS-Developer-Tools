@@ -16,9 +16,9 @@ HTTPS or SSH:
 - Storing & verifying credentials is a main diff
     - HTTPS: Credentials Helper
     - SSH: RSA Key Pairs  
--Port access (our firewall & network security)
+- Port access (our firewall & network security)
     -HTTPS: Port 443
     -SSH: Port 22 [more efficient]
--Recommendation:
+- Recommendation:
     -Windows & linux: HTTPS
     -Mac OSX: SSH (due to keychain issues)
