@@ -48,4 +48,4 @@ AWS Secret Key: Copy & paste secret key of IAM user (code commit)
 region: enter region
 format: json
 ```
-Note: if we want to change the IAM user, change AWS access & secret keys by running 'aws configure’ command
+Note: if we want to use another IAM user,we have to change AWS access & secret keys by running 'aws configure’ command
