@@ -63,9 +63,9 @@ enter password/passphrase:            /* don’t enter anything
   - IAM—>Users—>codecommituser—>security credentials tab—>upload ssh public key—>
 Paste the copied key of codecommitkey.pub—>upload—SSH Key ID—>copy ssh id
 
--Goto CLI
-#touch config
-#nano config  /*to edit config file in nano editor
+- Goto CLI:
+@root$touch config
+@root$nano config        /*to edit config file in nano editor
 Host git-codecommit.*.amazonaws.com
             User <Input SSH key>     /*paste copied ssh id
             Identityfile ~/.ssh/<NAME of PUB FILE> /*codecommitkey is name of pub file
