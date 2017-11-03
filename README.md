@@ -25,5 +25,5 @@ HTTPS or SSH:
 
 ### Setup & Configuration
 #### 1. Configure IAM Users, Access Keys & Policies
--Create a IAM User(as CodeCommit),download key credentials of that user.
+- Create a IAM User(as CodeCommit),download key credentials of that user.
 -Attach AWSCodeCommitFullAccess Policy to the user.
