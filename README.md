@@ -83,8 +83,8 @@ $git config --global --edit    /*opens vim editor file, to view git config file 
 Note: if IAM user credentials(access,secret keys) changed in AWS CLI, we have to re-run the above git commands to reconfigure the credential helper.
 - For linux the above commands are enough
 - For OSX:
--credentials last for 15mins only, its issue in OSX(Mac).So git clone ‘macerrorrepo’ to our local repo.
-mac$ git clone <url of macerror repo> <local repo name>
+- credentials last for 15mins only, its issue in OSX(Mac).So git clone ‘macerrorrepo’ to our local repo.
+@mac$git clone <url of macerror repo> <local repo name>
 $cd local repo
 $touch test.txt
 $git add text.txt
