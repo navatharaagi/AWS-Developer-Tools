@@ -97,3 +97,18 @@ $git push
 ```sh
 $git pull   /* (Deny the given notification) will get already up to date
 ```
+### CodeCommit Basics
+1.Create, View, Edit, and Delete a Repository
+-AWS Console—code commit— create new repo—name “LATestRepo” (must be unique) ,description “test repo”—create.
+-If we click on created repo, we can view code,branches,settings…
+-If we want to delete repo, Settings-delete repo.
+To do the same on  AWS CLI,
+( “CLI-Repo” is a repo name here we are using )
+$aws codecommit  create-repository  - -repository-name  CLI-Repo  - -repository-description  “My description”         /* to create a “CLI-Repo” repo with description
+$aws codecommit  list-repositories    /* to list repos
+$aws codecommit  get-repository  - -repository-name  CLI-Repo /*to get one repo
+$aws codecommit  batch-get-repositories  - -repository-name  <Repo1> <Repo2> /*to get one json formatted info  two or more repos
+$aws codecommit  update-repository-name  - -old-name CLIRepo  - -new-name  newReponame     /*to change repo name, can check it out by ‘list-repos’ cmnd
+$aws codecommit  update-repository-description  - -repository-name  CLIRepo  
+- -repository-description “update description"     /*to change repo description can check it out by ‘get-repo’ command
+$aws codecommit  delete-repository  - -repository-name CLI-Repo  /*to del repo
