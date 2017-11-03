@@ -35,7 +35,7 @@ HTTPS or SSH:
 #### 4.OSX/Linux: AWS CLI Installation
 ```sh
 $python --version       /* to check whether python installed or not
-$sudo yum install python3     /* to install python for CentOS
+@root$sudo yum install python3     /* to install python for CentOS
 #sudo apt-get install python3    /* for  Debian distributions
 #pip --help   /* to check pip installation
 #curl -0 https://bootstrap.pypa.io/get-pip.py    /* to install pip
