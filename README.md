@@ -31,7 +31,7 @@ HTTPS or SSH:
 - Download git for MacOSX
 - To check whether git installed or not, run 'git help' command in CLI.
 #### 3.Linux: GIT Installation
--Download git for linux or unix by following given commands according to distribution like CentOS(yum), ubuntu,…..from Google
+- Download git for linux or unix by following given commands according to distribution like CentOS(yum), ubuntu,…..from Google
 #### 4.OSX/Linux: AWS CLI Installation
 ```sh
 $python --version       /* to check whether python installed or not
