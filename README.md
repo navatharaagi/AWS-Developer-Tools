@@ -41,7 +41,7 @@ $python --version       /* to check whether python installed or not
 #curl -0 https://bootstrap.pypa.io/get-pip.py    /*to install pip
 #sudo python3 get-pip.py
 #sudo pip install awscli     /* to install AWS CLI
-#sudo pip3 install awscli  - -ignore-installed six     /*if we get error:six at AWS install
+#sudo pip3 install awscli  - -ignore-installed six  /*if we get error:six at AWS install
 #aws configure
 AWS Access Key ID : Copy & paste access key of IAM user (code commit)
 AWS Secret Key: Copy & paste secret key of IAM user (code commit)
