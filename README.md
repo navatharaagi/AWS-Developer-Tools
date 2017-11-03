@@ -72,5 +72,5 @@ Host git-codecommit.*.amazonaws.com
             Identityfile ~/.ssh/<NAME of PUB FILE> /*codecommitkey is name of pub file
 save & exit
 @root$chmod 600 config
-@root$ssh  git-codecommit.us-east-1.amazonaws.com    /* Successfully authenticates
+@root$ssh git-codecommit.us-east-1.amazonaws.com    /* Successfully authenticates
 ```
