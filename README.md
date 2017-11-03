@@ -20,5 +20,5 @@ HTTPS or SSH:
     -HTTPS: Port 443
     -SSH: Port 22 [more efficient]
 - Recommendation:
-    -Windows & linux: HTTPS
-    -Mac OSX: SSH (due to keychain issues)
+    - Windows & linux: HTTPS
+    - Mac OSX: SSH (due to keychain issues)
