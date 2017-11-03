@@ -84,12 +84,14 @@ Note: if IAM user credentials(access,secret keys) changed in AWS CLI, we have to
 - For linux the above commands are enough
 - For OSX:
 - credentials last for 15mins only, its issue in OSX(Mac).So git clone ‘macerrorrepo’ to our local repo.
+```sh
 @mac$git clone <url of macerror repo> <local-new-repo-name>
 $cd local-repo
 $touch test.txt
 $git add text.txt
 $git commit -m “test commit”
 $git push
+```
 - After 15 mins, if we do git pull, we will get error.
 - Now just goto “ keychain Access” in our sys,search for ‘ git’, it will show git keys, select the key which associated with macerrorrepo—Access control--select 'git-credential-osxkeychain’ —del—save—enter sys pwd.
 $git pull   (Deny the given notification)  /*will get already up to date
