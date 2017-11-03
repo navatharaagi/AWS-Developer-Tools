@@ -27,3 +27,6 @@ HTTPS or SSH:
 #### 1. Configure IAM Users, Access Keys & Policies
 - Create a IAM User(as CodeCommit),download key credentials of that user.
 - Attach AWSCodeCommitFullAccess Policy to the user.
+#### 2.OSX: GIT Installation
+-Download git for MacOSX
+-To check whether git installed or not, run 'git help' command in CLI.
