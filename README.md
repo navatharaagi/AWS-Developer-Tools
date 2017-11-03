@@ -27,12 +27,12 @@ HTTPS or SSH:
 #### 1. Configure IAM Users, Access Keys & Policies
 - Create a IAM User(as CodeCommit),download key credentials of that user.
 - Attach AWSCodeCommitFullAccess Policy to the user.
-#### 2.OSX: GIT Installation
+#### 2. OSX: GIT Installation
 - Download git for MacOSX
 - To check whether git installed or not, run 'git help' command in CLI.
-#### 3.Linux: GIT Installation
+#### 3. Linux: GIT Installation
 - Download git for linux or unix by following given commands according to distribution like CentOS(yum), ubuntu,…..from Google
-#### 4.OSX/Linux: AWS CLI Installation
+#### 4. OSX/Linux: AWS CLI Installation
 ```sh
 $python --version       /* to check whether python installed or not
 @root$sudo yum install python3     /* to install python for CentOS
