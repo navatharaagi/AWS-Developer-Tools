@@ -60,8 +60,8 @@ enter password/passphrase:            /* don’t enter anything
 ```
 - Goto AWS Console:
   - AWS—-IAM-—Policies—-IAMUserSSHKeys--click on it-—Attach—-select “codecommitUser” -- Attach policy
-  - IAM—Users—codecommituser—security credentials tab—upload ssh public key—
-Paste the copied key of codecommitkey.pub—upload—SSH Key ID—copy ssh id
+  - IAM—-Users—-codecommituser—-security credentials tab—-upload ssh public key—-
+Paste the copied key of codecommitkey.pub—-upload—SSH Key ID—-copy ssh id
 
 -Goto CLI
 #touch config
