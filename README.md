@@ -85,7 +85,7 @@ Note: if IAM user credentials(access,secret keys) changed in AWS CLI, we have to
 - For OSX:
 - credentials last for 15mins only, its issue in OSX(Mac).So git clone ‘macerrorrepo’ to our local repo.
 @mac$git clone <url of macerror repo> <local new repo name>
-$cd local repo
+$cd local-repo
 $touch test.txt
 $git add text.txt
 $git commit -m “test commit”
