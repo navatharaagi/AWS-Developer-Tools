@@ -49,3 +49,25 @@ region: enter region
 format: json
 ```
 Note: if we want to use another IAM user,we should give that IAM User AWS access key & secret key by running 'aws configure’ command
+#### 5.OSX/Linux: Configure SSH Credentials (SSH)
+#cd ~/.ssh    /*change dir to ssh
+#ssh-keygen    /*to generate a rsa key pair
+enter file to save key: codecommitkey  (can give any name)
+enter password/passphrase: don’t enter anything
+#ls         /* codecommitkey , & codecommitkey.pub files must list
+#cat codecommitkey.pub    /*copy the key
+
+-Goto AWS Console
+AWS—IAM—Policies—IAMUserSSHKeys--click on it—Attach—select “codecommitUser” - Attach policy
+IAM—Users—codecommituser—security credentials tab—upload ssh public key—
+Paste the copied key of codecommitkey.pub—upload—SSH Key ID—copy ssh id
+
+-Goto CLI
+#touch config
+#nano config  /*to edit config file in nano editor
+Host git-codecommit.*.amazonaws.com
+            User <Input SSH key>     /*paste copied ssh id
+            Identityfile ~/.ssh/<NAME of PUB FILE> /*codecommitkey is name of pub file
+:wq!
+#chmod 600 config
+#ssh  git-codecommit.us-east-1.amazonaws.com    /* Successfully authenticates
