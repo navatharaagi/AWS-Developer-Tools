@@ -34,7 +34,7 @@ HTTPS or SSH:
 -Download git for linux or unix by following given commands according to distribution like CentOS(yum), ubuntu,…..from Google
 #### 4.OSX/Linux: AWS CLI Installation
 ```
-$python --version       /* to check whether python installed or not ,if not install it by
+$python --version       /* to check whether python installed or not 
 #sudo yum install python3     /* for CentOS
 #sudo apt-get install python3    /* for  Debian distributions
 #pip  - -help   /* to check pip installation
