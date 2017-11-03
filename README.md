@@ -11,8 +11,4 @@ Benefits:
 - Works with existing Git-based tools
 Setup & Config:
 - Tools we need to use code commit are AWS CLI(Edit,Create,Del,view repos), Git.
--Communication protocols are SSH & HTTPS
--Mac OSX(HTTPS) [1,5,7,9]
--Linux (HTTPS) [1,6,7,9]
--Mac OSX (SSH) [1,5,7,8]
--Linux (SSH) [6,7,8,9]
+- Communication protocols are SSH & HTTPS
