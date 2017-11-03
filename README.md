@@ -21,12 +21,12 @@ HTTPS or SSH:
     -SSH: Port 22 [more efficient]
 - Recommendation:
     - Windows & linux: HTTPS
-    - Mac OSX: SSH (due to keychain issues)
+    - MacOSX: SSH (due to keychain issues)
 
 ### Setup & Configuration
 #### 1. Configure IAM Users, Access Keys & Policies
 - Create a IAM User(as CodeCommit),download key credentials of that user.
 - Attach AWSCodeCommitFullAccess Policy to the user.
 #### 2.OSX: GIT Installation
--Download git for MacOSX
--To check whether git installed or not, run 'git help' command in CLI.
+- Download git for MacOSX
+- To check whether git installed or not, run 'git help' command in CLI.
