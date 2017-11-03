@@ -50,14 +50,14 @@ format: json
 ```
 Note: if we want to use another IAM user,we should give that IAM User AWS access key & secret key by running aws configure
 #### 5.OSX/Linux: Configure SSH Credentials (SSH)
-
+```sh
 #cd ~/.ssh    /*change dir to ssh
 #ssh-keygen    /*to generate a rsa key pair
 enter file to save key: codecommitkey  (can give any name)
 enter password/passphrase: don’t enter anything
 #ls         /* codecommitkey , & codecommitkey.pub files must list
 #cat codecommitkey.pub    /*copy the key
-
+```
 -Goto AWS Console
 AWS—IAM—Policies—IAMUserSSHKeys--click on it—Attach—select “codecommitUser” - Attach policy
 IAM—Users—codecommituser—security credentials tab—upload ssh public key—
