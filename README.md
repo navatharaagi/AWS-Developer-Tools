@@ -33,7 +33,7 @@ HTTPS or SSH:
 #### 3.Linux: GIT Installation
 -Download git for linux or unix by following given commands according to distribution like CentOS(yum), ubuntu,…..from Google
 #### 4.OSX/Linux: AWS CLI Installation
-```
+```ssh
 $python --version       /* to check whether python installed or not
 #sudo yum install python3     /* to install python for CentOS
 #sudo apt-get install python3    /* for  Debian distributions
@@ -47,4 +47,5 @@ AWS Access Key ID : Copy & paste access key of IAM user (code commit)
 AWS Secret Key: Copy & paste secret key of IAM user (code commit)
 region: enter region
 format: json
+```
 Note: if we want to change the user change AWS access & secret keys by running 'aws configure’ command
