@@ -4,7 +4,7 @@
 - CodeCommit is a communication tool
 - It is an service that allows developers to collaborate on a project & easily manage,share,update & coordinate the code they are independently working on.
 Benefits:
--Highly available,scalable & fault tolerant
+- Highly available,scalable & fault tolerant
 -No size limit
 -Integrates with other AWS services(Code-pipeline,Lambda,SNS)
 -Easily migrate files from other Git-based repos
