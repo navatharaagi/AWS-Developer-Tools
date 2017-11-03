@@ -12,3 +12,13 @@ Benefits:
 Setup & Config:
 - Tools we need to use code commit are AWS CLI(Edit,Create,Del,view repos), Git.
 - Communication protocols are SSH & HTTPS
+HTTPS or SSH:
+-Storing & verifyning credentials is a main diff
+    -HTTPS: Credentials Helper
+    -SSH: RSA Key Pairs  
+-Port access (our firewall & network security)
+    -HTTPS: Port 443
+    -SSH: Port 22 [more efficient]
+-Recommendation:
+    -Windows & linux: HTTPS
+    -Mac OSX: SSH (due to keychain issues)
