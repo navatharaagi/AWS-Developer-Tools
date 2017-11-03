@@ -73,7 +73,7 @@ Host git-codecommit.*.amazonaws.com
 save & exit
 @root$chmod 600 config
 @root$ssh git-codecommit.us-east-1.amazonaws.com    /* Successfully authenticates
-```
+
 #### 6. OSX/Linux: Configure the Credential Helper (HTTP)
 $git config - -global credential.helper  ‘!aws  - -profile codecommit credential-helper $@‘     /*  config credential-helper globally, string put inside .config file & points to aws credentials in git
 $$git config - -global credential.UseHttpPath true   /* telling git that we are using Http as communication protocol with our repo
