@@ -74,3 +74,20 @@ save & exit
 @root$chmod 600 config
 @root$ssh git-codecommit.us-east-1.amazonaws.com    /* Successfully authenticates
 ```
+#### 6.OSX/Linux: Configure the Credential Helper (HTTP)
+$git config - -global credential.helper  ‘!aws  - -profile codecommit credential-helper $@‘     /*  config credential-helper globally, string put inside .config file & points to aws credentials in git
+$$git config - -global credential.UseHttpPath true   /* telling git that we are using Http as communication protocol with our repo
+$$git config - -global - -edit    /*opens vim editor file, to view git config file with given credentials
+Note: if IAM user credentials(access,secret keys) changed in AWS CLI, we have to re-run the above git commands to reconfigure the credential helper.
+For linux the above commands are enough
+For OSX:
+-credentials last for 15mins only, its issue in OSX(Mac).So git clone ‘macerrorrepo’ to our local repo.
+mac$ git clone <url of macerror repo> <local repo name>
+$cd local repo
+$touch test.txt
+$git add text.txt
+$git commit -m “test commit”
+$git push
+-After 15 mins, if we do git pull, will get error.
+-Now just goto “ keychain Access” in our sys,search for ‘ git’, it will show git keys, select the key which associated with macerrorrepo—Access control--select 'git-credential-osxkeychain’ —del—save—enter sys pwd.
+$git pull   (Deny the given notification)  /*will get already up to date
