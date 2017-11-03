@@ -77,7 +77,7 @@ save & exit
 #### 6. OSX/Linux: Configure the Credential Helper (HTTP)
 ```sh
 $git config --global credential.helper  ‘!aws  - -profile codecommit credential-helper $@‘     /*  config credential-helper globally,put string inside .config file & points to aws credentials in git
-$$git config - -global credential.UseHttpPath true   /* telling git that we are using Http as communication protocol with our repo
+$git config - -global credential.UseHttpPath true   /* telling git that we are using Http as communication protocol with our repo
 $$git config - -global - -edit    /*opens vim editor file, to view git config file with given credentials
 ```
 Note: if IAM user credentials(access,secret keys) changed in AWS CLI, we have to re-run the above git commands to reconfigure the credential helper.
