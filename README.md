@@ -30,3 +30,5 @@ HTTPS or SSH:
 #### 2.OSX: GIT Installation
 - Download git for MacOSX
 - To check whether git installed or not, run 'git help' command in CLI.
+#### 3.Linux: GIT Installation
+-Download git for linux or unix by following given commands according to distribution like CentOS(yum), ubuntu,…..from Google
