@@ -13,7 +13,7 @@ Setup & Config:
 - Tools we need to use code commit are AWS CLI(Edit,Create,Del,view repos), Git.
 - Communication protocols are SSH & HTTPS
 HTTPS or SSH:
--Storing & verifyning credentials is a main diff
+- Storing & verifying credentials is a main diff
     -HTTPS: Credentials Helper
     -SSH: RSA Key Pairs  
 -Port access (our firewall & network security)
