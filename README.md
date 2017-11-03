@@ -51,8 +51,8 @@ format: json
 Note: if we want to use another IAM user,we should give that IAM User AWS access key & secret key by running aws configure
 #### 5. OSX/Linux: Configure SSH Credentials (SSH)
 ```sh
-#cd ~/.ssh    /*change dir to ssh
-#ssh-keygen    /*to generate a rsa key pair
+@root$cd ~/.ssh    /*change dir to ssh
+@root$ssh-keygen    /*to generate a rsa key pair
 enter file to save key: codecommitkey  (can give any name)
 enter password/passphrase: don’t enter anything
 #ls         /* codecommitkey , & codecommitkey.pub files must list
