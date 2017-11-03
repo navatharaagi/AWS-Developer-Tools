@@ -34,10 +34,10 @@ HTTPS or SSH:
 -Download git for linux or unix by following given commands according to distribution like CentOS(yum), ubuntu,…..from Google
 #### 4.OSX/Linux: AWS CLI Installation
 ```
-$python --version       /* to check whether python installed or not 
-#sudo yum install python3     /* for CentOS
+$python --version       /* to check whether python installed or not
+#sudo yum install python3     /* to install python for CentOS
 #sudo apt-get install python3    /* for  Debian distributions
-#pip  - -help   /* to check pip installation
+#pip --help   /* to check pip installation
 #curl -0 https://bootstrap.pypa.io/get-pip.py       /*to install pip
 #sudo python3 get-pip.py
 #sudo pip install awscli     /* to install AWS CLI
