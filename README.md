@@ -58,8 +58,7 @@ enter password/passphrase:            /* don’t enter anything
 @root$ls         /* lists codecommitkey , codecommitkey.pub files  
 @root$cat codecommitkey.pub    /*copy the key
 ```
-- Goto AWS Console.
-
+- Goto AWS Console:
 AWS—IAM—Policies—IAMUserSSHKeys--click on it—Attach—select “codecommitUser” - Attach policy
 IAM—Users—codecommituser—security credentials tab—upload ssh public key—
 Paste the copied key of codecommitkey.pub—upload—SSH Key ID—copy ssh id
