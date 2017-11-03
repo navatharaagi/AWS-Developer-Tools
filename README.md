@@ -55,8 +55,8 @@ Note: if we want to use another IAM user,we should give that IAM User AWS access
 @root$ssh-keygen    /*to generate a rsa key pair
 enter file to save key: codecommitkey  (can give any name)
 enter password/passphrase: don’t enter anything
-#ls         /* codecommitkey , & codecommitkey.pub files must list
-#cat codecommitkey.pub    /*copy the key
+@root$ls         /* lists codecommitkey , codecommitkey.pub files  
+@root$cat codecommitkey.pub    /*copy the key
 ```
 -Goto AWS Console
 AWS—IAM—Policies—IAMUserSSHKeys--click on it—Attach—select “codecommitUser” - Attach policy
