@@ -95,5 +95,5 @@ $git push
 - After 15 mins, if we do git pull, we will get error.To avoid this
 - Goto “keychain Access” in our Mac sys,search for ‘git’, it will show git keys, select the key which associated with macerrorrepo—>Access control->select 'git-credential-osxkeychain’—>del—>save—>enter sys pwd.
 ```sh
-$git pull   (Deny the given notification)  /* will get already up to date
+$git pull   /* (Deny the given notification) will get already up to date
 ```
