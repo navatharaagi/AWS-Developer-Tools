@@ -269,7 +269,8 @@ AWS->CodeCommit->“My repo”->widgets.html with “new_feature branch only” 
 $cd User3_local repo   
 $git branch   /*lists master branch
 $ls     /*lists widgets.html file
--If we switch to another branch, then that branch also points to the same commit-Id of
+```
+- If we switch to another branch, then that branch also points to the same commit-Id of
 the previous branch. so lists same files as previous one.i.e,.
 $git checkout -b new_feature   /*created & switched branch
 $ls  /*lists widgets.html file only
