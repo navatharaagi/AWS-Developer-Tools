@@ -264,3 +264,16 @@ $git push origin master    /*origin=remote name  , master=branch name
 - we can check this by going to
 AWS->CodeCommit->“My repo”->widgets.html with “new_feature branch only” line
 ```
+#### 5.A Closer look at Commits and the HEAD Pointer
+$cd User3_local repo   
+$git branch   /*lists master branch
+$ls     /*lists widgets.html file
+-If we switch to another branch, then that branch also points to the same commit-Id of
+the previous branch. so lists same files as previous one.i.e,.
+$git checkout -b new_feature   /*created & switched branch
+$ls  /*lists widgets.html file only
+$git branch  /*lists branches with a * points to current branch i.e, HEAD points to that branch whichever branch has *. If we switches branches then HEAD p[ointer also switches.
+-If we add a new file “newfeature.txt" in “new_feature” branch & do git add & commit. AND add a new file “master.txt" in “master” branch & do git add & commit.
+-If we check, new_feature branch—>ls—> newfeature.txt
+  AND master branch—>ls—>master.txt
+-Now merge the changes being in master branch, then if we do ls, we can see  newfeature.txt,master.txt files. so we can delete new_feature branch now.
