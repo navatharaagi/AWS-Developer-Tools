@@ -279,8 +279,8 @@ $git branch  /*lists branches with a * points to current branch i.e, HEAD points
 - If we check, new_feature branch—>ls—>newfeature.txt
   AND master branch—>ls—>master.txt
 - Now merge the changes being in master branch, then if we do ls, we can see  newfeature.txt,master.txt files. so we can delete new_feature branch now.
-#### 6.Tags 
-To manage Tags locally
+#### 6.Tags
+- To manage Tags locally
 $cd User3_local repo   
 $git log   /*gives detailed info of commits with commit-Id’s & details
 $git tag v1.0 <1st 7 letters of commit-id> /*to tag a commit with tag name “v1.0”
