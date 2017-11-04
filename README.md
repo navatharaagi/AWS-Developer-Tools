@@ -258,7 +258,6 @@ $ls  /*now we can see the “widgets.html” .
 - Now we have merged the changes in to master branch, so we no longer need the new_feature branch
 $git branch -d new_feature  /*to delete “new_feature” branch
 $git branch   /*can check whether branch deleted/not
-- Now we have to push the changes from local repo to central repo
 $git push origin master    /*origin=remote name  , master=branch name
 ```
 - we can check this by going to
