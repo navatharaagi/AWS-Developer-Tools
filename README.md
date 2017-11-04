@@ -135,7 +135,7 @@ $nano what_is_www   /* to edit file
 #My first script
 echo “hello"
 save & exit
-$chmod 755 what_is_www  /*changing permissions to execute
+$chmod 755 what_is_www  /* changing permissions to execute
 $./what_is_www
 hello
 $git status  /*tells us that there are untracked files “what_is_www”
