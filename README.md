@@ -154,7 +154,7 @@ $git branch    /* to get branch name
 $git diff --stat <remote name> <branch name>   /*to view which files to be pushed
 $git push <remote name> <branch name>  
 ```
-- After push success, check file pushed to  “MyRepo” or not
+- After push success, check file pushed to “MyRepo” or not
 - Goto AWS—>CodeCommit—>select repo—>“MyRepo”—>“what_is_www” file will be there.
 
 -Now User2 has “Myrepo” with .txt files but there is no “what_is_www” file in it.
