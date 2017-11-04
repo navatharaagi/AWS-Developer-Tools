@@ -101,7 +101,7 @@ $git pull   /* (Deny the given notification) will get already up to date
 #### 1.Create, View, Edit, and Delete a Repository
 - AWS Console—>CodeCommit—>create new repo—>name “LatestRepo” (must be unique), description  “test repo” —>create.
 - If we click on created repo, we can view code,branches,settings,etc…
-- If we want to delete repo, Settings-delete repo.
+- If we want to delete repo, Settings->delete repo.
 To do the same on  AWS CLI:
 ```sh
 ( “CLI-Repo” is a repo name here we are using )
