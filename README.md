@@ -261,5 +261,5 @@ $git branch -d new_feature  /*to delete “new_feature” branch
 $git branch   /*can check whether branch deleted/not
 -Now we have to push the changes from local repo to central repo
 $git push origin master    /*origin=remote name  , master=branch name
--we can check this much by going to
-AWS-Code Commit-“My repo”- widgets.html with “new_feature branch only” line
+-we can check this by going to
+AWS->CodeCommit->“My repo”->widgets.html with “new_feature branch only” line
