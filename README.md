@@ -146,9 +146,9 @@ $git status  /* again gives, untracked files
 $git add what_is_www  /* so again add it if we want that file & check status
 $git commit -m “adding file to central repo” /* asks for email & name if not configured
 -To configure user globally
-$git config  - -global  user.email  “username@Myreponame”
-$git config  - -global  user.name  “username”
-$git commit -m “adding file to central repo”   /*Now it commit changes
+$git config --global user.email “username@Myreponame”
+$git config --global user.name “username”
+$git commit -m “adding file to central repo”  /* Now commit changes
 $git remote    /* to get remote name
 $git branch    /*to get branch name
 $git diff  - -stat  <remote name>  <branch name>   /*to view which files to be pushed
