@@ -128,7 +128,7 @@ $git clone <url> <Myreponame> <My-local-repo-name>
 $ls  /*to check local repo cloned/not
 $cd <My-local-repo-name>
 $ls   /*lists files which were created in “Myrepo”, which cloned now
--Now make some changes in local repo by creating a file “what_is_www”
+- Now make some changes in local repo by creating a file “what_is_www”
 $touch what_is_www
 $nano what_is_www   /*to edit file
 #!/bin/bash
