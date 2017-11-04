@@ -114,6 +114,7 @@ $aws codecommit update-repository-description --repository-name CLIRepo --reposi
 $aws codecommit delete-repository --repository-name CLI-Repo  /* to del repo
 ```
 #### 2.Cloning Repositories, Commits, Push, and Pulls
+```sh
 $aws codecommit  list-repositories
 Assume that there are 3 users, User1 & User2 & User3
 -To clone a repo:
