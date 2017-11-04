@@ -171,7 +171,7 @@ $ls   /* lists what_is_www file along with previous files
 $./what_is_www    /* gives info which is in file
 Now User1 & User2 both have central repo with same files.
 ```
-3.Merging Basic Conflicts
+#### 3.Merging Basic Conflicts
 Now User1 & User2 addes some changes to “What_is_www” file
 User1:
 $cd <My-local_repo>
