@@ -223,3 +223,68 @@ $git pull <remote name>  <branch name>
 $nano what_is_www  /*can view the User2 conflict which changed by User2.
 -Now User1 & User2 both have updated repos
 ```
+#### 4.Branches (local)
+Now we have User1,User2 & User3
+$cd User3_local repo   
+$ls    /*which has the updated repo with files same as User1, User2
+-Now User3 wants to make changes by developing a new feature. so User3 creates a new branch “new_feature”
+$git checkout -b new_feature   /*creates new branch & switches into it
+$touch  widgets.html  
+$nano widgets.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+ <h1 style=“color: #5e9ca0;”>what is www?</h1>
+<h1 style=“color: #5e9ca0;”>Its a project being developed by User1,User2 & User3</h1>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+</body>
+</html>
+save & exit
+$git branch  /*lists all branches,* points to the current branch
+$git branch -r /*lists the remote branches
+$git checkout <new branch name>  /*switch to another branch
+$nano widgets.html  /*edit html file
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+Testing Branches     /*adding this line
+ <h1 style=“color: #5e9ca0;”>what is www?</h1>
+<h1 style=“color: #5e9ca0;”>Its a project being developed by User1,User2 & User3</h1>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+</body>
+</html>
+save & exit
+$git checkout master  /*switching into master branch
+-If we open
+$nano widgets.html
+-we can see the changes which we made in new_feature branch.
+Note: Without committing the changes to the specific branch, there will be no diff in files even we switch branches.
+$git checkout new_feature  /*switching into new_feature
+$nano widgets.html  /*Replace "Testing Branches" line with “new_feature branch only”
+$git add widgets.html
+$git commit -m “new_feature addition”  /*now changes in the file committed
+-Now if we change branch & check the file, file will be empty
+$git checkout master
+$nano widgets.html /*file will be empty, since file is no longer  with this branch
+$ls    /*there will be no “widgets.html” file in this branch
+-Now to incorporate  the changes to “master” branch, we need to pull the “new_feature” branch changes & merge them into “master” branch
+-To do this pull, we need to be in “master” branch
+Note: we must be in the branch, that we want to merge the other branch into.
+-Already we are in master branch,so do merge
+$git merge new_feature
+$ls  /*now we can see the “widgets.html” .
+-Now we have merged the changes in to master branch, so we no longer need the new_feature branch
+$git branch -d new_feature  /*to delete “new_feature” branch
+$git branch   /*can check whether branch deleted/not
+-Now we have to push the changes from local repo to central repo
+$git push origin master    /*origin=remote name  , master=branch name
+-we can check this much by going to
+AWS-Code Commit-“My repo”- widgets.html with “new_feature branch only” line
