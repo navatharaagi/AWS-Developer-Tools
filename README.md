@@ -160,7 +160,7 @@ $git push <remote name> <branch name>
 - Now User2 has “Myrepo” with .txt files but there is no “what_is_www” file in it.
 - So User2 has to clone the “Myrepo” with new changes i.e.,with “what_is_www” file
 ```sh
-$ls    /*lists “User2-local-repo” dir , which already cloned from “Myrepo” to local repo  before  changes pushed by User1
+$ls    /* lists “User2-local-repo” dir ,which already cloned from “Myrepo” to local repo before changes pushed by User1
 $cd  User2-local-repo
 $ls    /*files will be listed
 -Now User2 has to Pull the new changes from “Myrepo” which are pushed by User1
