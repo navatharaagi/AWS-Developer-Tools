@@ -279,3 +279,21 @@ $git branch  /*lists branches with a * points to current branch i.e, HEAD points
 - If we check, new_feature branch—>ls—>newfeature.txt
   AND master branch—>ls—>master.txt
 - Now merge the changes being in master branch, then if we do ls, we can see  newfeature.txt,master.txt files. so we can delete new_feature branch now.
+#### 6.Tags 
+To manage Tags locally
+$cd User3_local repo   
+$git log   /*gives detailed info of commits with commit-Id’s & details
+$git tag v1.0 <1st 7 letters of commit-id> /*to tag a commit with tag name “v1.0”
+$git tag       /*to view our tag
+$git show  v1.0   /*to see detailed info of created tag
+$git tag -d  v1.0    /*to delete the tag
+$git tag    /*doesn’t list anything, since we deleted tag v1.0
+To manage Tags with Central Repo
+$git log     
+$git tag v5.0 <commit-id>
+$git push origin v5.0   /*Push to add tag to central repo here origin=remote name, v5.0=tag name
+$git ls-remote - -tags    /*gives tags in central repo
+$git fetch  - -tags   /*to pull tags from central repo to local repo
+$git push - -delete origin v5.0 /*deletes tag from central repo
+$git ls-remote - -tags    /*there is no v5.0 tag in central repo
+$git tag     /*it will show v5.0,since it is in local repo which we pulled to local repo using fetch command
