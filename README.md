@@ -112,6 +112,7 @@ $aws codecommit batch-get-repositories --repository-name <Repo1> <Repo2> /* to g
 $aws codecommit update-repository-name --old-name CLIRepo --new-name newReponame /* to change repo name, can check it out by ‘list-repos’ cmnd
 $aws codecommit update-repository-description --repository-name CLIRepo --repository-description “update description" /* to change repo description can check it out by ‘get-repo’ command
 $aws codecommit delete-repository --repository-name CLI-Repo  /* to del repo
+```
 #### 2.Cloning Repositories, Commits, Push, and Pulls
 $aws codecommit  list-repositories
 Assume that there are 3 users, User1 & User2 & User3
