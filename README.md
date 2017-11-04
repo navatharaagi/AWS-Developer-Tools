@@ -240,7 +240,7 @@ Testing Branches /*add this line in <body> section of the file
 $git checkout master  /*switching into master branch
 - If we open
 $nano widgets.html
--we can see the changes which we made in new_feature branch.
+- we can see the changes which we made in new_feature branch.
 Note: Without committing the changes to the specific branch, there will be no diff in files even we switch branches.
 $git checkout new_feature  /*switching into new_feature
 $nano widgets.html  /*Replace "Testing Branches" line with “new_feature branch only”
