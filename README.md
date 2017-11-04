@@ -172,7 +172,7 @@ $./what_is_www    /* gives info which is in file
 Now User1 & User2 both have central repo with same files.
 ```
 #### 3.Merging Basic Conflicts
-Now User1 & User2 addes some changes to “What_is_www” file
+Now User1 & User2 added some changes to “What_is_www” file
 User1:
 $cd <My-local_repo>
 $nano What_is_www
