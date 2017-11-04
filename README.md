@@ -263,3 +263,4 @@ $git branch   /*can check whether branch deleted/not
 $git push origin master    /*origin=remote name  , master=branch name
 - we can check this by going to
 AWS->CodeCommit->“My repo”->widgets.html with “new_feature branch only” line
+```
