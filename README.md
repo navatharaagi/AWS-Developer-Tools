@@ -173,6 +173,7 @@ Now User1 & User2 both have central repo with same files.
 ```
 #### 3.Merging Basic Conflicts
 -Consider if User1 & User2 added some changes to “What_is_www” file
+```sh
 User1:
 $cd <My-local_repo>
 $nano What_is_www
@@ -184,7 +185,7 @@ $git add what_is_www
 $git commit -m “User1 conflicts added to file"
 $git push <remote name>  <branch name>
 -To verify Goto  AWS—code commit—Myrepo—what_is_www—(we can see the edited  file with User1 conflict)
-
+```
 User2:
 $cd <User2-local_repo>
 $nano What_is_www
