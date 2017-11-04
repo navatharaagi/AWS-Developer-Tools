@@ -232,7 +232,10 @@ $ls    /*which has the updated repo with files same as User1, User2
 $git checkout -b new_feature   /*creates new branch & switches into it
 $touch  widgets.html  
 $nano widgets.html
-
+$git branch  /*lists all branches,* points to the current branch
+$git branch -r /*lists the remote branches
+$git checkout <new branch name>  /*switch to another branch
+$nano widgets.html  /*edit html file
 save & exit
 $git checkout master  /*switching into master branch
 -If we open
