@@ -235,7 +235,8 @@ $nano widgets.html
 $git branch  /*lists all branches,* points to the current branch
 $git branch -r /*lists the remote branches
 $git checkout <new branch name>  /*switch to another branch
-$nano widgets.html  /*edit html file
+$nano widgets.html  /*edit file by adding
+Testing Branches /*add this line in body of the file
 save & exit
 $git checkout master  /*switching into master branch
 -If we open
