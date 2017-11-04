@@ -232,36 +232,7 @@ $ls    /*which has the updated repo with files same as User1, User2
 $git checkout -b new_feature   /*creates new branch & switches into it
 $touch  widgets.html  
 $nano widgets.html
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
- <h1 style=“color: #5e9ca0;”>what is www?</h1>
-<h1 style=“color: #5e9ca0;”>Its a project being developed by User1,User2 & User3</h1>
-<p>&nbsp;</p>
-<p><strong>&nbsp;</strong></p>
-</body>
-</html>
-save & exit
-$git branch  /*lists all branches,* points to the current branch
-$git branch -r /*lists the remote branches
-$git checkout <new branch name>  /*switch to another branch
-$nano widgets.html  /*edit html file
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-Testing Branches     /*adding this line
- <h1 style=“color: #5e9ca0;”>what is www?</h1>
-<h1 style=“color: #5e9ca0;”>Its a project being developed by User1,User2 & User3</h1>
-<p>&nbsp;</p>
-<p><strong>&nbsp;</strong></p>
-</body>
-</html>
+
 save & exit
 $git checkout master  /*switching into master branch
 -If we open
