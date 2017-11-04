@@ -290,7 +290,7 @@ $git show  v1.0   /* to see detailed info of created tag
 $git tag -d  v1.0    /* to delete the tag
 $git tag    /* doesn’t list anything, since we deleted tag v1.0
 ```
-To manage Tags with Central Repo
+- To manage Tags with Central Repo
 $git log     
 $git tag v5.0 <commit-id>
 $git push origin v5.0   /*Push to add tag to central repo here origin=remote name, v5.0=tag name
