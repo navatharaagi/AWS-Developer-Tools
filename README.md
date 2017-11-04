@@ -162,12 +162,12 @@ $git push <remote name> <branch name>
 ```sh
 $ls    /* lists “User2-local-repo” dir ,which already cloned from “Myrepo” to local repo before changes pushed by User1
 $cd User2-local-repo
-$ls    /*files will be listed
+$ls    /* files will be listed
 - Now User2 has to Pull the new changes from “Myrepo” which are pushed by User1
 $git remote
 $git branch
 $git pull <remote name>  <branch name>
-$ls   /*lists what_is_www file along with previous files
+$ls   /* lists what_is_www file along with previous files
 $./what_is_www    /*gives info which is in file
 Now User1 & User2 both have central repo with same files.
 ```
