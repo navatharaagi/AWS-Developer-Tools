@@ -275,6 +275,6 @@ $git checkout -b new_feature   /*created & switched branch
 $ls  /*lists widgets.html file only
 $git branch  /*lists branches with a * points to current branch i.e, HEAD points to that branch whichever branch has *. If we switches branches then HEAD p[ointer also switches.
 - If we add a new file “newfeature.txt" in “new_feature” branch & do git add & commit. AND add a new file “master.txt" in “master” branch & do git add & commit.
--If we check, new_feature branch—>ls—> newfeature.txt
+- If we check, new_feature branch—>ls—> newfeature.txt
   AND master branch—>ls—>master.txt
 -Now merge the changes being in master branch, then if we do ls, we can see  newfeature.txt,master.txt files. so we can delete new_feature branch now.
