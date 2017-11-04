@@ -224,7 +224,7 @@ $nano what_is_www  /*can view the User2 conflict which changed by User2.
 -Now User1 & User2 both have updated repos
 ```
 #### 4.Branches (local)
-- Now we have User1,User2 & User3
+- Assume we have User1,User2 & User3
 ```sh
 $cd User3_local repo   
 $ls    /*which has the updated repo with files same as User1, User2
