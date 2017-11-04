@@ -250,16 +250,16 @@ $git commit -m “new_feature addition”  /*now changes in the file committed
 $git checkout master
 $nano widgets.html /*file will be empty, since file is no longer  with this branch
 $ls    /*there will be no “widgets.html” file in this branch
--Now to incorporate  the changes to “master” branch, we need to pull the “new_feature” branch changes & merge them into “master” branch
--To do this pull, we need to be in “master” branch
+- Now to incorporate  the changes to “master” branch, we need to pull the “new_feature” branch changes & merge them into “master” branch
+- To do this pull, we need to be in “master” branch
 Note: we must be in the branch, that we want to merge the other branch into.
--Already we are in master branch,so do merge
+- Already we are in master branch,so do merge
 $git merge new_feature
 $ls  /*now we can see the “widgets.html” .
--Now we have merged the changes in to master branch, so we no longer need the new_feature branch
+- Now we have merged the changes in to master branch, so we no longer need the new_feature branch
 $git branch -d new_feature  /*to delete “new_feature” branch
 $git branch   /*can check whether branch deleted/not
--Now we have to push the changes from local repo to central repo
+- Now we have to push the changes from local repo to central repo
 $git push origin master    /*origin=remote name  , master=branch name
--we can check this by going to
+- we can check this by going to
 AWS->CodeCommit->“My repo”->widgets.html with “new_feature branch only” line
