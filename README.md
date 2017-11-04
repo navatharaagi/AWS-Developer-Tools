@@ -171,3 +171,50 @@ $ls   /* lists what_is_www file along with previous files
 $./what_is_www    /* gives info which is in file
 Now User1 & User2 both have central repo with same files.
 ```
+3.Merging Basic Conflicts
+Now User1 & User2 addes some changes to “What_is_www” file
+User1:
+$cd <My-local_repo>
+$nano What_is_www
+#!/bin/bash
+#My first script
+echo “hello”  User1 Conflict
+save & exit
+$git add what_is_www
+$git commit -m “User1 conflicts added to file"
+$git push <remote name>  <branch name>
+-To verify Goto  AWS—code commit—Myrepo—what_is_www—(we can see the edited  file with User1 conflict)
+
+User2:
+$cd <User2-local_repo>
+$nano What_is_www
+#!/bin/bash
+#My first script
+echo “hello”  User2 Conflict
+save & exit
+$git add what_is_www
+$git commit -m “User2 conflicts added to file"
+$git push <remote name>  <branch name>  /*gives error and asks to merge changes
+$git pull <remote name>  <branch name>  /*gives conflict automatic merge failed error
+$nano What_is_www   /*can view file with HEAD pointer & commit-id
+#!/bin/bash
+#My first script
+>>>>HEAD
+echo “hello”  User2 Conflict
+- - - - - -
+echo “hello”  User1 Conflict
+>>>>> <commit-id>
+-Now decide which one wants to be in the file and del remaining part.Here we are deleting User1 conflict
+#!/bin/bash
+#My first script
+echo “hello”  User2 Conflict
+save & exit
+-Again git add,commit & push the changes
+$git add what_is_www
+$git commit -m “Overwriting User1 conflict"
+$git push <remote name>  <branch name>  
+-To verify Goto  AWS—code commit—Myrepo—what_is_www—(we can see the edited  file with User2 conflict)
+-Now User1, doesn’t have the latest changes in the file. So just pull the changes to User1 local repo
+$git pull <remote name>  <branch name>
+$nano what_is_www  /*can view the User2 conflict which changed by User2.
+-Now User1 & User2 both have updated repos
