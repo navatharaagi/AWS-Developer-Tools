@@ -168,6 +168,6 @@ $git remote
 $git branch
 $git pull <remote name>  <branch name>
 $ls   /* lists what_is_www file along with previous files
-$./what_is_www    /*gives info which is in file
+$./what_is_www    /* gives info which is in file
 Now User1 & User2 both have central repo with same files.
 ```
