@@ -127,10 +127,10 @@ $aws codecommit  list-repositories
 $git clone <url> <Myreponame> <My-local-repo-name>
 $ls  /*to check local repo cloned/not
 $cd <My-local-repo-name>
-$ls   /*lists files which were created in “Myrepo”, which cloned now
+$ls   /* lists files which were created in “Myrepo”, which cloned now
 - Now make some changes in local repo by creating a file “what_is_www”
 $touch what_is_www
-$nano what_is_www   /*to edit file
+$nano what_is_www   /* to edit file
 #!/bin/bash
 #My first script
 echo “hello"
@@ -139,9 +139,9 @@ $chmod 755 what_is_www  /*changing permissions to execute
 $./what_is_www
 hello
 $git status  /*tells us that there are untracked files “what_is_www”
-$git add what_is_www   /*to add file to commit
-$git status     /*gives changes committed
-$git rm - -cached what_is_www    /*to remove file, if it added by mistake
+$git add what_is_www   /* to add file to commit
+$git status     /* gives changes committed
+$git rm --cached what_is_www /* to remove file, if it added by mistake
 $git status  /*again gives, untracked files
 $git add what_is_www   /*so again add it if we want that file & check status
 $git commit -m “adding file to central repo”   /*asks for email & name if not configured
