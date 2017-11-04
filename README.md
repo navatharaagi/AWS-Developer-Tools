@@ -150,9 +150,9 @@ $git config --global user.email “username@Myreponame”
 $git config --global user.name “username”
 $git commit -m “adding file to central repo”  /* Now commit changes
 $git remote    /* to get remote name
-$git branch    /*to get branch name
-$git diff  - -stat  <remote name>  <branch name>   /*to view which files to be pushed
-$git push <remote name>/<branch name>  
+$git branch    /* to get branch name
+$git diff --stat <remote name> <branch name>   /*to view which files to be pushed
+$git push <remote name> <branch name>  
 ```
 -After push success, check file pushed to  “MyRepo” or not
 -Goto AWS — Code Commit — select repo — “MyRepo” — “what_is_www”.
