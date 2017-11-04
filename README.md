@@ -185,7 +185,7 @@ $git add what_is_www
 $git commit -m “User1 conflicts added to file"
 $git push <remote name>  <branch name>
 -To verify Goto  AWS—code commit—Myrepo—what_is_www—(we can see the edited  file with User1 conflict)
-```
+
 User2:
 $cd <User2-local_repo>
 $nano What_is_www
