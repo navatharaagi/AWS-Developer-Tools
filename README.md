@@ -112,3 +112,55 @@ $aws codecommit batch-get-repositories --repository-name <Repo1> <Repo2> /* to g
 $aws codecommit update-repository-name --old-name CLIRepo --new-name newReponame /* to change repo name, can check it out by ‘list-repos’ cmnd
 $aws codecommit update-repository-description --repository-name CLIRepo --repository-description “update description" /* to change repo description can check it out by ‘get-repo’ command
 $aws codecommit delete-repository --repository-name CLI-Repo  /* to del repo
+#### 2.Cloning Repositories, Commits, Push, and Pulls
+$aws codecommit  list-repositories
+Assume that there are 3 users, User1 & User2 & User3
+-To clone a repo:
+AWS—Code Commit—select repo name “Myrepo" — code—clone URL— select SSH/HTTP url
+-In CLI,
+-Here “Myrepo” is the central repo
+-Here User1 making changes to “Myrepo” by cloning into his local repo
+$git clone <url> <Myreponame> <My-local-repo-name>
+$ls  /*to check local repo cloned/not
+$cd <My-local-repo-name>
+$ls   /*lists files which were created in “Myrepo”, which cloned now
+-Now make some changes in local repo by creating a file “what_is_www”
+$touch what_is_www
+$nano what_is_www   /*to edit file
+#!/bin/bash
+#My first script
+echo “hello"
+save & exit
+$chmod 755 what_is_www  /*changing permissions to execute
+$./what_is_www
+hello
+$git status  /*tells us that there are untracked files “what_is_www”
+$git add what_is_www   /*to add file to commit
+$git status     /*gives changes committed
+$git rm - -cached what_is_www    /*to remove file, if it added by mistake
+$git status  /*again gives, untracked files
+$git add what_is_www   /*so again add it if we want that file & check status
+$git commit -m “adding file to central repo”   /*asks for email & name if not configured
+-To configure user globally
+$git config  - -global  user.email  “username@Myreponame”
+$git config  - -global  user.name  “username”
+$git commit -m “adding file to central repo”   /*Now it commit changes
+$git remote    /* to get remote name
+$git branch    /*to get branch name
+$git diff  - -stat  <remote name>  <branch name>   /*to view which files to be pushed
+$git push <remote name>/<branch name>  
+-After push success, check file pushed to  “MyRepo” or not
+-Goto AWS — Code Commit — select repo — “MyRepo” — “what_is_www”.
+
+-Now User2 has “Myrepo” with .txt files but there is no “what_is_www” file in it.
+-So User2 has to clone the “Myrepo” with new changes i.e.,“what_is_www” file
+$ls    /*lists “User2-local-repo” dir , which already cloned from “Myrepo” to local repo  before  changes pushed by User1
+$cd  User2-local-repo
+$ls    /*files will be listed
+-Now User2 has to Pull the new changes from “Myrepo” which are pushed by User1
+$git remote
+$git branch
+$git pull <remote name>  <branch name>
+$ls   /*lists what_is_www file along with previous files
+$./what_is_www    /*gives info which is in file
+Now User1 & User2 both have central repo with same files.
