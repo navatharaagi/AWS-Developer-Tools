@@ -238,15 +238,13 @@ $git checkout <new branch name>  /*switch to another branch
 $nano widgets.html  /*edit file by adding
 Testing Branches /*add this line in <body> section of the file
 $git checkout master  /*switching into master branch
-- If we open
 $nano widgets.html /* we can see the changes which we made in new_feature branch.
 Note: Without committing the changes to the specific branch, there will be no diff in files even we switch branches.
 $git checkout new_feature  /*switching into new_feature
 $nano widgets.html  /*Replace "Testing Branches" line with “new_feature branch only”
 $git add widgets.html
 $git commit -m “new_feature addition”  /*now changes in the file committed
--Now if we change branch & check the file, file will be empty
-$git checkout master
+$git checkout master /* Now if we change branch & check the file, file will be empty
 $nano widgets.html /*file will be empty, since file is no longer  with this branch
 $ls    /*there will be no “widgets.html” file in this branch
 - Now to incorporate  the changes to “master” branch, we need to pull the “new_feature” branch changes & merge them into “master” branch
