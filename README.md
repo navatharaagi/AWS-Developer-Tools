@@ -118,9 +118,9 @@ $aws codecommit delete-repository --repository-name CLI-Repo  /* to del repo
 $aws codecommit  list-repositories
 ```
 - Assume that there are 3 users, User1 & User2 & User3
--To clone a repo:
-AWS—Code Commit—select repo name “Myrepo" — code—clone URL— select SSH/HTTP url
--In CLI,
+- To clone a repo:
+  - AWS—>CodeCommit—>select repo name “Myrepo"—>code—>clone URL—>select SSH/HTTP url
+- In CLI,
 -Here “Myrepo” is the central repo
 -Here User1 making changes to “Myrepo” by cloning into his local repo
 $git clone <url> <Myreponame> <My-local-repo-name>
