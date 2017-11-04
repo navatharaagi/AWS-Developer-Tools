@@ -300,3 +300,4 @@ $git fetch  - -tags   /*to pull tags from central repo to local repo
 $git push - -delete origin v5.0 /*deletes tag from central repo
 $git ls-remote - -tags    /*there is no v5.0 tag in central repo
 $git tag     /*it will show v5.0,since it is in local repo which we pulled to local repo using fetch command
+```
