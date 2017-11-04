@@ -244,9 +244,10 @@ $git checkout new_feature  /*switching into new_feature
 $nano widgets.html  /*Replace "Testing Branches" line with “new_feature branch only”
 $git add widgets.html
 $git commit -m “new_feature addition”  /*now changes in the file committed
-$git checkout master /* Now if we change branch & check the file, file will be empty
+$git checkout master /* Now if we change branch & check the file
 $nano widgets.html /*file will be empty, since file is no longer  with this branch
 $ls    /*there will be no “widgets.html” file in this branch
+```
 - Now to incorporate  the changes to “master” branch, we need to pull the “new_feature” branch changes & merge them into “master” branch
 - To do this pull, we need to be in “master” branch
 Note: we must be in the branch, that we want to merge the other branch into.
