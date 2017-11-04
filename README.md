@@ -272,6 +272,7 @@ $ls     /*lists widgets.html file
 ```
 - If we switch to another branch, then that branch also points to the same commit-Id of
 the previous branch. so lists same files as previous one.i.e,.
+```sh
 $git checkout -b new_feature   /*created & switched branch
 $ls  /*lists widgets.html file only
 $git branch  /*lists branches with a * points to current branch i.e, HEAD points to that branch whichever branch has *. If we switches branches then HEAD p[ointer also switches.
