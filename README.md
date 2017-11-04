@@ -264,7 +264,6 @@ $git push origin master    /*origin=remote name  , master=branch name
 ```
 - we can check this by going to
 AWS->CodeCommit->“My repo”->widgets.html with “new_feature branch only” line
-```
 #### 5.A Closer look at Commits and the HEAD Pointer
 ```sh
 $cd User3_local repo   
