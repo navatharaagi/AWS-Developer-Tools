@@ -120,9 +120,10 @@ $aws codecommit  list-repositories
 - Assume that there are 3 users, User1 & User2 & User3
 - To clone a repo:
   - AWS—>CodeCommit—>select repo name “Myrepo"—>code—>clone URL—>select SSH/HTTP url
-- In CLI,
--Here “Myrepo” is the central repo
--Here User1 making changes to “Myrepo” by cloning into his local repo
+- In CLI:
+```sh
+- Here “Myrepo” is the central repo
+- Here User1 making changes to “Myrepo” by cloning into his local repo
 $git clone <url> <Myreponame> <My-local-repo-name>
 $ls  /*to check local repo cloned/not
 $cd <My-local-repo-name>
@@ -152,6 +153,7 @@ $git remote    /* to get remote name
 $git branch    /*to get branch name
 $git diff  - -stat  <remote name>  <branch name>   /*to view which files to be pushed
 $git push <remote name>/<branch name>  
+```
 -After push success, check file pushed to  “MyRepo” or not
 -Goto AWS — Code Commit — select repo — “MyRepo” — “what_is_www”.
 
