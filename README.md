@@ -215,8 +215,11 @@ $git add what_is_www
 $git commit -m “Overwriting User1 conflict"
 $git push <remote name>  <branch name>  
 ```
--To verify Goto  AWS—code commit—Myrepo—what_is_www—(we can see the edited  file with User2 conflict)
--Now User1, doesn’t have the latest changes in the file. So just pull the changes to User1 local repo
+-To verify Goto  
+  - AWS—CodeCommit—Myrepo—what_is_www—(we can see the edited  file with User2 conflict)
+- Now User1, doesn’t have the latest changes in the file. So just pull the changes to User1 local repo
+```sh
 $git pull <remote name>  <branch name>
 $nano what_is_www  /*can view the User2 conflict which changed by User2.
 -Now User1 & User2 both have updated repos
+```
