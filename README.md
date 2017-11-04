@@ -282,12 +282,12 @@ $git branch  /*lists branches with a * points to current branch i.e, HEAD points
 #### 6.Tags
 - To manage Tags locally
 $cd User3_local repo   
-$git log   /*gives detailed info of commits with commit-Id’s & details
-$git tag v1.0 <1st 7 letters of commit-id> /*to tag a commit with tag name “v1.0”
-$git tag       /*to view our tag
-$git show  v1.0   /*to see detailed info of created tag
-$git tag -d  v1.0    /*to delete the tag
-$git tag    /*doesn’t list anything, since we deleted tag v1.0
+$git log   /* gives detailed info of commits with commit-Id’s & details
+$git tag v1.0 <1st 7 letters of commit-id> /* to tag a commit with tag name “v1.0”
+$git tag       /* to view our tag
+$git show  v1.0   /* to see detailed info of created tag
+$git tag -d  v1.0    /* to delete the tag
+$git tag    /* doesn’t list anything, since we deleted tag v1.0
 To manage Tags with Central Repo
 $git log     
 $git tag v5.0 <commit-id>
