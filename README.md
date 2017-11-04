@@ -253,7 +253,6 @@ $ls    /*there will be no “widgets.html” file in this branch
 Note: we must be in the branch, that we want to merge the other branch into.
 - Already we are in master branch,so do merge
 ```sh
-```
 $git merge new_feature
 $ls  /*now we can see the “widgets.html” .
 - Now we have merged the changes in to master branch, so we no longer need the new_feature branch
