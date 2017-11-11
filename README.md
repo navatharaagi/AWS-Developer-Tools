@@ -302,7 +302,7 @@ $git ls-remote - -tags    /*there is no v5.0 tag in central repo
 $git tag     /*it will show v5.0,since it is in local repo which we pulled to local repo using fetch command
 ```
 #### 7.Migrating a Repository into CodeCommit
--AWS allows us to migrate other git-based repos seamlessly into CodeCommit
+- AWS allows us to migrate other git-based repos seamlessly into CodeCommit
     -Github
     -Beanstalk
     -GitLab
