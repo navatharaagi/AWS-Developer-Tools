@@ -320,7 +320,8 @@ $git tag     /*it will show v5.0,since it is in local repo which we pulled to lo
 ```
 - Goto AWS—CodeCommit—MyMigratedRepo
 ```sh
--$git clone - -mirror <repo to migrate url>  <my local temp dir>
+- $git clone --mirror <repo to migrate url>  <my local temp dir>
+```
 Goto GitHub—login to our account—select the Repo which we want to migrate—Copy the URL to clone.
 $git clone - -mirror <paste URL>  mytempdirformigration
 $ls   /* our tmp dir has to be listed
