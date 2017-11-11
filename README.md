@@ -301,3 +301,39 @@ $git push - -delete origin v5.0 /*deletes tag from central repo
 $git ls-remote - -tags    /*there is no v5.0 tag in central repo
 $git tag     /*it will show v5.0,since it is in local repo which we pulled to local repo using fetch command
 ```
+7.Migrating a Repository into CodeCommit
+-AWS allows us to migrate other git-based repos seamlessly into CodeCommit
+    -Github
+    -Beanstalk
+    -GitLab
+    -BitBucket,...
+-We can choose to migrate the entire repo or just some of the branches
+-We can migrate from other(non-git-based) version control systems such as Perforce,Subversion or TFS, but we have to migrate to a git-based system first.
+Migrating:
+1.Create a new repo in AWS CodeCommit
+2.Clone the repo we want to migrate to our local machine(into a temp dir) from GitHub
+3.Push the cloned GitHub repo on our local machine to the repo we created in AWS CodeCommit during step1
+4.Delete the temp dir that housed the cloned GitHub repo on our local machine
+5.Clone the AWS CodeCommit repo that we migrated to our local machine
+
+-$aws code commit create-repository - -repository-name MyMigratedrepo - -repository-description “my migrated repo”
+Goto AWS—CodeCommit—MyMigratedRepo
+
+-$git clone - -mirror <repo to migrate url>  <my local temp dir>
+Goto GitHub—login to our account—select the Repo which we want to migrate—Copy the URL to clone.
+$git clone - -mirror <paste URL>  mytempdirformigration
+$ls   /* our tmp dir has to be listed
+
+-$cd mytempdirformigration   /*cd to push our cloned repo to AWS
+$git push https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo  - -all     /*can copy URL from AWS CodeCommit
+Goto AWS—CodeCommit—MyMigratedRepo—[have to see the files which cloned from selected GitHub Repo]
+
+-$cd ..
+$rm -rf  mytempdirformigration   /*delete the temp dir
+$ls    /*check dir deleted/not
+
+-$git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo  <local repo name>
+$git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo  my-local-migrated-repo
+$ls    /* local dir has to be listed
+$cd my-local-migrated-repo
+$ls   /*has to list the files which are in our AWS CodeCommit MyMigratedrepo & GitHub repo
