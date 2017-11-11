@@ -331,12 +331,12 @@ $git push https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo
 ```
 - Goto AWS—CodeCommit—MyMigratedRepo—[have to see the files which cloned from selected GitHub Repo]
 ```sh
--$cd ..
+$cd ..
 $rm -rf  mytempdirformigration   /*delete the temp dir
 $ls    /*check dir deleted/not
-
--$git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo  <local repo name>
+$git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo  <local repo name>
 $git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo  my-local-migrated-repo
 $ls    /* local dir has to be listed
 $cd my-local-migrated-repo
 $ls   /*has to list the files which are in our AWS CodeCommit MyMigratedrepo & GitHub repo
+```
