@@ -329,8 +329,8 @@ $ls   /* our tmp dir has to be listed
 $cd mytempdirformigration   /*cd to push our cloned repo to AWS
 $git push https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo  --all     /*can copy URL from AWS CodeCommit
 ```
-Goto AWS—CodeCommit—MyMigratedRepo—[have to see the files which cloned from selected GitHub Repo]
-
+- Goto AWS—CodeCommit—MyMigratedRepo—[have to see the files which cloned from selected GitHub Repo]
+```sh
 -$cd ..
 $rm -rf  mytempdirformigration   /*delete the temp dir
 $ls    /*check dir deleted/not
