@@ -305,8 +305,8 @@ $git tag     /*it will show v5.0,since it is in local repo which we pulled to lo
 - AWS allows us to migrate other git-based repos seamlessly into CodeCommit
     - Github
     - Beanstalk
-    -GitLab
-    -BitBucket,...
+    - GitLab
+    - BitBucket,...
 -We can choose to migrate the entire repo or just some of the branches
 -We can migrate from other(non-git-based) version control systems such as Perforce,Subversion or TFS, but we have to migrate to a git-based system first.
 Migrating:
