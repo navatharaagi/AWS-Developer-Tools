@@ -309,7 +309,7 @@ $git tag     /*it will show v5.0,since it is in local repo which we pulled to lo
     - BitBucket,...
 - We can choose to migrate the entire repo or just some of the branches
 - We can migrate from other(non-git-based) version control systems such as Perforce,Subversion or TFS, but we have to migrate to a git-based system first.
-Migrating:
+- Migrating:
 1.Create a new repo in AWS CodeCommit
 2.Clone the repo we want to migrate to our local machine(into a temp dir) from GitHub
 3.Push the cloned GitHub repo on our local machine to the repo we created in AWS CodeCommit during step1
