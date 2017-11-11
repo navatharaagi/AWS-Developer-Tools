@@ -313,7 +313,7 @@ $git tag     /*it will show v5.0,since it is in local repo which we pulled to lo
   1. Create a new repo in AWS CodeCommit
   2. Clone the repo we want to migrate to our local machine(into a temp dir) from GitHub
   3. Push the cloned GitHub repo on our local machine to the repo we created in AWS CodeCommit during step1
-4.Delete the temp dir that housed the cloned GitHub repo on our local machine
+  4. Delete the temp dir that housed the cloned GitHub repo on our local machine
 5.Clone the AWS CodeCommit repo that we migrated to our local machine
 
 -$aws code commit create-repository - -repository-name MyMigratedrepo - -repository-description “my migrated repo”
