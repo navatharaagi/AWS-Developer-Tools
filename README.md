@@ -430,8 +430,7 @@ $nano RepoTrigger.json
     ]
 }
 Save & exit
-```
--Test Trigger
+- Test Trigger
 $aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.json  /*to test Trigger,we will get an test email as branches deleted
 -Push Trigger to the Repo:
 $aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
