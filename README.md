@@ -608,4 +608,4 @@ CodeCommit, KMS & IAM Policies:
     "kms:GenerateDataKeyWithoutPlaintext”
     "kms:DescribeKey”
 
-AWS—IAM—Encryption Keys—aws/codecommit(which will be created automatically when we create CodeCommit Repo).
+AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatically when we create CodeCommit Repo).
