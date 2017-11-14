@@ -473,7 +473,7 @@ Resource<Copy & paste SNS Topic ARN> in two places,  AWS:SourceOwner<copy & past
 - Goto AWS—>SNS—>Topics—>select “CrossAccountTriggerTopic”—>other topic Actions—>Edit Topic Policy—>Advanced View—>Delete default one & Paste the SNS Policy Template—>Update policy.
 - Again login to Root Account#1—>CodeCommit—>“TriggerRepo”—>Triggers—>Create Trigger—>“CrossTest”—>Events—>Create a branch/tag—>Branch names—>All branches—>send to—>Amazon SNS—>SNS Topic—>Type an Amazon SNS topic ARN—>SNS Topic ARN—<paste the SNS topic ARN of Root Account#2 which pasted in SNS Policy template>—>Test trigger  
 - We should get an email notification.
-4.CodeCommit Trigger for Lambda Functions
+#### 4.CodeCommit Trigger for Lambda Functions
 AWS Lambda: is a compute service where we can upload our code to lambda & service  can run the code on our behalf using AWS infrastructure.
 Prerequisites for lambda triggers:
 -Must have an existing Lambda function created
