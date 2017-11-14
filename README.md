@@ -456,4 +456,5 @@ master
 $git checkout master  /*to delete TriggerBranch,we have to switch the branch
 $git branch -D TriggerBranch  /*to delete it from local repo
 $git push origin - -delete TriggerBranch  /*to delete branch from central (repo,origin=remote name, TriggerBranch=branch name)
+```
 - Now we should get the notification about TriggerBranch delete.
