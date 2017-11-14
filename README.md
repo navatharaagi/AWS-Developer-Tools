@@ -494,7 +494,7 @@ If we want to test the code, click on TEST & see results.
 If we want to change the values used in Test,  goto Actions —> configure test events —> save & test —> check Log output  [where we can see console log msgs]
 Execution result is the output of the returned ‘callback’  function.
 
-AWS—CodeCommit—Create a new repo—“LambdaTriggerRepo”—create—Settings—Repository ARN(copy that for Permissions JSON file).
+AWS—>CodeCommit—>Create a new repo—>“LambdaTriggerRepo”—>create—>Settings—>Repository ARN(copy that for Permissions JSON file).
 
 Goto CLI, User1
 $touch CodeCommitLambdaPermission.json
