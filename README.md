@@ -476,8 +476,8 @@ Resource<Copy & paste SNS Topic ARN> in two places,  AWS:SourceOwner<copy & past
 #### 4.CodeCommit Trigger for Lambda Functions
 AWS Lambda: is a compute service where we can upload our code to lambda & service  can run the code on our behalf using AWS infrastructure.
 Prerequisites for lambda triggers:
--Must have an existing Lambda function created
--The repository & the Lambda function must be in the same region.
+- Must have an existing Lambda function created
+- The repository & the Lambda function must be in the same region.
 
 Creating a Lambda Trigger Using AWS
 Setting up Lambda Permissions:
