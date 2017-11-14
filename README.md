@@ -348,8 +348,8 @@ i.e., creating a new branch can trigger an SNS topic to notify all subscribers t
     - All repository events
     - A push to existing branch(*master branch)
     - Creation/deletion of a branch or tag
--Triggers can invoke actions in the following AWS services:
-    -AWS SNS
+- Triggers can invoke actions in the following AWS services:
+    - AWS SNS
     -AWS Lambda
     -We can also take advantage of ANS’s ability to integrate with other AWS services like Simple Queue Service(SQS)
 
