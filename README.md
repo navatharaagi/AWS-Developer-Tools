@@ -522,7 +522,7 @@ $aws lambda add-permission - -cli-input-json file://CodeCommitLambdaPermission.j
 - Now to verify the test is actually works
 AWS—>Lambda—>“CodeCommitTriggerFunction”—>Monitoring—>View logs in cloud watch—>click on latest log stream(which should see clone URL of our LambdaTriggerRepo & References: ref/head/Test Reference)
 
--Now goto CLI,
+- Now goto CLI,
 $cd local-lambda repo
 $git clone <Copy & Paste the URL of LambdaTriggerRepo from CodeCommit  into “local-lambda-repo” dir>
 $touch file.txt
@@ -531,7 +531,7 @@ $git commit -m “testing trigger”
 $git push origin master  (ie., <remote name> <branch name>)
 
 Again check logs in cloud watch
-AWS—Lambda—“CodeCommitTriggerFunction”—Monitoring—View logs in cloud watch—click on latest log stream(which should see References: ref/head/Test Reference & References: ref/head/master & Clone URL)
+AWS—>Lambda—>“CodeCommitTriggerFunction”—>Monitoring—>View logs in cloud watch—>click on latest log stream(which should see References: ref/head/Test Reference & References: ref/head/master & Clone URL)
 
 Create a Lambda Trigger using CLI
 $cd local-lambda repo
