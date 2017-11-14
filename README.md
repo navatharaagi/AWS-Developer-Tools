@@ -447,6 +447,7 @@ $aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.jso
 - View Triggers in the Repo
 ```sh
 $aws codecommit get-repository-triggers - -repository-name TriggerRepo /*gives JSON format of our file
+```
 -Now our Trigger has been successfully created,now will check by deleting one of our branches, we have to receive a notification.
 $git branch
 *TriggerBranch
