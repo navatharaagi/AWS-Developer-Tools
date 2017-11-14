@@ -440,7 +440,9 @@ Save & exit
 $aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.json  /*to test Trigger,we will get an test email as branches deleted
 ```
 - Push Trigger to the Repo:
+```sh
 $aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
+```
 -If we goto AWS—CodeCommit—Triggers—TriggerRepo—“deleteTrigger" will be replaces in place of “NewBranchTrigger”.
 -View Triggers in the Repo
 $aws codecommit get-repository-triggers - -repository-name TriggerRepo /*gives JSON format of our file
