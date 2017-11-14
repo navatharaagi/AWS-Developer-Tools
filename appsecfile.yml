@@ -24,7 +24,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: /     #to install all of the contents of src dir
-    destination: /MyRepo  #dir of our deployment gng to create for us on our EC2  
+    destination: /MyRepo  #dir of our deployment gng to create for us on our EC2
 
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions"
@@ -37,7 +37,7 @@ files:
 #   "permissions" section altogether. A blank or incomplete "permissions"
 #   section may cause associated deployments to fail.
 permissions:
-  - object:
+  - object: /MyRepo/html
     pattern:
     except:
     owner:
