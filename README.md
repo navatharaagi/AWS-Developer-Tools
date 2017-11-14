@@ -350,10 +350,10 @@ i.e., creating a new branch can trigger an SNS topic to notify all subscribers t
     - Creation/deletion of a branch or tag
 - Triggers can invoke actions in the following AWS services:
     - AWS SNS
-    -AWS Lambda
-    -We can also take advantage of ANS’s ability to integrate with other AWS services like Simple Queue Service(SQS)
+    - AWS Lambda
+    - We can also take advantage of ANS’s ability to integrate with other AWS services like Simple Queue Service(SQS)
 
-2.CodeCommit Trigger for SNS
+#### 2.CodeCommit Trigger for SNS
 SNS Triggers: Setup/Getting Started:
 -Triggers can be setup using both
     -AWS Console
