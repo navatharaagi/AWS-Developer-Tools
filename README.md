@@ -682,10 +682,6 @@ IAM—>Users—>Create user “Matt"—>Permissions—>Attach Policy—> “AWSC
 - This Policy is attached to EC2 instance when it is running using Role
 - IAM—>Roles—>Create New Role—>"CodeDeploDemo-EC2"—>Amazon EC2—> “CodeDeployDemo->EC2->Permissions”—>Create Role.
 
-
-
-
-
 3. Create a Service Role
 - This will allow CodeDeploy to communicate and interact with other AWS Services
 4.Install the AWS Command Line Interface (CLI)
