@@ -560,6 +560,7 @@ save & exit
 -Test Trigger
 ```sh
 $aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.json
+```
 -Push Trigger to central repo
 $aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
 -View Triggers in the Repo
