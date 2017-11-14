@@ -375,6 +375,7 @@ i.e., creating a new branch can trigger an SNS topic to notify all subscribers t
 
 - Clone TriggerRepo to local machine
 - Goto CLI,consider this doing on User1 m/c
+```sh
 $git clone <copy URL from CodeCommit TriggerRepo>  Local-Trigger-Repo
 $cd Local-Trigger-Repo
 $touch file.txt
