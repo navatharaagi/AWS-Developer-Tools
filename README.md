@@ -382,13 +382,13 @@ $touch file.txt
 $git add file.txt
 $git commit -m “setting up master branch”
 $git push origin master
--create a new branch & make some changes in a file
+- create a new branch & make some changes in a file
 $git checkout -b TriggerBranch
 $touch new.txt
 $git add new.txt
 $git commit -m “test commit for our trigger”
 $git push origin TriggerBranch
--Now we have two notifications about branches “master” & “TriggerBranch”  created  in our Email
+- Now we have two notifications about branches “master” & “TriggerBranch”  created  in our Email
 
 SNS Triggers using AWS CLI :
 -Trigger JSON file “Events” list
