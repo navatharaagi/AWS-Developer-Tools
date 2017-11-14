@@ -466,8 +466,8 @@ $git push origin - -delete TriggerBranch  /*to delete branch from central (repo,
 - Login into AWS Root Account#1—>CodeCommit—>“TriggerRepo”—>Triggers—>select “deleteTrigger”—>delete.Goto settings,copy Repository ARN of “TriggerRepo”.
 - Now edit the SNS Policy template,
 In CodeCommit section, AWS:SourceARN<paste copied ARN>, AWS:SourceAccount<number from copied ARN>     
-- Now login to Root Account#2—SNS—Topics—Create “CrossAccountTriggerTopic”—Add Subscription to Email.
--Again goto to SNS Policy template,edit
+- Now login to Root Account#2—>SNS—>Topics—>Create“CrossAccountTriggerTopic”—>Add Subscription to Email.
+- Again goto to SNS Policy template,edit
 Resource<Copy & paste SNS Topic ARN> in two places,  AWS:SourceOwner<copy & paste SNS Source number from ARN>
 -Now copy the whole SNS Policy Template,
 -Goto AWS—SNS—Topics—select “CrossAccountTriggerTopic”—other topic Actions— Edit Topic Policy—Advanced View—Delete default one & Paste the SNS Policy Template—Update policy.
