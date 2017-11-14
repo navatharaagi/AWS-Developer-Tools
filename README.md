@@ -470,6 +470,6 @@ In CodeCommit section, AWS:SourceARN<paste copied ARN>, AWS:SourceAccount<number
 - Again goto to SNS Policy template,edit
 Resource<Copy & paste SNS Topic ARN> in two places,  AWS:SourceOwner<copy & paste SNS Source number from ARN>
 - Now copy the whole SNS Policy Template,
-- Goto AWS—>SNS—>Topics—>select “CrossAccountTriggerTopic”—>other topic Actions—>Edit Topic Policy—Advanced View—Delete default one & Paste the SNS Policy Template—Update policy.
--Again login to Root Account#1—CodeCommit—“TriggerRepo”—Triggers—Create Trigger—“CrossTest”—Events—Create a branch/tag—Branch names—All branches—send to—Amazon SNS—SNS Topic—Type an Amazon SNS topic ARN—SNS Topic ARN—<paste the SNS topic ARN of Root Account#2 which pasted in SNS Policy template>—Test trigger  
+- Goto AWS—>SNS—>Topics—>select “CrossAccountTriggerTopic”—>other topic Actions—>Edit Topic Policy—>Advanced View—>Delete default one & Paste the SNS Policy Template—>Update policy.
+- Again login to Root Account#1—CodeCommit—“TriggerRepo”—Triggers—Create Trigger—“CrossTest”—Events—Create a branch/tag—Branch names—All branches—send to—Amazon SNS—SNS Topic—Type an Amazon SNS topic ARN—SNS Topic ARN—<paste the SNS topic ARN of Root Account#2 which pasted in SNS Policy template>—Test trigger  
 -We should get an email notification.
