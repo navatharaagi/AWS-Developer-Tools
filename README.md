@@ -345,9 +345,9 @@ $ls   /*has to list the files which are in our AWS CodeCommit MyMigratedrepo & G
 - Triggers are a method where events in CodeCommit can launch automated actions in other AWS services
 i.e., creating a new branch can trigger an SNS topic to notify all subscribers that a new branch has been created
 - Currently, we can select one of the following events in CodeCommit to invoke a trigger:
-    -All repository events
-    -A push to existing branch(*master branch)
-    -Creation/deletion of a branch or tag
+    - All repository events
+    - A push to existing branch(*master branch)
+    - Creation/deletion of a branch or tag
 -Triggers can invoke actions in the following AWS services:
     -AWS SNS
     -AWS Lambda
