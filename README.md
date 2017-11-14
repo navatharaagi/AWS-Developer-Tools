@@ -623,7 +623,7 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
 - Platform-agnostic:
     - CodeDeploy is built to work with any application.
 #### 2.Setup and Configuration (Roles and Policies)
-1) Provision an IAM user with a custom CodeDeploy Policy
+1 Provision an IAM user with a custom CodeDeploy Policy
 • Gives a non-admin user the rights to manage all the elements needed to use CodeDeploy.
 2) Create an Instance Profile
  • This allows you to launch EC2 instances that are configured for use with CodeDeploy.
