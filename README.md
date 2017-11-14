@@ -572,9 +572,10 @@ $aws codecommit get-repository-triggers - -repository-name LambdaTriggerRepo
 ```
 
 Now create a file, add & commit that file,push that commit to activate Trigger in real world situation
+```sh
 $touch new.txt
 $git add new.txt
 $git commit -m “testing trigger”
 $git push origin master
-
+```
 AWS—Lambda—CodeCommitTriggerFunction—Monitoring--View logs in cloud watch—click on latest log stream(which should see two separate References: ref/head/master  & References: ref/head/master & Clone URLs)
