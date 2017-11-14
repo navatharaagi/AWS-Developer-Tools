@@ -24,7 +24,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: /     #to install all of the contents of src dir
-    destination:     # dir of our EC2 instance that 
+    destination:     # dir of our EC2 instance that our deployment
   - source:
     destination:
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
