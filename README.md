@@ -697,6 +697,7 @@ Amazon Linux, Ubuntu Server, Red Hat Enterprise Linux (RHEL), Windows Server
 2) Select appropriate instance Type
 3) Set IAM role to the Instance Profile we created in the Setup & Configuration lesson
 4) Open ‘Advanced Details’ and add the following bash script:
+```sh
 #!/bin/bash
 yum -y update
 yum install -y ruby
