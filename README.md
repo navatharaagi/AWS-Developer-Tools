@@ -562,7 +562,9 @@ save & exit
 $aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.json
 ```
 - Push Trigger to central repo
+```sh
 $aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
+```
 -View Triggers in the Repo
 $aws codecommit get-repository-triggers - -repository-name LambdaTriggerRepo
 /*gives CLITestTrigger info in output
