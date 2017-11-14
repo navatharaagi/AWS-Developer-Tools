@@ -368,9 +368,9 @@ i.e., creating a new branch can trigger an SNS topic to notify all subscribers t
   - AWS Console—->CodeCommit—->Create new repo—->“TriggerRepo"—->Create
 
 - We need to create a SNS Topic, to setup a Trigger with
-AWS Console—->SNS—Create Topic—->"Trigger Topic"—->Create Topic—->Create Subscription—->Protocol—->Email—->Email-->Id—->Create subscription—->confirm subscription by going to Email-Id.
+  - AWS Console—->SNS—Create Topic—->"Trigger Topic"—->Create Topic—->Create Subscription—->Protocol—->Email—->Email-->Id—->Create subscription—->confirm subscription by going to Email-Id.
 
-Goto CodeCommit Repo,Create a Trigger & Test it
+- Goto CodeCommit Repo,Create a Trigger & Test it
  AWS Console—CodeCommit—Create Trigger—Trigger name—“NewBranchTrigger”—Events—Select Create a branch or tag—Branch name—All Branches—Send to —Amazon SNS—SNS Topic—“Trigger Topic”—Test trigger (to test, check email)—Create
 
 Clone TriggerRepo to local machine
