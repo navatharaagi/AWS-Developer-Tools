@@ -734,7 +734,7 @@ sudo service codedeploy-agent status
     - Fix: sudo service codedeploy-agent start
 ```
 - Error: codedeploy-agent: unrecognized service
-Fix: Launch a new instance and double check the bash script for errors, OR double check the permissions policy attached to the Instance Profile (make sure it allows access to S3)
+  - Fix: Launch a new instance and double check the bash script for errors, OR double check the permissions policy attached to the Instance Profile (make sure it allows access to S3)
 
 AWS—EC2—SG—create a SG—“CodeDeploySG” with SSH,HTTP Allow Rules
 AWS—EC2—Amazon Linux AMI—Configure Instance—IAM Role—"CodeDeploDemo-EC2”—Advanced Details—Copy & paste above bash script [Edit Bucket name: aws-codedeploy-us-west-1  & Region Name: us-west-1]—Next—Next—Tag—Name-- “CodeDeployTestInstance”—Configure SG—select existing SG--“CodeDeploySG”—review & launch—create new key-pair & download it.
