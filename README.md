@@ -364,8 +364,8 @@ i.e., creating a new branch can trigger an SNS topic to notify all subscribers t
 - Cross-Account Triggers
     - If setting up repos & SNS topics using different root accounts(not different users within the same account),we must have the proper permissions set so CodeCommit can communicate with SNS in the other account.
 
-Now create a new repo,to test Trigger on
-AWS Console—CodeCommit—Create new repo—“TriggerRepo"—Create
+- Now create a new repo,to test Trigger on
+  - AWS Console—->CodeCommit—->Create new repo—->“TriggerRepo"—->Create
 
 We need to create a SNS Topic, to setup a Trigger with
 AWS Console—SNS—Create Topic—"Trigger Topic"—Create Topic—Create Subscription—Protocol—Email—Email-Id—Create subscription—confirm subscription by going to Email-Id.
