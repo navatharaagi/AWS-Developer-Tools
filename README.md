@@ -628,7 +628,7 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
 2 Create an Instance Profile
   • This allows you to launch EC2 instances that are configured for use with CodeDeploy.
 3 Create a Service Role
-  • This will allow CodeDeploy to communicate and interact with other AWS Services
+  - This will allow CodeDeploy to communicate and interact with other AWS Services
 4 Install the AWS Command Line Interface (CLI)
 
 AWS—IAM—Policies—Create Policy—Create Own Policy— “CodeDeployCustomUser”—Policy Document (Paste the following code in policy document)—create Policy
