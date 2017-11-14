@@ -23,8 +23,8 @@ os: linux
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source: /
-    destination:
+  - source: /     #to install all of the contents of src dir
+    destination:     # dir of our EC2 instance that 
   - source:
     destination:
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
