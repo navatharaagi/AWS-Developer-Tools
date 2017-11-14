@@ -631,7 +631,7 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
 - This will allow CodeDeploy to communicate and interact with other AWS Services
 4.Install the AWS Command Line Interface (CLI)
 
-1. AWS—IAM—Policies—Create Policy—Create Own Policy— “CodeDeployCustomUser”—Policy Document (Paste the following code in policy document)—create Policy
+1. AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—>“CodeDeployCustomUser”—>Policy Document (Paste the following code in policy document)—>create Policy
 ```sh
 {
   "Version": "2012-10-17",
