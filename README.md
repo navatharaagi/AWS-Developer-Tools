@@ -684,6 +684,8 @@ IAM—>Users—>Create user “Matt"—>Permissions—>Attach Policy—> “AWSC
 
 3. Create a Service Role
 - This will allow CodeDeploy to communicate and interact with other AWS Services
+- IAM—Roles—Create New Role—“CodeDeployServiceRole”—Amazon CodeDeploy—Attach Policy—AWSCodeDeployRole—Create Role
+4)Install AWS CLI
 4.Install the AWS Command Line Interface (CLI)
 
 
