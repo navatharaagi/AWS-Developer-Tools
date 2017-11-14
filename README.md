@@ -400,8 +400,9 @@ $git push origin TriggerBranch
 - For creating,pushing & viewing triggers - we will use AWS CLI commands NOT Git commands.
 
 Test Trigger before pushing it:
+```sh
 aws codecommit test-repository-triggers - -cli-input-json file://<JSON file>
-
+```
 Push Trigger to the Repo:
 aws codecommit put-repository-triggers - -cli-input-json file://<JSON file>
 
