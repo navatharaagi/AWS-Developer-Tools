@@ -497,6 +497,7 @@ Execution result is the output of the returned ‘callback’  function.
 AWS—>CodeCommit—>Create a new repo—>“LambdaTriggerRepo”—>create—>Settings—>Repository ARN(copy that for Permissions JSON file).
 
 Goto CLI, User1
+```sh
 $touch CodeCommitLambdaPermission.json
 $nano  CodeCommitLambdaPermission.json
 {
