@@ -727,9 +727,9 @@ Command:
 ```sh
 sudo service codedeploy-agent status
 ```
-Good Response: The AWS CodeDeploy agent is running.
-Error Responses:
-Error: No AWS CodeDeploy agent running
+- Good Response: The AWS CodeDeploy agent is running.
+- Error Responses:
+    - Error: No AWS CodeDeploy agent running
 ```sh
 Fix: sudo service codedeploy-agent start
 ```
