@@ -519,8 +519,8 @@ $aws lambda add-permission - -cli-input-json file://CodeCommitLambdaPermission.j
 - Now create a CodeCommit Trigger
 - AWS—>CodeCommit—>LambdaTriggerRepo—>Triggers—>Create Trigger—> “LambdaTrigger”—>Events—>All Repository Events—>Banch name—>All Branches—>send to —> AWS Lambda—>Lambda Function—>“CodeCommitTriggerFunction”—>Test Trigger—>If Test successful—>create.
 
--Now to verify the test is actually works
-AWS—Lambda—“CodeCommitTriggerFunction”—Monitoring—View logs in cloud watch—click on latest log stream(which should see clone URL of our LambdaTriggerRepo & References: ref/head/Test Reference)
+- Now to verify the test is actually works
+AWS—>Lambda—>“CodeCommitTriggerFunction”—>Monitoring—>View logs in cloud watch—>click on latest log stream(which should see clone URL of our LambdaTriggerRepo & References: ref/head/Test Reference)
 
 -Now goto CLI,
 $cd local-lambda repo
