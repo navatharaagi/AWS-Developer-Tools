@@ -473,3 +473,96 @@ Resource<Copy & paste SNS Topic ARN> in two places,  AWS:SourceOwner<copy & past
 - Goto AWS—>SNS—>Topics—>select “CrossAccountTriggerTopic”—>other topic Actions—>Edit Topic Policy—>Advanced View—>Delete default one & Paste the SNS Policy Template—>Update policy.
 - Again login to Root Account#1—>CodeCommit—>“TriggerRepo”—>Triggers—>Create Trigger—>“CrossTest”—>Events—>Create a branch/tag—>Branch names—>All branches—>send to—>Amazon SNS—>SNS Topic—>Type an Amazon SNS topic ARN—>SNS Topic ARN—<paste the SNS topic ARN of Root Account#2 which pasted in SNS Policy template>—>Test trigger  
 - We should get an email notification.
+4.CodeCommit Trigger for Lambda Functions
+AWS Lambda: is a compute service where we can upload our code to lambda & service  can run the code on our behalf using AWS infrastructure.
+Prerequisites for lambda triggers:
+-Must have an existing Lambda function created
+-The repository & the Lambda function must be in the same region.
+
+Creating a Lambda Trigger Using AWS
+Setting up Lambda Permissions:
+$aws lambda add-permission - -cli-input-json file://<My Permissions JSON File>
+-In Permissions JSON File, we must have 'Lambda Function name’,'Repository ARN’,'Repository Source Number’.
+
+AWS Console—Lambda—Create Function—Type ‘hello-World’ function in Filter option —> click on hello world—> ‘hello World’ [code will be provided by ‘hello World’ function
+Handler as ‘index.handler’ which is in code] Name “CodeCommitTriggerFunction" —> Role as ‘create new role from templates—>Role name as ‘lambda_basic_execution’ —> Policy templates as ‘simple micro service permissions’ —>
+Memory as ‘128MB’ —> Timeout ‘0 min 3 sec’ —> VPC as ‘no VPC’ —> Next
+Review Page  [where we can review all of the functions we have given] —> create function
+If we want to test the code, click on TEST & see results.
+If we want to change the values used in Test,  goto Actions —> configure test events —> save & test —> check Log output  [where we can see console log msgs]
+Execution result is the output of the returned ‘callback’  function.
+
+AWS—CodeCommit—Create a new repo—“LambdaTriggerRepo”—create—Settings—Repository ARN(copy that for Permissions JSON file).
+
+Goto CLI, User1
+$touch CodeCommitLambdaPermission.json
+$nano  CodeCommitLambdaPermission.json
+{
+“FunctionName”: “CodeCommitTriggerFunction”,
+“StatementId”: “1”,
+“Action”: “lambda:InvokeFunction”,
+“Principal”: “codecommit.amazonaws.com”,
+“SourceARN”: "< Paste copied Repo ARN >”,
+“SourceAccount”: “<Repo Source number from copied ARN >"
+}
+Save & exit
+
+$aws lambda add-permission - -cli-input-json file://CodeCommitLambdaPermission.json    /*which gives our file content as output
+
+-Add Permissions to the role which is created while creating a lambda function
+-AWS—IAM—Roles—select “lambda_basic_execution”—Permissions—Add Inline Policy--create role policy—Policy generator—select—Edit Permissions—Effect “Allow”—AWS Service—AWSCodeCommit—Actions—Get Repository—Amazon Repository Name(ARN)—Paste copied Repo ARN—Add statement—next step—Apply Policy.
+
+-Now create a CodeCommit Trigger
+-AWS—CodeCommit—LambdaTriggerRepo—Triggers—Create Trigger— “LambdaTrigger”—Events—All Repository Events—Banch name—All Branches—send to — AWS Lambda—Lambda Function—“CodeCommitTriggerFunction”—Test Trigger—If Test successful—create.
+
+-Now to verify the test is actually works
+AWS—Lambda—“CodeCommitTriggerFunction”—Monitoring—View logs in cloud watch—click on latest log stream(which should see clone URL of our LambdaTriggerRepo & References: ref/head/Test Reference)
+
+-Now goto CLI,
+$cd local-lambda repo
+$git clone <Copy & Paste the URL of LambdaTriggerRepo from CodeCommit  into “local-lambda-repo” dir>
+$touch file.txt
+$git add file.txt
+$git commit -m “testing trigger”
+$git push origin master  (ie., <remote name> <branch name>)
+
+Again check logs in cloud watch
+AWS—Lambda—“CodeCommitTriggerFunction”—Monitoring—View logs in cloud watch—click on latest log stream(which should see References: ref/head/Test Reference & References: ref/head/master & Clone URL)
+
+Create a Lambda Trigger using CLI
+$cd local-lambda repo
+$touch RepoTrigger.json
+$nano RepoTrigger.json
+{
+    "repositoryName": “LambdaTriggerRepo",
+    "triggers": [
+        {
+            "name": “CLITestTrigger",
+            "destinationArn": “<Paste copied ARN of CodeCommitTriggerFunction>",
+            "customData": "",
+            "branches": [
+
+            ],
+            "events": [
+                “all"
+            ]
+        }
+
+    ]
+}
+save & exit
+-Test Trigger
+$aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.json
+-Push Trigger to central repo
+$aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
+-View Triggers in the Repo
+$aws codecommit get-repository-triggers - -repository-name LambdaTriggerRepo
+/*gives CLITestTrigger info in output
+
+Now create a file, add & commit that file,push that commit to activate Trigger in real world situation
+$touch new.txt
+$git add new.txt
+$git commit -m “testing trigger”
+$git push origin master
+
+AWS—Lambda—CodeCommitTriggerFunction—Monitoring--View logs in cloud watch—click on latest log stream(which should see two separate References: ref/head/master  & References: ref/head/master & Clone URLs)
