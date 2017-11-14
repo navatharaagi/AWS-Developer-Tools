@@ -355,8 +355,8 @@ i.e., creating a new branch can trigger an SNS topic to notify all subscribers t
 
 #### 2.CodeCommit Trigger for SNS
 ##### SNS Triggers: Setup/Getting Started:
--Triggers can be setup using both
-    -AWS Console
+- Triggers can be setup using both
+    - AWS Console
     -AWS CLI
 -Prerequisites for SNS Triggers:
     -Must have an existing SNS topic
