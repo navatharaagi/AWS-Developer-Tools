@@ -513,8 +513,8 @@ Save & exit
 $aws lambda add-permission - -cli-input-json file://CodeCommitLambdaPermission.json    /*which gives our file content as output
 ```
 
--Add Permissions to the role which is created while creating a lambda function
--AWS—IAM—Roles—select “lambda_basic_execution”—Permissions—Add Inline Policy--create role policy—Policy generator—select—Edit Permissions—Effect “Allow”—AWS Service—AWSCodeCommit—Actions—Get Repository—Amazon Repository Name(ARN)—Paste copied Repo ARN—Add statement—next step—Apply Policy.
+- Add Permissions to the role which is created while creating a lambda function
+- AWS—>IAM—>Roles—>select “lambda_basic_execution”—>Permissions—>Add Inline Policy-->create role policy—Policy generator—>select—>Edit Permissions—>Effect “Allow”—>AWS Service—>AWSCodeCommit—>Actions—>Get Repository—>Amazon Repository Name(ARN)—>Paste copied Repo ARN—>Add statement—>next step—>Apply Policy.
 
 -Now create a CodeCommit Trigger
 -AWS—CodeCommit—LambdaTriggerRepo—Triggers—Create Trigger— “LambdaTrigger”—Events—All Repository Events—Banch name—All Branches—send to — AWS Lambda—Lambda Function—“CodeCommitTriggerFunction”—Test Trigger—If Test successful—create.
