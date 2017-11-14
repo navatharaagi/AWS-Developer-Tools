@@ -722,7 +722,7 @@ For Amazon, Ubuntu, and RHEL instances:
   - Location: /etc/codedeploy-agent/conf
   - S3 Bucket Name: aws-codedeploy-us-east-1    if region: us-east-1, (replace it with in whichever region we want to launch our EC2.)  
 
-CodeDeploy Agent Status:
+##### CodeDeploy Agent Status:
 Command:
 sudo service codedeploy-agent status
 Good Response: The AWS CodeDeploy agent is running.
