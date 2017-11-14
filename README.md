@@ -578,4 +578,4 @@ $git add new.txt
 $git commit -m “testing trigger”
 $git push origin master
 ```
-AWS—Lambda—CodeCommitTriggerFunction—Monitoring--View logs in cloud watch—click on latest log stream(which should see two separate References: ref/head/master  & References: ref/head/master & Clone URLs)
+AWS—>Lambda—>CodeCommitTriggerFunction—>Monitoring-->View logs in cloud watch—>click on latest log stream(which should see two separate References: ref/head/master  & References: ref/head/master & Clone URLs)
