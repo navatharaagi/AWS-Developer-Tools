@@ -392,8 +392,8 @@ $git push origin TriggerBranch
 ```
 
 ##### SNS Triggers using AWS CLI :
--Trigger JSON file “Events” list
-    -all  (all events in repo)
+- Trigger JSON file “Events” list
+    - all  (all events in repo)
     -updateReference  (push occurred)
     -createReference   (branch or tag created)
     -deleteReference   (branch or tag deleted)
