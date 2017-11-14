@@ -594,8 +594,8 @@ CodeCommit & KMS
 - Key usage:
     - The key (created specifically for CodeCommit), is then used to encrypt and decrypt our data while both In-Transit, and when at rest.
     - In-Transit:
-        AWS encrypts the data when we push to a repository (git push)
-        AWS decrypts the data when we pull from a repository (git pull)
+        - AWS encrypts the data when we push to a repository (git push)
+        - AWS decrypts the data when we pull from a repository (git pull)
 - Encryption Type:
     AWS KMS uses AES-256
 NOTE: CodeCommit integrates with AWS KMS automatically. we do not have to take any steps by ourself, to encrypt our data when using CodeCommit (while in-transit or at rest on AWS servers)
