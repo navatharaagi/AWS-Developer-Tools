@@ -39,7 +39,7 @@ files:
 permissions:
   - object: /MyRepo/html   #permissions setting to html dir
     pattern: "*.html"      #pattern apply to all files in the html dir
-    except: [index.html]
+    except: [index.html]   #pattern will apply to all files except "index.html"
     owner:
     group:
     mode:
