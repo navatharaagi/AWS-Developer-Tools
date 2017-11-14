@@ -663,7 +663,7 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
     }    
   ]
 }
-IAM—Users—Create user “Matt"—Permissions—Attach Policy— “AWSCodeCommitFullAccess”--“CodeDeployCustomUser”—Attach Policy.
+IAM—>Users—>Create user “Matt"—>Permissions—>Attach Policy—> “AWSCodeCommitFullAccess”-->“CodeDeployCustomUser”—>Attach Policy.
 
 2)Create another Instance Role Policy which gives access to get & list in all S3 Buckets
 AWS—IAM—Policies—Create Policy—Create Own Policy—“CodeDeployDemo-EC2-Permissions”--Policy Document (Paste the following code in policy document)—create Policy
