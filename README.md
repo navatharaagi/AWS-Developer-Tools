@@ -534,6 +534,7 @@ Again check logs in cloud watch
 AWS—>Lambda—>“CodeCommitTriggerFunction”—>Monitoring—>View logs in cloud watch—>click on latest log stream(which should see References: ref/head/Test Reference & References: ref/head/master & Clone URL)
 
 Create a Lambda Trigger using CLI
+```sh
 $cd local-lambda repo
 $touch RepoTrigger.json
 $nano RepoTrigger.json
