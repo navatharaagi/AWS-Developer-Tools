@@ -38,8 +38,8 @@ files:
 #   section may cause associated deployments to fail.
 permissions:
   - object: /MyRepo/html   #permissions setting to html dir
-    pattern: "*.html"             #pattern apply to all files in the html dir
-    except:
+    pattern: "*.html"      #pattern apply to all files in the html dir
+    except: [index.html]
     owner:
     group:
     mode:
