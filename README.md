@@ -583,20 +583,20 @@ AWS—>Lambda—>CodeCommitTriggerFunction—>Monitoring-->View logs in cloud wa
 AWS Key Management System (KMS)
 - Amazon’s encryption management service that allows us to easily create and control the keys used to encrypt our data.
 - We can:
-    Create, describe, enable and disable master keys
-    Set master key usage polices and logs
-    Encrypt and decrypt our data using the master keys we create
+    - Create, describe, enable and disable master keys
+    - Set master key usage polices and logs
+    - Encrypt and decrypt our data using the master keys we create
 CodeCommit & KMS
 - Key creation:
-    -AWS automatically creates an AWS-managed key when we create a CodeCommit repository in a given region.
-    -The key is stored in the same region as the repository.
-    -The key is stored in our AWS account.
+    - AWS automatically creates an AWS-managed key when we create a CodeCommit repository in a given region.
+    - The key is stored in the same region as the repository.
+    - The key is stored in our AWS account.
 - Key usage:
-    -The key (created specifically for CodeCommit), is then used to encrypt and decrypt our data while both In-Transit, and when at rest.
-    -In-Transit:
+    - The key (created specifically for CodeCommit), is then used to encrypt and decrypt our data while both In-Transit, and when at rest.
+    - In-Transit:
         AWS encrypts the data when we push to a repository (git push)
         AWS decrypts the data when we pull from a repository (git pull)
--Encryption Type:
+- Encryption Type:
     AWS KMS uses AES-256
 NOTE: CodeCommit integrates with AWS KMS automatically. we do not have to take any steps by ourself, to encrypt our data when using CodeCommit (while in-transit or at rest on AWS servers)
 CodeCommit, KMS & IAM Policies
