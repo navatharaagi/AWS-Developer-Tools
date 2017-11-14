@@ -681,4 +681,4 @@ AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—>“CodeDeployDem
   ]
 }
 - This Policy is attached to EC2 instance when it is running using Role
-IAM—Roles—Create New Role—"CodeDeployDemo-EC2"—Amazon EC2— “CodeDeployDemo-EC2-Permissions”—Create Role.
+IAM—>Roles—>Create New Role—>"CodeDeployDemo->EC2"—>Amazon EC2—> “CodeDeployDemo->EC2->Permissions”—>Create Role.
