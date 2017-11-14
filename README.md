@@ -579,7 +579,7 @@ $git commit -m “testing trigger”
 $git push origin master
 ```
 AWS—>Lambda—>CodeCommitTriggerFunction—>Monitoring-->View logs in cloud watch—>click on latest log stream(which should see two separate References: ref/head/master  & References: ref/head/master & Clone URLs)
-5.CodeCommit & AWS KMS (encryption)
+#### 5.CodeCommit & AWS KMS (encryption)
 AWS Key Management System (KMS)
 -Amazon’s encryption management service that allows us to easily create and control the keys used to encrypt our data.
 -We can:
