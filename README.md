@@ -481,6 +481,7 @@ Prerequisites for lambda triggers:
 
 Creating a Lambda Trigger Using AWS
 Setting up Lambda Permissions:
+```sh
 $aws lambda add-permission - -cli-input-json file://<My Permissions JSON File>
 -In Permissions JSON File, we must have 'Lambda Function name’,'Repository ARN’,'Repository Source Number’.
 
