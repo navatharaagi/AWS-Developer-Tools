@@ -587,11 +587,11 @@ AWS Key Management System (KMS)
     Set master key usage polices and logs
     Encrypt and decrypt our data using the master keys we create
 CodeCommit & KMS
--Key creation:
+- Key creation:
     -AWS automatically creates an AWS-managed key when we create a CodeCommit repository in a given region.
     -The key is stored in the same region as the repository.
     -The key is stored in our AWS account.
--Key usage:
+- Key usage:
     -The key (created specifically for CodeCommit), is then used to encrypt and decrypt our data while both In-Transit, and when at rest.
     -In-Transit:
         AWS encrypts the data when we push to a repository (git push)
