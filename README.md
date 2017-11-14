@@ -412,7 +412,7 @@ View Triggers in the Repo:
 aws codecommit get-repository-triggers - -repository-name <Repo Name>
 ```
 
-Goto AWS—SNS—Topics—TriggerTopic—copy ARN
+Goto AWS—>SNS—>Topics—>TriggerTopic—>copy ARN
 
 $touch RepoTrigger.json  /*creating a json file
 $nano RepoTrigger.json
