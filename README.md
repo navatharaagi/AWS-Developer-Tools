@@ -413,7 +413,7 @@ aws codecommit get-repository-triggers - -repository-name <Repo Name>
 ```
 
 Goto AWS—>SNS—>Topics—>TriggerTopic—>copy ARN
-
+```sh
 $touch RepoTrigger.json  /*creating a json file
 $nano RepoTrigger.json
 {
