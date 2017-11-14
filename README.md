@@ -340,7 +340,7 @@ $ls    /* local dir has to be listed
 $cd my-local-migrated-repo
 $ls   /*has to list the files which are in our AWS CodeCommit MyMigratedrepo & GitHub repo
 ```
-Using CodeCommit with other AWS Services
+### Using CodeCommit with other AWS Services
 1.Triggers:
 -Triggers are a method where events in CodeCommit can launch automated actions in other AWS services
 i.e., creating a new branch can trigger an SNS topic to notify all subscribers that a new branch has been created
