@@ -391,7 +391,7 @@ $git push origin TriggerBranch
 - Now we have two notifications about branches “master” & “TriggerBranch”  created  in our Email
 ```
 
-SNS Triggers using AWS CLI :
+- SNS Triggers using AWS CLI :
 -Trigger JSON file “Events” list
     -all  (all events in repo)
     -updateReference  (push occurred)
