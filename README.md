@@ -706,6 +706,7 @@ cd /home/ec2-user
 aws s3 cp s3://<bucket-name>/latest/install . --region <region-name>
 chmod +x ./install
 ./install auto
+```
 5) Add storage
 6) Add a ‘Name’ Tag to the instance
 7) Configure a Security Group
