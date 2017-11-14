@@ -389,6 +389,7 @@ $git add new.txt
 $git commit -m “test commit for our trigger”
 $git push origin TriggerBranch
 - Now we have two notifications about branches “master” & “TriggerBranch”  created  in our Email
+```
 
 SNS Triggers using AWS CLI :
 -Trigger JSON file “Events” list
