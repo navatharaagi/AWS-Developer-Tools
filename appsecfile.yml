@@ -41,9 +41,8 @@ permissions:
     pattern: "*.html"      #pattern apply to all files in the html dir
     except: [index.html]   #pattern will apply to all files except "index.html"
     mode: 400
-    
     type:
-      -
+      - files  #apply type to the files in the html dir
 # If you are not running any commands on the Amazon EC2 instance, then remove
 #   the "hooks" section altogether. A blank or incomplete "hooks" section
 #   may cause associated deployments to fail.
