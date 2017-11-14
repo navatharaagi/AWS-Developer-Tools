@@ -443,7 +443,7 @@ $aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.js
 ```sh
 $aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
 ```
--If we goto AWS—CodeCommit—Triggers—TriggerRepo—“deleteTrigger" will be replaces in place of “NewBranchTrigger”.
+- If we goto AWS—CodeCommit—Triggers—TriggerRepo—“deleteTrigger" will be replaces in place of “NewBranchTrigger”.
 -View Triggers in the Repo
 $aws codecommit get-repository-triggers - -repository-name TriggerRepo /*gives JSON format of our file
 -Now our Trigger has been successfully created,now will check by deleting one of our branches, we have to receive a notification.
