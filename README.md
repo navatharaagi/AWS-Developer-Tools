@@ -610,7 +610,7 @@ CodeCommit, KMS & IAM Policies:
 
 AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatically when we create CodeCommit Repo).
 ### AWS CodeDeploy
-1.CodeDeploy
+#### 1.CodeDeploy
 -CodeDeploy is an AWS service for automating the deployment process of our applications, from Git-based version control systems or S3 buckets to Amazon EC2 instances, on-premise instances, or both.
 -Automation:
     We can easily automate our code deployment to development, test, and production environments.
