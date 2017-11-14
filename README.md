@@ -730,7 +730,9 @@ sudo service codedeploy-agent status
 Good Response: The AWS CodeDeploy agent is running.
 Error Responses:
 Error: No AWS CodeDeploy agent running
+```sh
 Fix: sudo service codedeploy-agent start
+```
 Error: codedeploy-agent: unrecognized service
 Fix: Launch a new instance and double check the bash script for errors, OR double check the permissions policy attached to the Instance Profile (make sure it allows access to S3)
 
