@@ -340,3 +340,105 @@ $ls    /* local dir has to be listed
 $cd my-local-migrated-repo
 $ls   /*has to list the files which are in our AWS CodeCommit MyMigratedrepo & GitHub repo
 ```
+Using CodeCommit with other AWS Services
+1.Triggers:
+-Triggers are a method where events in CodeCommit can launch automated actions in other AWS services
+i.e., creating a new branch can trigger an SNS topic to notify all subscribers that a new branch has been created
+-Currently, we can select one of the following events in CodeCommit to invoke a trigger:
+    -All repository events
+    -A push to existing branch(*master branch)
+    -Creation/deletion of a branch or tag
+-Triggers can invoke actions in the following AWS services:
+    -AWS SNS
+    -AWS Lambda
+    -We can also take advantage of ANS’s ability to integrate with other AWS services like Simple Queue Service(SQS)
+
+2.CodeCommit Trigger for SNS
+SNS Triggers: Setup/Getting Started:
+-Triggers can be setup using both
+    -AWS Console
+    -AWS CLI
+-Prerequisites for SNS Triggers:
+    -Must have an existing SNS topic
+    -The Repository & SNS topic must be in the same region
+-Cross-Account Triggers
+    -If setting up repos & SNS topics using different root accounts(not different users within the same account),we must have the proper permissions set so CodeCommit can communicate with SNS in the other account.
+
+Now create a new repo,to test Trigger on
+AWS Console—CodeCommit—Create new repo—“TriggerRepo"—Create
+
+We need to create a SNS Topic, to setup a Trigger with
+AWS Console—SNS—Create Topic—"Trigger Topic"—Create Topic—Create Subscription—Protocol—Email—Email-Id—Create subscription—confirm subscription by going to Email-Id.
+
+Goto CodeCommit Repo,Create a Trigger & Test it
+ AWS Console—CodeCommit—Create Trigger—Trigger name—“NewBranchTrigger”—Events—Select Create a branch or tag—Branch name—All Branches—Send to —Amazon SNS—SNS Topic—“Trigger Topic”—Test trigger (to test, check email)—Create
+
+Clone TriggerRepo to local machine
+Goto CLI,consider this doing on User1 m/c
+$git clone <copy URL from CodeCommit TriggerRepo>  Local-Trigger-Repo
+$cd Local-Trigger-Repo
+$touch file.txt
+$git add file.txt
+$git commit -m “setting up master branch”
+$git push origin master
+-create a new branch & make some changes in a file
+$git checkout -b TriggerBranch
+$touch new.txt
+$git add new.txt
+$git commit -m “test commit for our trigger”
+$git push origin TriggerBranch
+-Now we have two notifications about branches “master” & “TriggerBranch”  created  in our Email
+
+SNS Triggers using AWS CLI :
+-Trigger JSON file “Events” list
+    -all  (all events in repo)
+    -updateReference  (push occurred)
+    -createReference   (branch or tag created)
+    -deleteReference   (branch or tag deleted)
+-For creating,pushing & viewing triggers - we will use AWS CLI commands NOT Git commands.
+Test Trigger before pushing it:
+aws codecommit test-repository-triggers - -cli-input-json file://<JSON file>
+
+Push Trigger to the Repo:
+aws codecommit put-repository-triggers - -cli-input-json file://<JSON file>
+
+View Triggers in the Repo:
+aws codecommit get-repository-triggers - -repository-name <Repo Name>
+
+Goto AWS—SNS—Topics—TriggerTopic—copy ARN
+
+$touch RepoTrigger.json  /*creating a json file
+$nano RepoTrigger.json
+{
+    "repositoryName": “TriggerRepo",
+    "triggers": [
+        {
+            "name": “deleteTrigger",
+            "destinationArn": “<Paste copied ARN of TriggerTopic from SNS Topic>",
+            "customData": "",
+            "branches": [
+
+            ],
+            "events": [
+                “deleteReference"
+            ]
+        }
+
+    ]
+}
+Save & exit
+-Test Trigger
+$aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.json  /*to test Trigger,we will get an test email as branches deleted
+-Push Trigger to the Repo:
+$aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
+-If we goto AWS—CodeCommit—Triggers—TriggerRepo—“deleteTrigger" will be replaces in place of “NewBranchTrigger”.
+-View Triggers in the Repo
+$aws codecommit get-repository-triggers - -repository-name TriggerRepo /*gives JSON format of our file
+-Now our Trigger has been successfully created,now will check by deleting one of our branches, we have to receive a notification.
+$git branch
+*TriggerBranch
+master
+$git checkout master  /*to delete TriggerBranch,we have to switch the branch
+$git branch -D TriggerBranch  /*to delete it from local repo
+$git push origin - -delete TriggerBranch  /*to delete branch from central (repo,origin=remote name, TriggerBranch=branch name)
+-Now we should get the notification about TriggerBranch delete.
