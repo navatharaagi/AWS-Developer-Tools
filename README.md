@@ -613,12 +613,12 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
 #### 1.CodeDeploy
 - CodeDeploy is an AWS service for automating the deployment process of our applications, from Git-based version control systems or S3 buckets to Amazon EC2 instances, on-premise instances, or both.
 - Automation:
-    We can easily automate our code deployment to development, test, and production environments.
+    - We can easily automate our code deployment to development, test, and production environments.
 - Scale:
-     Deploy our code to one or thousands of instances at once.
+     - Deploy our code to one or thousands of instances at once.
 - Reduced Downtime:
-     Rolling updates allow us to decrease downtime by allowing us to track application heath and stop/rollback deployments if there are errors.
+     - Rolling updates allow us to decrease downtime by allowing us to track application heath and stop/rollback deployments if there are errors.
 - Control:
-    Easily keep track of our deployments by receiving reports that list when and where each of our application revisions is deployed.
--Platform-agnostic:
-    CodeDeploy is built to work with any application.
+    - Easily keep track of our deployments by receiving reports that list when and where each of our application revisions is deployed.
+- Platform-agnostic:
+    - CodeDeploy is built to work with any application.
