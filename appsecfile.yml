@@ -2,11 +2,6 @@
 #   "AWS CodeDeploy User Guide" at
 #   http://docs.aws.amazon.com/codedeploy/latest/userguide/app-spec-ref.html
 version: 0.0
-# Specify "os: linux" if this revision targets Amazon Linux,
-#   Red Hat Enterprise Linux (RHEL), or Ubuntu Server
-#   instances.
-# Specify "os: windows" if this revision targets Windows Server instances.
-# (You cannot specify both "os: linux" and "os: windows".)
 os: linux
 # os: windows
 # During the Install deployment lifecycle event (which occurs between the
