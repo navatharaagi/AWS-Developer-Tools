@@ -41,12 +41,7 @@ permissions:
     pattern: "*.html"      #pattern apply to all files in the html dir
     except: [index.html]   #pattern will apply to all files except "index.html"
     mode: 400
-    acls:
-      -
-    context:
-      user:
-      type:
-      range:
+    
     type:
       -
 # If you are not running any commands on the Amazon EC2 instance, then remove
