@@ -458,3 +458,18 @@ $git branch -D TriggerBranch  /*to delete it from local repo
 $git push origin - -delete TriggerBranch  /*to delete branch from central (repo,origin=remote name, TriggerBranch=branch name)
 ```
 - Now we should get the notification about TriggerBranch delete.
+#### 3.CodeCommit Cross-Account SNS Trigger
+Consider there are Root Account#1, Root Account#2.
+Root Account#1 contains CodeCommit Repo “TriggerRepo” & also contains user accounts for our developers.
+Root Account#2 contains SNS Topic that we want to Trigger when Events happened in our “TriggerRepo” repository.
+To configure the Cross-Account SNS Trigger,we must first edit the SNS Policy in Root Account#2,then point our Root Account#1 to it. (Can copy the SNS Policy template from AWS-SNS-Topic-Other topic Actions-Edit Topic Policy-Advanced view& edit it as follows)
+-Login into AWS Root Account#1—CodeCommit—“TriggerRepo”—Triggers—select “deleteTrigger”—delete.Goto settings,copy Repository ARN of “TriggerRepo”.
+-Now edit the SNS Policy template,
+In CodeCommit section, AWS:SourceARN<paste copied ARN>, AWS:SourceAccount<number from copied ARN>     
+-Now login to Root Account#2—SNS—Topics—Create “CrossAccountTriggerTopic”—Add Subscription to Email.
+-Again goto to SNS Policy template,edit
+Resource<Copy & paste SNS Topic ARN> in two places,  AWS:SourceOwner<copy & paste SNS Source number from ARN>
+-Now copy the whole SNS Policy Template,
+-Goto AWS—SNS—Topics—select “CrossAccountTriggerTopic”—other topic Actions— Edit Topic Policy—Advanced View—Delete default one & Paste the SNS Policy Template—Update policy.
+-Again login to Root Account#1—CodeCommit—“TriggerRepo”—Triggers—Create Trigger—“CrossTest”—Events—Create a branch/tag—Branch names—All branches—send to—Amazon SNS—SNS Topic—Type an Amazon SNS topic ARN—SNS Topic ARN—<paste the SNS topic ARN of Root Account#2 which pasted in SNS Policy template>—Test trigger  
+-We should get an email notification.
