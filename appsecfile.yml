@@ -24,7 +24,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: /     #to install all of the contents of src dir
-    destination:     #dir of our deployment gng to create for us on our EC2 instance 
+    destination: /MyRepo    #dir of our deployment gng to create for us on our EC2 instance 
   - source:
     destination:
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
