@@ -731,9 +731,9 @@ sudo service codedeploy-agent status
 - Error Responses:
     - Error: No AWS CodeDeploy agent running
 ```sh
-Fix: sudo service codedeploy-agent start
+    - Fix: sudo service codedeploy-agent start
 ```
-Error: codedeploy-agent: unrecognized service
+- Error: codedeploy-agent: unrecognized service
 Fix: Launch a new instance and double check the bash script for errors, OR double check the permissions policy attached to the Instance Profile (make sure it allows access to S3)
 
 AWS—EC2—SG—create a SG—“CodeDeploySG” with SSH,HTTP Allow Rules
