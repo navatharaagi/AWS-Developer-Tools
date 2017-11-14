@@ -565,9 +565,11 @@ $aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.js
 ```sh
 $aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
 ```
--View Triggers in the Repo
+- View Triggers in the Repo
+```sh
 $aws codecommit get-repository-triggers - -repository-name LambdaTriggerRepo
 /*gives CLITestTrigger info in output
+```
 
 Now create a file, add & commit that file,push that commit to activate Trigger in real world situation
 $touch new.txt
