@@ -713,3 +713,26 @@ chmod +x ./install
 8) Review and Launch
 9) Select a key pair
 10) Check to see if the AWS CodeDeploy agent has been successfully installed
+##### AWS CodeDeploy Agent: 
+The AWS CodeDeploy agent is a custom software package that must be installed on all instances that will be part of a deployment group.
+ -The agent specifies many of the settings that are needed for the instance to interact with CodeDepoy – like directory paths, log files, and deployment polling time intervals.
+-The agent is also customizable, so we can alter it to fit our deployment needs.
+For Amazon, Ubuntu, and RHEL instances:
+Name: codedeployagent.yml
+Location: /etc/codedeploy-agent/conf
+S3 Bucket Name: aws-codedeploy-us-east-1    if region: us-east-1, (replace it with in whichever region we want to launch our EC2.)  
+
+CodeDeploy Agent Status:
+Command:
+sudo service codedeploy-agent status
+Good Response: The AWS CodeDeploy agent is running.
+Error Responses:
+Error: No AWS CodeDeploy agent running
+Fix: sudo service codedeploy-agent start
+Error: codedeploy-agent: unrecognized service
+Fix: Launch a new instance and double check the bash script for errors, OR double check the permissions policy attached to the Instance Profile (make sure it allows access to S3)
+
+AWS—EC2—SG—create a SG—“CodeDeploySG” with SSH,HTTP Allow Rules
+AWS—EC2—Amazon Linux AMI—Configure Instance—IAM Role—"CodeDeploDemo-EC2”—Advanced Details—Copy & paste above bash script [Edit Bucket name: aws-codedeploy-us-west-1  & Region Name: us-west-1]—Next—Next—Tag—Name-- “CodeDeployTestInstance”—Configure SG—select existing SG--“CodeDeploySG”—review & launch—create new key-pair & download it.
+After EC2 running,SSH into it to connect through CLI
+$sudo service codedeploy-agent status /*to see the agent status
