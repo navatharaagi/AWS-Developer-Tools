@@ -625,12 +625,6 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
 #### 2.Setup and Configuration (Roles and Policies)
 1. Provision an IAM user with a custom CodeDeploy Policy
 - Gives a non-admin user the rights to manage all the elements needed to use CodeDeploy.
-2. Create an Instance Profile
-- This allows you to launch EC2 instances that are configured for use with CodeDeploy.
-3. Create a Service Role
-- This will allow CodeDeploy to communicate and interact with other AWS Services
-4.Install the AWS Command Line Interface (CLI)
-
 1. AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—>“CodeDeployCustomUser”—>Policy Document (Paste the following code in policy document)—>create Policy
 ```sh
 {
@@ -667,6 +661,13 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
 ```
 
 IAM—>Users—>Create user “Matt"—>Permissions—>Attach Policy—> “AWSCodeCommitFullAccess”--> “CodeDeployCustomUser”—>Attach Policy.
+
+2. Create an Instance Profile
+- This allows you to launch EC2 instances that are configured for use with CodeDeploy.
+3. Create a Service Role
+- This will allow CodeDeploy to communicate and interact with other AWS Services
+4.Install the AWS Command Line Interface (CLI)
+
 
 2) Create another Instance Role Policy which gives access to get & list in all S3 Buckets
 AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—>“CodeDeployDemo->EC2-Permissions”-->Policy Document (Paste the following code in policy document)—>create Policy
