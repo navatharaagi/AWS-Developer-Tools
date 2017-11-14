@@ -479,12 +479,12 @@ Prerequisites for lambda triggers:
 - Must have an existing Lambda function created
 - The repository & the Lambda function must be in the same region.
 
-Creating a Lambda Trigger Using AWS
+##### Creating a Lambda Trigger Using AWS
 Setting up Lambda Permissions:
 ```sh
 $aws lambda add-permission - -cli-input-json file://<My Permissions JSON File>
 ```
--In Permissions JSON File, we must have 'Lambda Function name’,'Repository ARN’,'Repository Source Number’.
+- In Permissions JSON File, we must have 'Lambda Function name’,'Repository ARN’,'Repository Source Number’.
 
 AWS Console—Lambda—Create Function—Type ‘hello-World’ function in Filter option —> click on hello world—> ‘hello World’ [code will be provided by ‘hello World’ function
 Handler as ‘index.handler’ which is in code] Name “CodeCommitTriggerFunction" —> Role as ‘create new role from templates—>Role name as ‘lambda_basic_execution’ —> Policy templates as ‘simple micro service permissions’ —>
