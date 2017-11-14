@@ -37,8 +37,8 @@ files:
 #   "permissions" section altogether. A blank or incomplete "permissions"
 #   section may cause associated deployments to fail.
 permissions:
-  - object: /MyRepo/html
-    pattern:
+  - object: /MyRepo/html   #permissions setting to html dir
+    pattern: 
     except:
     owner:
     group:
