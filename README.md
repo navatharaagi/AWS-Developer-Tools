@@ -597,10 +597,10 @@ CodeCommit & KMS
         - AWS encrypts the data when we push to a repository (git push)
         - AWS decrypts the data when we pull from a repository (git pull)
 - Encryption Type:
-    AWS KMS uses AES-256
+    - AWS KMS uses AES-256
 NOTE: CodeCommit integrates with AWS KMS automatically. we do not have to take any steps by ourself, to encrypt our data when using CodeCommit (while in-transit or at rest on AWS servers)
-CodeCommit, KMS & IAM Policies
- -CodeCommit performs these actions against the default key (aws/codecommit)
+CodeCommit, KMS & IAM Policies:
+ - CodeCommit performs these actions against the default key (aws/codecommit)
     "kms:Encrypt”
     "kms:Decrypt”
     "kms:ReEncrypt”
