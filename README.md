@@ -724,7 +724,9 @@ For Amazon, Ubuntu, and RHEL instances:
 
 ##### CodeDeploy Agent Status:
 Command:
+```sh
 sudo service codedeploy-agent status
+```
 Good Response: The AWS CodeDeploy agent is running.
 Error Responses:
 Error: No AWS CodeDeploy agent running
