@@ -689,7 +689,7 @@ IAM—>Users—>Create user “Matt"—>Permissions—>Attach Policy—> “AWSC
   - IAM—>Roles—>Create New Role—>“CodeDeployServiceRole”—>Amazon CodeDeploy—>Attach Policy—>AWSCodeDeployRole—>Create Role
 4. Install the AWS Command Line Interface (CLI)
 #### 3.Code Deploy Basics
-- Configuring an EC2 Instance for Use with CodeDeploy
+##### Configuring an EC2 Instance for Use with CodeDeploy
 - Type of instances CodeDeploy support:
 Amazon Linux, Ubuntu Server, Red Hat Enterprise Linux (RHEL), Windows Server
 - Configuration Steps:
