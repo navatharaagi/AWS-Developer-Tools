@@ -622,3 +622,62 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
     - Easily keep track of our deployments by receiving reports that list when and where each of our application revisions is deployed.
 - Platform-agnostic:
     - CodeDeploy is built to work with any application.
+#### 2.Setup and Configuration (Roles and Policies)
+1) Provision an IAM user with a custom CodeDeploy Policy
+• Gives a non-admin user the rights to manage all the elements needed to use CodeDeploy.
+2) Create an Instance Profile
+ • This allows you to launch EC2 instances that are configured for use with CodeDeploy. 3) Create a Service Role
+• This will allow CodeDeploy to communicate and interact with other AWS Services
+4) Install the AWS Command Line Interface (CLI)
+
+1) AWS—IAM—Policies—Create Policy—Create Own Policy— “CodeDeployCustomUser”—Policy Document (Paste the following code in policy document)—create Policy
+{
+  "Version": "2012-10-17",
+  "Statement" : [
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "autoscaling:*",
+        "codedeploy:*",
+        "ec2:*",
+        "elasticloadbalancing:*",
+        "iam:AddRoleToInstanceProfile",
+        "iam:CreateInstanceProfile",
+        "iam:CreateRole",
+        "iam:DeleteInstanceProfile",
+        "iam:DeleteRole",
+        "iam:DeleteRolePolicy",
+        "iam:GetInstanceProfile",
+        "iam:GetRole",
+        "iam:GetRolePolicy",
+        "iam:ListInstanceProfilesForRole",
+        "iam:ListRolePolicies",
+        "iam:ListRoles",
+        "iam:PassRole",
+        "iam:PutRolePolicy",
+        "iam:RemoveRoleFromInstanceProfile",
+        "s3:*"
+      ],
+      "Resource" : "*"
+    }    
+  ]
+}
+IAM—Users—Create user “Matt"—Permissions—Attach Policy— “AWSCodeCommitFullAccess”--“CodeDeployCustomUser”—Attach Policy.
+
+2)Create another Instance Role Policy which gives access to get & list in all S3 Buckets
+AWS—IAM—Policies—Create Policy—Create Own Policy—“CodeDeployDemo-EC2-Permissions”--Policy Document (Paste the following code in policy document)—create Policy
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "s3:Get*",
+        "s3:List*"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
+-This Policy is attached to EC2 instance when it is running using Role
+IAM—Roles—Create New Role—"CodeDeploDemo-EC2"—Amazon EC2— “CodeDeployDemo-EC2-Permissions”—Create Role.
