@@ -404,6 +404,7 @@ Test Trigger before pushing it:
 aws codecommit test-repository-triggers - -cli-input-json file://<JSON file>
 ```
 Push Trigger to the Repo:
+```sh
 aws codecommit put-repository-triggers - -cli-input-json file://<JSON file>
 
 View Triggers in the Repo:
