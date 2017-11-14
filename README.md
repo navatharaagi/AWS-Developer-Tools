@@ -556,6 +556,7 @@ $nano RepoTrigger.json
     ]
 }
 save & exit
+```
 -Test Trigger
 $aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.json
 -Push Trigger to central repo
