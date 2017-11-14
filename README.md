@@ -398,7 +398,7 @@ $git push origin TriggerBranch
     - createReference   (branch or tag created)
     - deleteReference   (branch or tag deleted)
 - For creating,pushing & viewing triggers - we will use AWS CLI commands NOT Git commands.
-```sh
+
 Test Trigger before pushing it:
 aws codecommit test-repository-triggers - -cli-input-json file://<JSON file>
 
@@ -430,9 +430,10 @@ $nano RepoTrigger.json
     ]
 }
 Save & exit
+
 - Test Trigger
 $aws codecommit test-repository-triggers - -cli-input-json file://RepoTrigger.json  /*to test Trigger,we will get an test email as branches deleted
--Push Trigger to the Repo:
+- Push Trigger to the Repo:
 $aws codecommit put-repository-triggers - -cli-input-json file://RepoTrigger.json
 -If we goto AWS—CodeCommit—Triggers—TriggerRepo—“deleteTrigger" will be replaces in place of “NewBranchTrigger”.
 -View Triggers in the Repo
