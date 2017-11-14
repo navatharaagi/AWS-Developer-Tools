@@ -397,7 +397,8 @@ $git push origin TriggerBranch
     - updateReference  (push occurred)
     - createReference   (branch or tag created)
     - deleteReference   (branch or tag deleted)
--For creating,pushing & viewing triggers - we will use AWS CLI commands NOT Git commands.
+- For creating,pushing & viewing triggers - we will use AWS CLI commands NOT Git commands.
+```sh
 Test Trigger before pushing it:
 aws codecommit test-repository-triggers - -cli-input-json file://<JSON file>
 
