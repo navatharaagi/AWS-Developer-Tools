@@ -718,9 +718,9 @@ The AWS CodeDeploy agent is a custom software package that must be installed on 
  - The agent specifies many of the settings that are needed for the instance to interact with CodeDepoy – like directory paths, log files, and deployment polling time intervals.
 - The agent is also customizable, so we can alter it to fit our deployment needs.
 For Amazon, Ubuntu, and RHEL instances:
-Name: codedeployagent.yml
-Location: /etc/codedeploy-agent/conf
-S3 Bucket Name: aws-codedeploy-us-east-1    if region: us-east-1, (replace it with in whichever region we want to launch our EC2.)  
+  - Name: codedeployagent.yml
+  - Location: /etc/codedeploy-agent/conf
+  - S3 Bucket Name: aws-codedeploy-us-east-1    if region: us-east-1, (replace it with in whichever region we want to launch our EC2.)  
 
 CodeDeploy Agent Status:
 Command:
