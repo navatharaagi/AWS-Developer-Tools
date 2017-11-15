@@ -798,5 +798,5 @@ ie..key = name  & value = “CodeDeployTestInstance”
 -CodeDeployDefault.<SELECTOPTION>:AllAtOnce /*mentioning one option  
 -<SERVICE-ROLE_ARN> : IAM-Roles-“CodeDeployService”-Copy ARN& Paste it]
 
-To verify, goto AWS—CodeDeploy—Applications—CLIApplication—Deployment Group-
+- To verify, goto AWS—CodeDeploy—Applications—CLIApplication—Deployment Group-
  CLIDeploymentGroup will be created with given options.
