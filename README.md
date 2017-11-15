@@ -755,7 +755,7 @@ $sudo service codedeploy-agent status /*to see the agent status
 1) Navigate to CodeDeploy
 2) Choose Create a New Application
 3) Give the Application a name
-The next set of steps is to set up the Deployment Group within the Application
+- The next set of steps is to set up the Deployment Group within the Application
 4) Give the deployment group a name
 5) Select the tag type, Key & value for your instance
 - The next step is to setup the Deployment Configuration within the Application
