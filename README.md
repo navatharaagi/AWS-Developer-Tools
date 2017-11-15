@@ -742,3 +742,59 @@ sudo service codedeploy-agent status
 ```sh
 $sudo service codedeploy-agent status /*to see the agent status
 ```
+Creating an Application, Deployment Group and Deployment Configuration
+-CodeDeploy Application:
+    The application is simply a name identifier used to reference our deployment settings
+-CodeDeploy Deployment Group:  
+    The deployment group is the instance (or instances) we want to target and deploy our code to
+-CodeDeploy Deployment Configuration:
+    Select how many instances in our deployment group our code will deploy to at any given time
+
+Managing an Application from the AWS Console:
+Creating an Application, Deployment Group & Configuration:
+1) Navigate to CodeDeploy
+2) Choose Create a New Application
+3) Give the Application a name
+The next set of steps is to set up the Deployment Group within the Application
+4) Give the deployment group a name
+5) Select the tag type, Key & value for your instance
+The next step is to setup the Deployment Configuration within the Application
+6) Select deployment configuration
+    OneAtATime, AllAtOnce, HalfAtATime
+Optional
+7) Create a trigger
+Set permissions
+8) Select the CodeDeploy Service role we create
+9) Finalize & create the Application
+
+AWS—CodeDeploy—Custom Deployment—Skip Walkthrough—Application name “Test Application”—Deployment group name “TestDeploymentGroupName”—Deployment type—select accordingly—Environment config—Amazon EC2 Instances—key “name”—value “CodeDeployTestInstance”—Deployment config—OneAtATime—Service Role— select ARN of “CodeDeployServiceRole”—create application
+
+Managing an Application from the AWS CLI:
+Creating an Application, Deployment Group & Configuration:
+Base CLI Command:
+    aws deploy
+1) Create a new application
+    aws deploy create-application --application-name
+2) Create the deployment group, configuration & other options
+In one command we will specify:
+    Deployment group (tag, key, value)  
+    Deployment Configuration (AllAtOnce, OneAtATime, HalfAtATime)
+    Trigger (optional)
+    Service role (permissions)
+aws deploy create-deployment-group --application-name <NAME> --deployment-group-name <NAME> --ec2-tag-filters Key=< >,Value=< >,Type=KEY_AND_VALUE --deployment-config-name CodeDeployDefault.<SELECTOPTION> -- service-role-arn <SERVICE-ROLE_ARN>
+
+$aws deploy create-application --application-name CLIApplication /*creates application
+To verify, goto AWS—CodeDeploy—Applications—CLIApplication will be created
+
+$aws deploy create-deployment-group --application-name CLIApplication - -deployment-group-name CLIDeploymentGroup --ec2-tag-filters Key=Name,  Value=CodeDeployTestInstance, Type=KEY_AND_VALUE --deployment-config-name CodeDeployDefault.AllAtOnce  --service-role-arn <Copy “CodeDeployService” ARN & Paste it>  /*creates Deployment Group
+
+[In Above Command:
+-application-name <NAME>: “CLIApplication" which we created in 1st command
+-EC2-Runing instance-Tags-Copy Key & Value details & paste it
+ie..key = name  & value = “CodeDeployTestInstance”
+-deployment-group-name <NAME>: “CLIDeploymentGroup” /*can give any name
+-CodeDeployDefault.<SELECTOPTION>:AllAtOnce /*mentioning one option  
+-<SERVICE-ROLE_ARN> : IAM-Roles-“CodeDeployService”-Copy ARN& Paste it]
+
+To verify, goto AWS—CodeDeploy—Applications—CLIApplication—Deployment Group-
+ CLIDeploymentGroup will be created with given options.
