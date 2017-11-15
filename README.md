@@ -758,7 +758,7 @@ $sudo service codedeploy-agent status /*to see the agent status
 The next set of steps is to set up the Deployment Group within the Application
 4) Give the deployment group a name
 5) Select the tag type, Key & value for your instance
-The next step is to setup the Deployment Configuration within the Application
+- The next step is to setup the Deployment Configuration within the Application
 6) Select deployment configuration
     OneAtATime, AllAtOnce, HalfAtATime
 Optional
