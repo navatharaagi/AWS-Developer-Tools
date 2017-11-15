@@ -751,7 +751,7 @@ $sudo service codedeploy-agent status /*to see the agent status
   - Select 'how many instances' in our deployment group our code will deploy to at 'any given time'
 
 ##### Managing an Application from the AWS Console:
-Creating an Application, Deployment Group & Configuration:
+- Creating an Application, Deployment Group & Configuration:
 1) Navigate to CodeDeploy
 2) Choose Create a New Application
 3) Give the Application a name
