@@ -777,10 +777,10 @@ AWS—>CodeDeploy—>Custom Deployment—>Skip Walkthrough—>Application name �
     ```aws deploy create-application --application-name```
 2) Create the deployment group, configuration & other options
 - In one command we will specify:
-    Deployment group (tag, key, value)  
-    Deployment Configuration (AllAtOnce, OneAtATime, HalfAtATime)
-    Trigger (optional)
-    Service role (permissions)
+    - Deployment group (tag, key, value)  
+    - Deployment Configuration (AllAtOnce, OneAtATime, HalfAtATime)
+    - Trigger (optional)
+    - Service role (permissions)
 aws deploy create-deployment-group --application-name <NAME> --deployment-group-name <NAME> --ec2-tag-filters Key=< >,Value=< >,Type=KEY_AND_VALUE --deployment-config-name CodeDeployDefault.<SELECTOPTION> -- service-role-arn <SERVICE-ROLE_ARN>
 
 $aws deploy create-application --application-name CLIApplication /*creates application
