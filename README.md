@@ -774,7 +774,7 @@ AWS—>CodeDeploy—>Custom Deployment—>Skip Walkthrough—>Application name �
 - Base CLI Command:
     ``` aws deploy ```
 1) Create a new application
-    aws deploy create-application --application-name
+    ```aws deploy create-application --application-name```
 2) Create the deployment group, configuration & other options
 In one command we will specify:
     Deployment group (tag, key, value)  
