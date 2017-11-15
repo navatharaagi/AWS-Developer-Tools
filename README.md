@@ -772,7 +772,7 @@ AWS—>CodeDeploy—>Custom Deployment—>Skip Walkthrough—>Application name �
 ##### Managing an Application from the AWS CLI:
 - Creating an Application, Deployment Group & Configuration:
 - Base CLI Command:
-    aws deploy
+    ```sh aws deploy ```
 1) Create a new application
     aws deploy create-application --application-name
 2) Create the deployment group, configuration & other options
