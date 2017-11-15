@@ -745,10 +745,10 @@ $sudo service codedeploy-agent status /*to see the agent status
 ##### b.Creating an Application, Deployment Group and Deployment Configuration
 - CodeDeploy Application:
   - The application is simply a name identifier used to reference our deployment settings
--CodeDeploy Deployment Group:  
-    The deployment group is the instance (or instances) we want to target and deploy our code to
+- CodeDeploy Deployment Group:  
+  - The deployment group is the instance (or instances) we want to target and deploy our code to
 -CodeDeploy Deployment Configuration:
-    Select how many instances in our deployment group our code will deploy to at any given time
+  - Select how many instances in our deployment group our code will deploy to at any given time
 
 Managing an Application from the AWS Console:
 Creating an Application, Deployment Group & Configuration:
