@@ -767,7 +767,7 @@ $sudo service codedeploy-agent status /*to see the agent status
 8) Select the CodeDeploy Service role we create
 9) Finalize & create the Application
 
-AWS—CodeDeploy—Custom Deployment—Skip Walkthrough—Application name “Test Application”—Deployment group name “TestDeploymentGroupName”—Deployment type—select accordingly—Environment config—Amazon EC2 Instances—key “name”—value “CodeDeployTestInstance”—Deployment config—OneAtATime—Service Role— select ARN of “CodeDeployServiceRole”—create application
+AWS—>CodeDeploy—>Custom Deployment—>Skip Walkthrough—>Application name “Test Application”—>Deployment group name “TestDeploymentGroupName”—>Deployment type—>select accordingly—>Environment config—>Amazon EC2 Instances—>key “name”—>value “CodeDeployTestInstance”—>Deployment config—>OneAtATime—>Service Role—>select ARN of “CodeDeployServiceRole”—>create application
 
 Managing an Application from the AWS CLI:
 Creating an Application, Deployment Group & Configuration:
