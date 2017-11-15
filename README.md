@@ -763,7 +763,7 @@ The next set of steps is to set up the Deployment Group within the Application
   - OneAtATime, AllAtOnce, HalfAtATime
 - Optional:
 7) Create a trigger
-Set permissions
+- Set permissions:
 8) Select the CodeDeploy Service role we create
 9) Finalize & create the Application
 
