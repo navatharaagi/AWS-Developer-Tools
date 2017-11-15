@@ -742,7 +742,7 @@ sudo service codedeploy-agent status
 ```sh
 $sudo service codedeploy-agent status /*to see the agent status
 ```
-Creating an Application, Deployment Group and Deployment Configuration
+#####Creating an Application, Deployment Group and Deployment Configuration
 -CodeDeploy Application:
     The application is simply a name identifier used to reference our deployment settings
 -CodeDeploy Deployment Group:  
