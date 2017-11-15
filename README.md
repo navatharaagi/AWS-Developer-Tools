@@ -744,7 +744,7 @@ $sudo service codedeploy-agent status /*to see the agent status
 ```
 ##### b.Creating an Application, Deployment Group and Deployment Configuration
 - CodeDeploy Application:
-    The application is simply a name identifier used to reference our deployment settings
+  - The application is simply a name identifier used to reference our deployment settings
 -CodeDeploy Deployment Group:  
     The deployment group is the instance (or instances) we want to target and deploy our code to
 -CodeDeploy Deployment Configuration:
