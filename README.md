@@ -820,7 +820,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
       - AWS Console:
         1) Click on the application
         2) Scroll to the bottom and click ‘Delete Application’
-
+```sh
  $aws deploy list-applications  /*lists applications
  $aws deploy update-application --application-name CLIApplication --new-application-name CLIChangeApplication    /*Renames CLIApplication to CLIChangeApplication
  $aws deploy list-applications    /*can see the changed name here
