@@ -976,8 +976,8 @@ AWS—>S3—>wonderwidgets-deployment-test—>wonderwidgets.zip
 We can deploy a revision to an instance via:  
 - AWS Console.
 - AWS CLI
--AWS API
-Deploying a Revision via the AWS Console:
+- AWS API
+##### Deploying a Revision via the AWS Console:
 AWS—CodeDeploy—Get started—custom deployment—skip walk through—Select Deployments (from AWS CodeDeploy drop down at the top)—Application—“TestApplication”(which we created above)—Deployment group—“TestDeploymentGroupName”—Revision type—select "My application is stored in Amazon S3”—revision location—"s3://<wonderwidgets-deployment-test/wonderwidgets.zip”—description—“test”—Deployment configuration—select “CodeDeployDefault:AllAtOnce”—Deploy Now—check status
 AWS—EC2—CodeDeployTestInstance—Connect it through SSH
 $ssh into ec2
