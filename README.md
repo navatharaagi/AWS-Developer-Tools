@@ -947,3 +947,23 @@ $ls   /*executables .html files & .txt files will be listed
 $touch appsec.yml   /*must be specified in our root dir of our src files
 $nano appsec.yml    /*to edit file. [check appsec.yml file in github]
 ```
+g.Creating and Uploading a Revision to S3
+Application Revision:
+-Revision is simply the bundle(zip/tar file) containing the current group of files that we want to deploy.
+1.select a repository type : where we want to store our bundled src files, so CodeDeploy can access them for deployment.
+-CodeDeploy can be setup to access src files from AWS S3 Bucket,GitHub,BitBucket
+2.Bundle(.zip)our src files &push(upload) it to the repo we select (above) to use.
+
+-we are going to push our src files from CodeCommit to an S3 bucket, & deploy our files from there.
+Pushing Revision to an S3 Bucket:
+1.create an S3 Bucket for our revisions
+2.Bundle & upload the src files to S3 bucket
+aws deploy push  - -application-name <NAME>  - -description <“description”>  - -ignore-hidden-files  - -s3-location s3://<Bucket-Name>/<File-Name>.zip  - -source .
+
+AWS—S3—create a bucket “wonder-widgets"
+Goto CLI,User1
+$cd local-MyRepo
+$ls   /*lists appsec.yml , html files, executable files, .txt files
+$aws deploy push  - -application-name  TestApplication  - -description  “test deployment”  - -ignore-hidden-files  - -s3-location s3://wonderwidgets-deployment-test/wonderwidgets.zip  - -source .
+We can check it by going to :
+AWS—S3—wonderwidgets-deployment-test—wonderwidgets.zip
