@@ -802,10 +802,12 @@ ie..key = name  & value = “CodeDeployTestInstance”
  CLIDeploymentGroup will be created with given options.
 ##### c.Editing and Deleting an CodeDeploy Application
 - Changing the Application Name:
-     - AWS Console: N/A
-     - AWS CLI Commands:
-         aws deploy list-applications        (list all our applications)
-         aws deploy update-application --application-name <NAME> --new-application-name <NEW NAME>       (rename our application)
+    - AWS Console: N/A
+    - AWS CLI Commands:
+    ```sh
+    aws deploy list-applications        (list all our applications)
+    aws deploy update-application --application-name <NAME> --new-application-name <NEW NAME>       (rename our application)
+    ```
  -Deleting an Application:
      -AWS CLI Commands:
          aws deploy delete-application --application-name <NAME>  (delete an application)   
