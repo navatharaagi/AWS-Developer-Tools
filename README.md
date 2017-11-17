@@ -1012,3 +1012,4 @@ $aws deploy get-deployment --deployment-id <Paste the copied deployment-id>
 $cd wonderwidgets
 $cd html
 $ls -l  /* permissions of html files must be 644 except index.html
+```
