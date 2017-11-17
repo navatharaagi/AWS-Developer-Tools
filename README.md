@@ -928,8 +928,8 @@ $aws deploy delete-deployment-config --deployment-config-name MyCustomConfig
     - Lifecycle event hooks(optional) available to run specific scripts against.   
      Events in the deployment lifecycle that can trigger specific scripts to run
 - The AppSpec file MUST be named “appspec.yml”
-AppSpec File “Files” Section:
-Executes during the deployments “Install” lifecycle event.
+- AppSpec File “Files” Section:
+- Executes during the deployments “Install” lifecycle event.
 Source Options:
 -If ‘source’ refers to a file, ONLY that file will be installed
 -If ‘source’ refers to a directory, ALL directory content will be installed
