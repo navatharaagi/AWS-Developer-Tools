@@ -800,3 +800,73 @@ ie..key = name  & value = “CodeDeployTestInstance”
 
 - To verify, goto AWS—>CodeDeploy—>Applications—>CLIApplication—>Deployment Group->
  CLIDeploymentGroup will be created with given options.
+ c.Editing and Deleting an CodeDeploy Application
+ -Changing the Application Name:
+     -AWS Console: N/A
+     -AWS CLI Commands:
+         aws deploy list-applications        (list all our applications)
+         aws deploy update-application --application-name <NAME> --new-application-name <NEW NAME>       (rename our application)
+ -Deleting an Application:
+     -AWS CLI Commands:
+         aws deploy delete-application --application-name <NAME>  (delete an application)   
+      -AWS Console:
+             1) Click on the application
+             2) Scroll to the bottom and click ‘Delete Application’
+
+ $aws deploy list-applications  /*lists applications
+ $aws deploy update-application --application-name CLIApplication --new-application-name CLIChangeApplication    /*Renames CLIApplication to CLIChangeApplication
+ $aws deploy list-applications    /*can see the changed name here
+ $aws deploy delete-application --application-name CLIChangeApplication /*to delete
+
+ To delete an application from AWS Console,
+ AWS—CodeDeploy—Applications—select application—Delete application
+
+ d.Adding, Editing, and Deleting Application Elements (Deployment Groups & Configurations)
+ Edit, Add & Delete Deployment Groups & Configurations (in the AWS Console):
+ Editing and Adding Groups & Configurations:
+ 1) Navigate to CodeDeploy
+ 2) Click on one of your applications
+ 3) Select a deployment group and under actions, select “Edit”
+ 4) Here you can:
+     -Change the deployment group name
+     -Add/change/delete instances to deploy to
+     -Change the deployment configurations
+     -Add/edit/remove SNS Triggers
+     -Change the service role
+ Adding an Additional Deployment Group:
+ 1) Click on an application
+ 2) Under Deployment Groups, click ‘Create Deployment Group’
+ 3) Fill in the form with new information
+ Deleting an Deployment Group:
+ 1) Click on an application
+ 2) Under Deployment Groups, select a deployment group
+ 3) Under Actions, click ‘Delete’
+
+ AWS-CodeDeploy-Applications-"Test Application”-Deployment Groups-select group-Actions-Edit    /*we can edit whatever options we want
+
+ AWS-CodeDeploy-Applications-"Test Application”-Deployment Groups-create Deployment group   /*to create additional deployment groups  
+
+ AWS-CodeDeploy-Applications-"Test Application”-Deployment Groups-select group-Actions-Delete   /*to delete deployment group   
+
+ Edit, Add & Delete Deployment Groups & Configurations (using the AWS CLI):
+ Base CLI Command:
+     aws deploy
+ Edit a deployment group/configuration elements:
+     required arguments:
+     aws deploy update-deployment-group --application-name <NAME> --current-deployment-group-name <NAME>
+     Optional (elements to change):
+     --new-deployment-group-name <NAME>
+     --ec2-tag-filters
+     --on-premises-instance-tag-filters
+     Key=Name,Value=,Type=KEY_AND_VALUE
+     --auto-scaling-groups <NAME>
+     --deployment-config-name CodeDeployDefault.<SELECTOPTION>
+     --service-role-arn <SERVICE-ROLE_ARN>
+ Delete a deployment group/configuration:
+ aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>
+
+ $aws deploy list-applications
+ $aws deploy list-deployment-groups  - -application-name TestApplication
+ $aws deploy update-deployment-group --application-name TestApplication --current-deployment-group-name TestDeploymentGroupName --new-deployment-group-name NewDeploymentGroupName --deployment-config-name CodeDeployDefault.HalfAtATime
+ $aws deploy list-deployment-groups  - -application-name TestApplication /*lists changed deployment group name
+ $aws deploy delete-deployment-group --application-name TestApplication --deployment-group-name NewDeploymentGroupName  /*deletes deployment group
