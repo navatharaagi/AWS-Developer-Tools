@@ -902,7 +902,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
     -HOST_COUNT
     -FLEET_PERCENT
     ```
-Viewing a Custom Deployment Configuration:
+- Viewing a Custom Deployment Configuration:
     CLI Commands:
     To list all Deployment Configurations
     aws deploy list-deployment-configs
