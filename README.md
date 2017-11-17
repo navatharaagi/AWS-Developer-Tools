@@ -893,8 +893,8 @@ ie..key = name  & value = “CodeDeployTestInstance”
         - The AWS CLI
         - The AWS APIs
         - AWS CloudFormation Template
-    -CLI Command:
-        aws deploy create-deployment-config
+    - CLI Command:
+        ``` aws deploy create-deployment-config```
     Options
     --deployment-config-name <NAME>
     --minimum-healthy-hosts type=<OPTION>,value=<# or %>
