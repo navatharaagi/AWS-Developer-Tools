@@ -879,7 +879,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
  ```sh
  aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>
 ```
-
+```sh
  $aws deploy list-applications
  $aws deploy list-deployment-groups  - -application-name TestApplication
  $aws deploy update-deployment-group --application-name TestApplication --current-deployment-group-name TestDeploymentGroupName --new-deployment-group-name NewDeploymentGroupName --deployment-config-name CodeDeployDefault.HalfAtATime
