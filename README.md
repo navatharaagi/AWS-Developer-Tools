@@ -855,7 +855,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
 
  AWS->CodeDeploy->Applications->"Test Application”->Deployment Groups->create Deployment group   /*to create additional deployment groups  
 
- AWS->CodeDeploy->Applications->"Test Application”->Deployment Groups-select group-Actions-Delete   /*to delete deployment group   
+ AWS->CodeDeploy->Applications->"Test Application”->Deployment Groups->select group->Actions->Delete   /*to delete deployment group   
 
  Edit, Add & Delete Deployment Groups & Configurations (using the AWS CLI):
  Base CLI Command:
