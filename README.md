@@ -784,6 +784,7 @@ AWS—>CodeDeploy—>Custom Deployment—>Skip Walkthrough—>Application name �
 ```sh
  aws deploy create-deployment-group --application-name <NAME> --deployment-group-name <NAME> --ec2-tag-filters Key=< >,Value=< >,Type=KEY_AND_VALUE --deployment-config-name CodeDeployDefault.<SELECTOPTION> -- service-role-arn <SERVICE-ROLE_ARN>
 ```
+
 ```sh
 $aws deploy create-application --application-name CLIApplication /*creates application
 To verify, goto AWS—CodeDeploy—Applications—CLIApplication will be created
