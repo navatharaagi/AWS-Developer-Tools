@@ -862,7 +862,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
      ```aws deploy```
  - Edit a deployment group/configuration elements:
     - required arguments:
-     aws deploy update-deployment-group --application-name <NAME> --current-deployment-group-name <NAME>
+     ```aws deploy update-deployment-group --application-name <NAME> --current-deployment-group-name <NAME>```
      Optional (elements to change):
      --new-deployment-group-name <NAME>
      --ec2-tag-filters
