@@ -991,7 +991,7 @@ $ls -l  /* permissions of html files must be 400 except index.html
 $cd /
 ```
 - Deploying a Revision via the AWS CLI:
-Now open another CLI terminal, login as User1
+- Now open another CLI terminal, login as User1
 $cd local-MyRepo
 $nano appsec.yml /*edit mode=644 instead of 400
 $aws deploy push  - -application-name  TestApplication  - -description “second test”  - -ignore-hidden-files  - -s3-location s3://wonderwidgets-deployment-test/wonderwidgets.zip  - -source .
