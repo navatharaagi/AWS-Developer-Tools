@@ -800,7 +800,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
 
 - To verify, goto AWS—>CodeDeploy—>Applications—>CLIApplication—>Deployment Group->
  CLIDeploymentGroup will be created with given options.
- c.Editing and Deleting an CodeDeploy Application
+##### c.Editing and Deleting an CodeDeploy Application
  -Changing the Application Name:
      -AWS Console: N/A
      -AWS CLI Commands:
