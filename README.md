@@ -914,7 +914,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
     - CLI Command:
     ```aws deploy delete-deployment-config --deployment-config-name <NAME>```
 ```sh
-$aws deploy create-deployment-config --deployment-config-name MyCustomConfig  --minimum-healthy-hosts type=HOST_COUNT,value=1
+$aws deploy create-deployment-config --deployment-config-name MyCustomConfig --minimum-healthy-hosts type=HOST_COUNT,value=1
 $aws deploy list-deployment-configs    /*lists configs
 $aws deploy get-deployment-config --deployment-config-name MyCustomConfig
 $aws deploy delete-deployment-config --deployment-config-name MyCustomConfig
