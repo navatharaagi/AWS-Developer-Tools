@@ -898,7 +898,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
     - Options:
     ```sh
     --deployment-config-name <NAME>
-    --minimum-healthy-hosts type=<OPTION>,value=<# or %>
+    --minimum-healthy-hosts type=<OPTION>,value=<#or%>
     -HOST_COUNT
     -FLEET_PERCENT
     ```
