@@ -930,7 +930,7 @@ $aws deploy delete-deployment-config --deployment-config-name MyCustomConfig
 The AppSpec file MUST be named “appspec.yml”
 - AppSpec File “Files” Section:
 - Executes during the deployments “Install” lifecycle event.
-Source Options:
+- Source Options:
 -If ‘source’ refers to a file, ONLY that file will be installed
 -If ‘source’ refers to a directory, ALL directory content will be installed
 -If ‘source’ is just a single ‘ / ’, ALL files in the Revision will be installed
