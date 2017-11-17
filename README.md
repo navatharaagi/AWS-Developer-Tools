@@ -804,7 +804,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
 - Changing the Application Name:
     - AWS Console: N/A
     - AWS CLI Commands:
-    ```sh
+    ```
     aws deploy list-applications        (list all our applications)
     aws deploy update-application --application-name <NAME> --new-application-name <NEW NAME>       (rename our application)
     ```
@@ -812,7 +812,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
     - AWS CLI Commands:
     ```
     aws deploy delete-application --application-name <NAME> (delete application)   
-
+    ```
       -AWS Console:
              1) Click on the application
              2) Scroll to the bottom and click ‘Delete Application’
