@@ -860,8 +860,8 @@ ie..key = name  & value = “CodeDeployTestInstance”
  Edit, Add & Delete Deployment Groups & Configurations (using the AWS CLI):
  - Base CLI Command:
      ```aws deploy```
- Edit a deployment group/configuration elements:
-     required arguments:
+ - Edit a deployment group/configuration elements:
+    - required arguments:
      aws deploy update-deployment-group --application-name <NAME> --current-deployment-group-name <NAME>
      Optional (elements to change):
      --new-deployment-group-name <NAME>
