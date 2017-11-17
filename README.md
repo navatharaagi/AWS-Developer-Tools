@@ -888,9 +888,9 @@ ie..key = name  & value = “CodeDeployTestInstance”
  ```
  ##### e.Creating, Viewing, and Deleting a Custom Deployment Configuration
 - Default AWS Deployment Configurations:
-OneAtATime , AllAtOnce , HalfAtATime 
--Creating a Custom Deployment Configuration:
-    -You can create a custom configuration via:
+OneAtATime , AllAtOnce , HalfAtATime
+- Creating a Custom Deployment Configuration:
+    - You can create a custom configuration via:
         The AWS CLI
         The AWS APIs
         AWS CloudFormation Template
