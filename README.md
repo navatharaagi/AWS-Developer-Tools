@@ -895,11 +895,13 @@ ie..key = name  & value = “CodeDeployTestInstance”
         - AWS CloudFormation Template
     - CLI Command:
         ``` aws deploy create-deployment-config```
-    - Options
+    - Options:
+    ```sh
     --deployment-config-name <NAME>
     --minimum-healthy-hosts type=<OPTION>,value=<# or %>
     -HOST_COUNT
     -FLEET_PERCENT
+    ```
 Viewing a Custom Deployment Configuration:
     CLI Commands:
     To list all Deployment Configurations
