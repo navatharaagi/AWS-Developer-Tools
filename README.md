@@ -782,7 +782,7 @@ AWS—>CodeDeploy—>Custom Deployment—>Skip Walkthrough—>Application name �
     - Trigger (optional)
     - Service role (permissions)
 ```sh
- aws deploy create-deployment-group --application-name <NAME> --deployment-group-name <NAME> --ec2-tag-filters Key=< >,Value=< >,Type=KEY_AND_VALUE --deployment-config-name CodeDeployDefault.<SELECTOPTION> -- service-role-arn <SERVICE-ROLE_ARN>
+ aws deploy create-deployment-group --application-name <NAME> --deployment-group-name <NAME> --ec2-tag-filters Key=< >,Value=< >,Type=KEY_AND_VALUE --deployment-config-name CodeDeployDefault.<SELECTOPTION> --service-role-arn <SERVICE-ROLE_ARN>
 ```
 
 ```sh
