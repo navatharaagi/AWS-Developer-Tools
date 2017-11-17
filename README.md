@@ -935,7 +935,7 @@ The AppSpec file MUST be named “appspec.yml”
   - If ‘source’ refers to a directory, ALL directory content will be installed
   - If ‘source’ is just a single ‘ / ’, ALL files in the Revision will be installed
 
-Lets Consider the following is our tree structure
+Lets Consider the following is our tree structure:
 /local-MyRepo
     -.txt file
     -html files [ index.html (777) , wonder widgets.html(777) ]
