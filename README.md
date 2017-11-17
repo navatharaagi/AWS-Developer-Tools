@@ -828,7 +828,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
 ```
 
  To delete an application from AWS Console,
- AWS—CodeDeploy—Applications—select application—Delete application
+ - AWS—>CodeDeploy—>Applications—>select application—>Delete application
 
  d.Adding, Editing, and Deleting Application Elements (Deployment Groups & Configurations)
  Edit, Add & Delete Deployment Groups & Configurations (in the AWS Console):
