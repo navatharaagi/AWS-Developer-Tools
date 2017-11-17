@@ -872,7 +872,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
      ```--deployment-config-name CodeDeployDefault.<SELECTOPTION>```
      ```--service-role-arn <SERVICE-ROLE_ARN>```
  - Delete a deployment group/configuration:
- aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>
+ ```aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>
 
  $aws deploy list-applications
  $aws deploy list-deployment-groups  - -application-name TestApplication
