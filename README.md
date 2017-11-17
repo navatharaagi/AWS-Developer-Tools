@@ -931,9 +931,9 @@ The AppSpec file MUST be named “appspec.yml”
 - AppSpec File “Files” Section:
 - Executes during the deployments “Install” lifecycle event.
 - Source Options:
--If ‘source’ refers to a file, ONLY that file will be installed
--If ‘source’ refers to a directory, ALL directory content will be installed
--If ‘source’ is just a single ‘ / ’, ALL files in the Revision will be installed
+- If ‘source’ refers to a file, ONLY that file will be installed
+- If ‘source’ refers to a directory, ALL directory content will be installed
+- If ‘source’ is just a single ‘ / ’, ALL files in the Revision will be installed
 
 Lets Consider the following is our tree structure
 /local-MyRepo
