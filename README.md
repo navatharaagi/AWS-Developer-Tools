@@ -1007,7 +1007,8 @@ $aws deploy create-deployment --application-name TestApplication --s3-location b
 $aws deploy get-deployment --deployment-id <ID>
 $aws deploy get-deployment --deployment-id <Paste the copied deployment-id>
 ```
--Now goto EC2 instance connected terminal
+- Now goto EC2 instance connected terminal
+```sh
 $cd wonderwidgets
 $cd html
 $ls -l  /* permissions of html files must be 644 except index.html
