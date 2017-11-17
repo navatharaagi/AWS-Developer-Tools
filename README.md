@@ -1003,6 +1003,7 @@ $aws deploy create-deployment --application-name TestApplication --s3-location b
 ```
 - Gives Deployment ID as o/p,copy & paste it in following command
 - Now check the deployment status
+```sh
 $aws deploy get-deployment --deployment-id <ID>
 $aws deploy get-deployment --deployment-id <Paste the copied deployment-id>
 -Now goto EC2 instance connected terminal
