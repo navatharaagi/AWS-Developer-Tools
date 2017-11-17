@@ -938,8 +938,8 @@ The AppSpec file MUST be named “appspec.yml”
 Lets Consider the following is our tree structure:
 - /local-MyRepo
     - .txt file
-    -html files [ index.html (777) , wonder widgets.html(777) ]
-    -executable files [ what_is_www ]
+    - html files [ index.html (777) , wonder widgets.html(777) ]
+    - executable files [ what_is_www ]
 Goto CLI, User1 login
 $cd local-MyRepo
 $ls   /*executables .html files & .txt files will be listed
