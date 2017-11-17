@@ -1006,6 +1006,7 @@ $aws deploy create-deployment --application-name TestApplication --s3-location b
 ```sh
 $aws deploy get-deployment --deployment-id <ID>
 $aws deploy get-deployment --deployment-id <Paste the copied deployment-id>
+```
 -Now goto EC2 instance connected terminal
 $cd wonderwidgets
 $cd html
