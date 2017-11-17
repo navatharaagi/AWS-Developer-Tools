@@ -826,6 +826,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
  $aws deploy list-applications    /*can see the changed name here
  $aws deploy delete-application --application-name CLIChangeApplication /*to delete
 ```
+
  To delete an application from AWS Console,
  AWS—CodeDeploy—Applications—select application—Delete application
 
