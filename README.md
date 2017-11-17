@@ -905,7 +905,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
 - Viewing a Custom Deployment Configuration:
     - CLI Commands:
     - To list all Deployment Configurations
-    aws deploy list-deployment-configs
+    ```aws deploy list-deployment-configs```
     To view detailed information on a specific Configuration
     aws deploy get-deployment-config --deployment-config-name <NAME>
 Deleting a Custom Deployment Configuration:
