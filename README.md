@@ -862,7 +862,8 @@ ie..key = name  & value = “CodeDeployTestInstance”
      ```aws deploy```
  - Edit a deployment group/configuration elements:
     - required arguments:
-     ```aws deploy update-deployment-group --application-name <NAME> --current-deployment-group-name <NAME>```
+     ```sh
+     aws deploy update-deployment-group --application-name <NAME> --current-deployment-group-name <NAME>```
     - Optional (elements to change):
     ``` --new-deployment-group-name <NAME>```
      ```--ec2-tag-filters```
@@ -872,7 +873,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
      ```--deployment-config-name CodeDeployDefault.<SELECTOPTION>```
      ```--service-role-arn <SERVICE-ROLE_ARN>```
  - Delete a deployment group/configuration:
- ```aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>
+ ```aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>```
 
  $aws deploy list-applications
  $aws deploy list-deployment-groups  - -application-name TestApplication
