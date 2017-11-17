@@ -989,7 +989,8 @@ $ls   /*lists appsec.yml,executables,html,.txt files
 $cd html
 $ls -l  /* permissions of html files must be 400 except index.html
 $cd /
-Deploying a Revision via the AWS CLI:
+```
+- Deploying a Revision via the AWS CLI:
 Now open another CLI terminal, login as User1
 $cd local-MyRepo
 $nano appsec.yml /*edit mode=644 instead of 400
