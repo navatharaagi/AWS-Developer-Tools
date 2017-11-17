@@ -866,13 +866,15 @@ ie..key = name  & value = “CodeDeployTestInstance”
      aws deploy update-deployment-group --application-name <NAME> --current-deployment-group-name <NAME>
      ```
  - Optional (elements to change):
-    ``` --new-deployment-group-name <NAME>```
-     ```--ec2-tag-filters```
-     ```--on-premises-instance-tag-filters
-     Key=Name,Value=,Type=KEY_AND_VALUE```
-     ```--auto-scaling-groups <NAME>```
-     ```--deployment-config-name CodeDeployDefault.<SELECTOPTION>```
-     ```--service-role-arn <SERVICE-ROLE_ARN>```
+    ```sh
+     --new-deployment-group-name <NAME>
+     --ec2-tag-filters
+     --on-premises-instance-tag-filters
+     Key=Name,Value=,Type=KEY_AND_VALUE
+     --auto-scaling-groups <NAME>
+     --deployment-config-name CodeDeployDefault.<SELECTOPTION>
+     --service-role-arn <SERVICE-ROLE_ARN>
+     ```
  - Delete a deployment group/configuration:
  ```aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>```
 
