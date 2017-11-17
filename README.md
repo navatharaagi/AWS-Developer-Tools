@@ -908,8 +908,8 @@ ie..key = name  & value = “CodeDeployTestInstance”
     ```aws deploy list-deployment-configs```
     - To view detailed information on a specific Configuration
     ```aws deploy get-deployment-config --deployment-config-name <NAME>```
-Deleting a Custom Deployment Configuration:
-    CLI Command:
+- Deleting a Custom Deployment Configuration:
+    - CLI Command:
     aws deploy delete-deployment-config --deployment-config-name <NAME>
 
  $aws deploy create-deployment-config  --deployment-config-name MyCustomConfig  --minimum-healthy-hosts type=HOST_COUNT,value=1
