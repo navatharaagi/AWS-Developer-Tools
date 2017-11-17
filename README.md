@@ -951,10 +951,10 @@ $nano appsec.yml    /*to edit file. [check appsec.yml file in github]
 - Application Revision:
 - Revision is simply the bundle(zip/tar file) containing the current group of files that we want to deploy.
 1. select a repository type : where we want to store our bundled src files, so CodeDeploy can access them for deployment.
--CodeDeploy can be setup to access src files from AWS S3 Bucket,GitHub,BitBucket
-2.Bundle(.zip)our src files &push(upload) it to the repo we select (above) to use.
+- CodeDeploy can be setup to access src files from AWS S3 Bucket,GitHub,BitBucket
+2. Bundle(.zip)our src files &push(upload) it to the repo we select (above) to use.
 
--we are going to push our src files from CodeCommit to an S3 bucket, & deploy our files from there.
+- we are going to push our src files from CodeCommit to an S3 bucket, & deploy our files from there.
 Pushing Revision to an S3 Bucket:
 1.create an S3 Bucket for our revisions
 2.Bundle & upload the src files to S3 bucket
