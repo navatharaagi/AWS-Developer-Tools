@@ -971,3 +971,34 @@ $aws deploy push --application-name TestApplication --description “test deploy
 ```
 - We can check it by going to :
 AWS—>S3—>wonderwidgets-deployment-test—>wonderwidgets.zip
+h.Deploying a Revision from S3
+We can deploy a revision to an instance via:  
+-AWS Console.
+-AWS CLI
+-AWS API
+Deploying a Revision via the AWS Console:
+AWS—CodeDeploy—Get started—custom deployment—skip walk through—Select Deployments (from AWS CodeDeploy drop down at the top)—Application—“TestApplication”(which we created above)—Deployment group—“TestDeploymentGroupName”—Revision type—select "My application is stored in Amazon S3”—revision location—"s3://<wonderwidgets-deployment-test/wonderwidgets.zip”—description—“test”—Deployment configuration—select “CodeDeployDefault:AllAtOnce”—Deploy Now—check status
+AWS—EC2—CodeDeployTestInstance—Connect it through SSH
+$ssh into ec2
+$cd /
+$ls   /*check “wonder widgets” created/not
+$cd wonderwidgets
+$ls   /*lists appsec.yml,executables,html,.txt files  
+$cd html
+$ls -l  /* permissions of html files must be 400 except index.html
+$cd /
+Deploying a Revision via the AWS CLI:
+Now open another CLI terminal, login as User1
+$cd local-MyRepo
+$nano appsec.yml /*edit mode=644 instead of 400
+$aws deploy push  - -application-name  TestApplication  - -description “second test”  - -ignore-hidden-files  - -s3-location s3://wonderwidgets-deployment-test/wonderwidgets.zip  - -source .
+-Gives  create a deployment command as o/p,run that command as follows
+$aws deploy create-deployment  - -application-name  TestApplication  - -s3-location bucket=wonderwidgets-deployment-test,key=wonderwidgets1.zip,bundleType=zip,eTag=<S3 Ref Num>  - -deployment-group-name  TestDeploymentGroupName - -deployment-config-name CodeDeployDefault.OneAtATime  - -description “test2”
+-Gives Deployment ID as o/p,copy & paste it in following command
+-Now check the deployment status
+$aws deploy get-deployment --deployment-id <ID>
+$aws deploy get-deployment --deployment-id <Paste the copied deployment-id>
+-Now goto EC2 instance connected terminal
+$cd wonderwidgets
+$cd html
+$ls -l  /* permissions of html files must be 644 except index.html
