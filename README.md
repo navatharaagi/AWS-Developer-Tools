@@ -999,7 +999,7 @@ $aws deploy push --application-name TestApplication --description “second test
 ```
 - Gives create deployment command as o/p,run that command as follows
 ```sh
-$aws deploy create-deployment --application-name  TestApplication  - -s3-location bucket=wonderwidgets-deployment-test,key=wonderwidgets1.zip,bundleType=zip,eTag=<S3 Ref Num>  - -deployment-group-name  TestDeploymentGroupName - -deployment-config-name CodeDeployDefault.OneAtATime  - -description “test2”
+$aws deploy create-deployment --application-name TestApplication --s3-location bucket=wonderwidgets-deployment-test,key=wonderwidgets1.zip,bundleType=zip,eTag=<S3 Ref Num>  - -deployment-group-name  TestDeploymentGroupName - -deployment-config-name CodeDeployDefault.OneAtATime  - -description “test2”
 -Gives Deployment ID as o/p,copy & paste it in following command
 -Now check the deployment status
 $aws deploy get-deployment --deployment-id <ID>
