@@ -957,8 +957,8 @@ Application Revision:
 - we are going to push our src files from CodeCommit to an S3 bucket, & deploy our files from there.
 ##### Pushing Revision to an S3 Bucket:
 1. create an S3 Bucket for our revisions
-2.Bundle & upload the src files to S3 bucket
-aws deploy push  - -application-name <NAME>  - -description <“description”>  - -ignore-hidden-files  - -s3-location s3://<Bucket-Name>/<File-Name>.zip  - -source .
+2. Bundle & upload the src files to S3 bucket
+aws deploy push --application-name <NAME>  - -description <“description”>  - -ignore-hidden-files  - -s3-location s3://<Bucket-Name>/<File-Name>.zip  - -source .
 
 AWS—S3—create a bucket “wonder-widgets"
 Goto CLI,User1
