@@ -970,4 +970,4 @@ $ls   /*lists appsec.yml , html files, executable files, .txt files
 $aws deploy push --application-name TestApplication --description “test deployment”  --ignore-hidden-files --s3-location s3://wonderwidgets-deployment-test/wonderwidgets.zip --source .
 ```
 - We can check it by going to :
-AWS—>S3—>wonderwidgets-deployment-test—wonderwidgets.zip
+AWS—>S3—>wonderwidgets-deployment-test—>wonderwidgets.zip
