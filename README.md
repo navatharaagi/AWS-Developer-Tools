@@ -886,3 +886,32 @@ ie..key = name  & value = “CodeDeployTestInstance”
  $aws deploy list-deployment-groups --application-name TestApplication /*lists changed deployment group name
  $aws deploy delete-deployment-group --application-name TestApplication --deployment-group-name NewDeploymentGroupName  /*deletes deployment group
  ```
+ ##### e.Creating, Viewing, and Deleting a Custom Deployment Configuration
+-Default AWS Deployment Configurations:
+OneAtATime ! AllAtOnce ! HalfAtATime !
+-Creating a Custom Deployment Configuration:
+    -You can create a custom configuration via:
+        The AWS CLI
+        The AWS APIs
+        AWS CloudFormation Template
+    -CLI Command:
+        aws deploy create-deployment-config
+    Options
+    --deployment-config-name <NAME>
+    --minimum-healthy-hosts type=<OPTION>,value=<# or %>
+    -HOST_COUNT
+    -FLEET_PERCENT
+Viewing a Custom Deployment Configuration:
+    CLI Commands:
+    To list all Deployment Configurations
+    aws deploy list-deployment-configs
+    To view detailed information on a specific Configuration
+    aws deploy get-deployment-config --deployment-config-name <NAME>
+Deleting a Custom Deployment Configuration:
+    CLI Command:
+    aws deploy delete-deployment-config --deployment-config-name <NAME>
+
+ $aws deploy create-deployment-config  --deployment-config-name MyCustomConfig  --minimum-healthy-hosts type=HOST_COUNT,value=1
+$aws deploy list-deployment-configs    /*lists configs
+$aws deploy get-deployment-config --deployment-config-name MyCustomConfig
+$aws deploy delete-deployment-config --deployment-config-name MyCustomConfig
