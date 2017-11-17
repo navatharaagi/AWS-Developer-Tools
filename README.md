@@ -962,8 +962,8 @@ Application Revision:
 aws deploy push --application-name <NAME> --description <“description”> --ignore-hidden-files --s3-location s3://<Bucket-Name>/<File-Name>.zip --source .
 ```
 
-AWS—S3—create a bucket “wonder-widgets"
-Goto CLI,User1
+AWS—>S3—>create a bucket “wonder-widgets"
+- Goto CLI,User1
 $cd local-MyRepo
 $ls   /*lists appsec.yml , html files, executable files, .txt files
 $aws deploy push  - -application-name  TestApplication  - -description  “test deployment”  - -ignore-hidden-files  - -s3-location s3://wonderwidgets-deployment-test/wonderwidgets.zip  - -source .
