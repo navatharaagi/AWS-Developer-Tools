@@ -831,7 +831,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
  - AWS—>CodeDeploy—>Applications—>select application—>Delete application
 
  ##### d.Adding, Editing, and Deleting Application Elements (Deployment Groups & Configurations)
- Edit, Add & Delete Deployment Groups & Configurations (in the AWS Console):
+ - Edit, Add & Delete Deployment Groups & Configurations (in the AWS Console):
  Editing and Adding Groups & Configurations:
  1) Navigate to CodeDeploy
  2) Click on one of your applications
