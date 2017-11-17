@@ -890,9 +890,9 @@ ie..key = name  & value = “CodeDeployTestInstance”
 - Default AWS Deployment Configurations:OneAtATime , AllAtOnce , HalfAtATime
 - Creating a Custom Deployment Configuration:
     - You can create a custom configuration via:
-        The AWS CLI
-        The AWS APIs
-        AWS CloudFormation Template
+        - The AWS CLI
+        - The AWS APIs
+        - AWS CloudFormation Template
     -CLI Command:
         aws deploy create-deployment-config
     Options
