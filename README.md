@@ -813,7 +813,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
     ```
     aws deploy delete-application --application-name <NAME> (delete application)   
     ```
-      -AWS Console:
+      - AWS Console:
              1) Click on the application
              2) Scroll to the bottom and click ‘Delete Application’
 
