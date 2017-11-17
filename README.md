@@ -881,7 +881,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
 ```
 ```sh
  $aws deploy list-applications
- $aws deploy list-deployment-groups  - -application-name TestApplication
+ $aws deploy list-deployment-groups --application-name TestApplication
  $aws deploy update-deployment-group --application-name TestApplication --current-deployment-group-name TestDeploymentGroupName --new-deployment-group-name NewDeploymentGroupName --deployment-config-name CodeDeployDefault.HalfAtATime
  $aws deploy list-deployment-groups  - -application-name TestApplication /*lists changed deployment group name
  $aws deploy delete-deployment-group --application-name TestApplication --deployment-group-name NewDeploymentGroupName  /*deletes deployment group
