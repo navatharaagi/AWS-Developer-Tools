@@ -863,8 +863,8 @@ ie..key = name  & value = “CodeDeployTestInstance”
  - Edit a deployment group/configuration elements:
     - required arguments:
      ```aws deploy update-deployment-group --application-name <NAME> --current-deployment-group-name <NAME>```
-     Optional (elements to change):
-     --new-deployment-group-name <NAME>
+    - Optional (elements to change):
+    ``` --new-deployment-group-name <NAME>```
      --ec2-tag-filters
      --on-premises-instance-tag-filters
      Key=Name,Value=,Type=KEY_AND_VALUE
