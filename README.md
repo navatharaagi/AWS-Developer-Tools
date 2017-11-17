@@ -973,7 +973,7 @@ $aws deploy push --application-name TestApplication --description “test deploy
 AWS—>S3—>wonderwidgets-deployment-test—>wonderwidgets.zip
 
 ##### h.Deploying a Revision from S3
-We can deploy a revision to an instance via:  
+- We can deploy a revision to an instance via:  
 -AWS Console.
 -AWS CLI
 -AWS API
