@@ -971,7 +971,7 @@ $aws deploy push --application-name TestApplication --description “test deploy
 ```
 - We can check it by going to :
 AWS—>S3—>wonderwidgets-deployment-test—>wonderwidgets.zip
-h.Deploying a Revision from S3
+##### h.Deploying a Revision from S3
 We can deploy a revision to an instance via:  
 -AWS Console.
 -AWS CLI
