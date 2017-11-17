@@ -923,9 +923,9 @@ $aws deploy delete-deployment-config --deployment-config-name MyCustomConfig
 - AppSpec (short for Application Specification):
 - Is YAML-formatted file used to specify the:
     - Source and target location(required) of the files we want to deploy
-    -Permissions(optional) given to your files once at their target location
+    - Permissions(optional) given to your files once at their target location
     *Only applies to Amazon Linux, Ubuntu Server & RHEL
-    -Lifecycle event hooks(optional) available to run specific scripts against.   
+    - Lifecycle event hooks(optional) available to run specific scripts against.   
      Events in the deployment lifecycle that can trigger specific scripts to run
  The AppSpec file MUST be named “appspec.yml”
 AppSpec File “Files” Section:
