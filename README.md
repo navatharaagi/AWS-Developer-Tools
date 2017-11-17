@@ -887,8 +887,7 @@ ie..key = name  & value = “CodeDeployTestInstance”
  $aws deploy delete-deployment-group --application-name TestApplication --deployment-group-name NewDeploymentGroupName  /*deletes deployment group
  ```
  ##### e.Creating, Viewing, and Deleting a Custom Deployment Configuration
-- Default AWS Deployment Configurations:
-OneAtATime , AllAtOnce , HalfAtATime
+- Default AWS Deployment Configurations:OneAtATime , AllAtOnce , HalfAtATime
 - Creating a Custom Deployment Configuration:
     - You can create a custom configuration via:
         The AWS CLI
