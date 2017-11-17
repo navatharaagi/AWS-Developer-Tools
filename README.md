@@ -877,7 +877,8 @@ ie..key = name  & value = “CodeDeployTestInstance”
      ```
  - Delete a deployment group/configuration:
  ```sh
- aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>```
+ aws deploy delete-deployment-group --application-name <NAME> --deployment-group-name <NAME>
+```
 
  $aws deploy list-applications
  $aws deploy list-deployment-groups  - -application-name TestApplication
