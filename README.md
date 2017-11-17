@@ -946,3 +946,4 @@ $cd local-MyRepo
 $ls   /*executables .html files & .txt files will be listed
 $touch appsec.yml   /*must be specified in our root dir of our src files
 $nano appsec.yml    /*to edit file. [check appsec.yml file in github]
+```
