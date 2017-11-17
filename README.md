@@ -919,3 +919,29 @@ $aws deploy list-deployment-configs    /*lists configs
 $aws deploy get-deployment-config --deployment-config-name MyCustomConfig
 $aws deploy delete-deployment-config --deployment-config-name MyCustomConfig
 ```
+f.Creating and Configuring the AppSpec File
+AppSpec (short for Application Specification):
+Is YAML-formatted file used to specify the:
+    -Source and target location(required) of the files we want to deploy
+    -Permissions(optional) given to your files once at their target location
+    *Only applies to Amazon Linux, Ubuntu Server & RHEL
+    -Lifecycle event hooks(optional) available to run specific scripts against.   
+     Events in the deployment lifecycle that can trigger specific scripts to run
+ The AppSpec file MUST be named “appspec.yml”
+AppSpec File “Files” Section:
+Executes during the deployments “Install” lifecycle event.
+Source Options:
+-If ‘source’ refers to a file, ONLY that file will be installed
+-If ‘source’ refers to a directory, ALL directory content will be installed
+-If ‘source’ is just a single ‘ / ’, ALL files in the Revision will be installed
+
+Lets Consider the following is our tree structure
+/local-MyRepo
+    -.txt file
+    -html files [ index.html (777) , wonder widgets.html(777) ]
+    -executable files [ what_is_www ]
+Goto CLI, User1 login
+$cd local-MyRepo
+$ls   /*executables .html files & .txt files will be listed
+$touch appsec.yml   /*must be specified in our root dir of our src files
+$nano appsec.yml    /*to edit file. [check appsec.yml file in github]
