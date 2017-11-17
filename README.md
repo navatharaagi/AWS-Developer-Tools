@@ -842,11 +842,11 @@ ie..key = name  & value = “CodeDeployTestInstance”
     - Change the deployment configurations
     - Add/edit/remove SNS Triggers
     - Change the service role
- Adding an Additional Deployment Group:
- 1) Click on an application
- 2) Under Deployment Groups, click ‘Create Deployment Group’
- 3) Fill in the form with new information
- Deleting an Deployment Group:
+ - Adding an Additional Deployment Group:
+  1) Click on an application
+  2) Under Deployment Groups, click ‘Create Deployment Group’
+  3) Fill in the form with new information
+- Deleting an Deployment Group:
  1) Click on an application
  2) Under Deployment Groups, select a deployment group
  3) Under Actions, click ‘Delete’
