@@ -919,7 +919,7 @@ $aws deploy list-deployment-configs    /*lists configs
 $aws deploy get-deployment-config --deployment-config-name MyCustomConfig
 $aws deploy delete-deployment-config --deployment-config-name MyCustomConfig
 ```
-#####f.Creating and Configuring the AppSpec File
+##### f.Creating and Configuring the AppSpec File
 - AppSpec (short for Application Specification):
 - Is YAML-formatted file used to specify the:
     - Source and target location(required) of the files we want to deploy
