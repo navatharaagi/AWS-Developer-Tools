@@ -987,7 +987,7 @@ $ls   /*check “wonder widgets” created/not
 $cd wonderwidgets
 $ls   /*lists appsec.yml,executables,html,.txt files  
 $cd html
-$ls -l  /* permissions of html files must be 400 except index.html
+$ls -l /* permissions of html files must be 400 except index.html
 $cd /
 ```
 ##### Deploying a Revision via the AWS CLI:
