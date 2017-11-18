@@ -983,7 +983,7 @@ We can deploy a revision to an instance via:
 ```sh
 $ssh into ec2
 $cd /
-$ls   /*check “wonder widgets” created/not
+$ls   /*check “wonder-widgets” created/not
 $cd wonderwidgets
 $ls  /*lists appsec.yml,executables,html,.txt files  
 $cd html
