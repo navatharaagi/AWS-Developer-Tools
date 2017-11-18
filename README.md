@@ -990,7 +990,7 @@ $cd html
 $ls -l /* permissions of html files must be 400 except index.html
 $cd /
 ```
-##### Deploying a Revision via the AWS CLI:
+##### Deploying a Revision using the AWS CLI:
 - Now open another CLI terminal, login as User1
 ```sh
 $cd local-MyRepo
