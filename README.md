@@ -985,7 +985,7 @@ $ssh into ec2
 $cd /
 $ls   /*check “wonder widgets” created/not
 $cd wonderwidgets
-$ls   /*lists appsec.yml,executables,html,.txt files  
+$ls  /*lists appsec.yml,executables,html,.txt files  
 $cd html
 $ls -l /* permissions of html files must be 400 except index.html
 $cd /
