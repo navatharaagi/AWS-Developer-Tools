@@ -1014,8 +1014,8 @@ $cd html
 $ls -l  /* permissions of html files must be 644 except index.html
 ```
 ##### i.Monitoring Deployments via SNS Triggers
--SNS Triggers must be setup pre-deployment
--SNS Triggers are great for automating the monitoring process. Allowing us to get instant notifications if deployments or instances fail or succeed.
+- SNS Triggers must be setup pre-deployment
+- SNS Triggers are great for automating the monitoring process. Allowing us to get instant notifications if deployments or instances fail or succeed.
 -SNS Triggers can be setup via:
     -AWS Console
     -AWS CLI
