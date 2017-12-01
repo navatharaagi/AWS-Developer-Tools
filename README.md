@@ -1013,3 +1013,12 @@ $cd wonderwidgets
 $cd html
 $ls -l  /* permissions of html files must be 644 except index.html
 ```
+i.Monitoring Deployments via SNS Triggers
+-SNS Triggers must be setup pre-deployment
+-SNS Triggers are great for automating the monitoring process. Allowing us to get instant notifications if deployments or instances fail or succeed.
+-SNS Triggers can be setup via:
+    -AWS Console
+    -AWS CLI
+-SNS Triggers:
+    -Deployment Status: Deployment Starts, Deployment succeeds , Deployment fails , Deployment Stops
+    -Instance Status:  Instance Starts , Instance Succeeds , Instance Fails
