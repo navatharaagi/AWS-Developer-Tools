@@ -1069,7 +1069,7 @@ aws deploy get-deployment-group --application-name <App-Name> --deployment-group
   - “InstanceSuccess”
   - ”InstanceFailure”
 8) Add the Topic ARN for the SNS Topic you want to invoke to “triggerTargetArn”:
-    9) Add a name to “triggerName”:
-    10) Save and exit
+9) Add a name to “triggerName”:
+10) Save and exit
     11) Upload the .json file using the command:
     aws deploy update-deployment-group --current-deploymentgroup-name <Deployment-Group-Name> --cli-input-json file://<FILENAME>.json
