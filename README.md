@@ -1049,8 +1049,8 @@ aws deploy get-deployment-group --application-name <App-Name> --deployment-group
   - "deploymentGroupId": “XXXX”,
   - "deploymentGroupName": ”XXXX”,
   - The entire “targetRevision” section (if your file has it)
-    - The remaining “}” from when you deleted "deploymentGroupInfo” above
-     6) Add the following JSON text:
+  - The remaining “}” from when you deleted "deploymentGroupInfo” above
+6) Add the following JSON text:
      "triggerConfigurations": [
      {
         "triggerEvents": [ ],
