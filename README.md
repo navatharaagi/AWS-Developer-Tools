@@ -1064,9 +1064,9 @@ aws deploy get-deployment-group --application-name <App-Name> --deployment-group
   - “DeploymentStart”
   - “DeploymentSuccess”
   - “DeploymentFailure”
-    - “DeploymentStop”
-    - “InstanceStart”
-    - “InstanceSuccess”
+  - “DeploymentStop”
+  - “InstanceStart”
+  - “InstanceSuccess”
     - ”InstanceFailure”
     8) Add the Topic ARN for the SNS Topic you want to invoke to “triggerTargetArn”:
     9) Add a name to “triggerName”:
