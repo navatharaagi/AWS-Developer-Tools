@@ -1025,8 +1025,8 @@ $ls -l  /* permissions of html files must be 644 except index.html
 ##### Add SNS Triggers via AWS Console:
 - Must have a SNS Topic “Trigger Topic" created & subscribed to our Email
 - AWS—CodeDeploy—click on “Test Application”(which we created before)—open up the details of our “TestDeploymentGroupName”—Triggers—Create Trigger—Trigger Name—“CodeDeployTrigger”—Events—select “Deployments status(All)—Amazon SNS Topic—select “Trigger Topic”(which is created before & subscribed to our Email.If not created already, create it first & then add SNS triggers)—create Trigger
--By clicking on the edit option/icon beside Trigger, we can edit or delete Trigger.
-    -Now run a deployment,& check whether we get a notification from our SNS Trigger when our deployment fails
+- By clicking on the edit option/icon beside Trigger, we can edit or delete Trigger.
+- Now run a deployment,& check whether we get a notification from our SNS Trigger when our deployment fails
     -Before creating deployment,upload new revision location into S3 bucket "s3://<wonderwidgets-deployment-test/wonderwidgetsFAIL.zip” by following the "Deploying a Revision via the AWS CLI: Deployment creation"
     -AWS CodeDeploy—Deployments(from dropdown list at the top of dashboard)—create a new deployment—Application—select “Test Application”—Deployment Group—select “TestDeploymentGroupName”—Revision Type—select “My application is stored in Amazon S3”—Revision Location—select ""s3://<wonderwidgets-deployment-test/wonderwidgetsFAIL.zip” —Deployment Description—“Fail”—Deployment Config—select “CodeDeployDefault:OneAtATime”—Deploy Now—status—failed
     -If we check our Email, we get notifications about Success,Creation &Failed deployment status.
