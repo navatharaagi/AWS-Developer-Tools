@@ -1061,9 +1061,9 @@ aws deploy get-deployment-group --application-name <App-Name> --deployment-group
     ],
     ```
 7) Add one or more Events to “triggerEvents”
-    - “DeploymentStart”
-    - “DeploymentSuccess”
-    - “DeploymentFailure”
+  - “DeploymentStart”
+  - “DeploymentSuccess”
+  - “DeploymentFailure”
     - “DeploymentStop”
     - “InstanceStart”
     - “InstanceSuccess”
