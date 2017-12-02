@@ -1030,8 +1030,8 @@ $ls -l  /* permissions of html files must be 644 except index.html
 - Before creating deployment,upload new revision location into S3 bucket "s3://<wonderwidgets-deployment-test/wonderwidgetsFAIL.zip” by following the "Deploying a Revision via the AWS CLI: Deployment creation"
 - AWS CodeDeploy—Deployments(from dropdown list at the top of dashboard)—create a new deployment—Application—select “Test Application”—Deployment Group—select “TestDeploymentGroupName”—Revision Type—select “My application is stored in Amazon S3”—Revision Location—select ""s3://<wonderwidgets-deployment-test/wonderwidgetsFAIL.zip” —Deployment Description—“Fail”—Deployment Config—select “CodeDeployDefault:OneAtATime”—Deploy Now—status—failed
 - If we check our Email, we get notifications about Success,Creation &Failed deployment status.
-Creating an SNS Triggers via AWS CLI:
-    -When creating a new Deployment Group:
+##### Creating an SNS Triggers via AWS CLI:
+- When creating a new Deployment Group:
     1) Run the command:
      aws deploy create-deployment-group --generate-cli-skeleton
     2) Fill out JSON file will all the info for the Deployment Group
