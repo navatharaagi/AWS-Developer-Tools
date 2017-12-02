@@ -1038,8 +1038,9 @@ $ls -l  /* permissions of html files must be 644 except index.html
 3) Upload the JSON file to create the new Deployment Group, which will include the SNS Trigger you added, by using the command:
 ```aws deploy create-deployment-group --cli-input-json file://<FILENAME>.json```
 - Adding a Trigger to an existing Deployment Group:
-    1) Run the command:
-    aws deploy get-deployment-group --application-name <App-Name>
+1) Run the command:
+```sh
+aws deploy get-deployment-group --application-name <App-Name>
     --deployment-group-name <Deployment-Group-Name>
     2) Copy the entire JSON text block
     3) Create a .json file and open it with a text editor
