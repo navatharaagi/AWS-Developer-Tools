@@ -1059,7 +1059,8 @@ aws deploy get-deployment-group --application-name <App-Name> --deployment-group
         "triggerName": “"
      }
     ],
-     7) Add one or more Events to “triggerEvents”
+    ```
+7) Add one or more Events to “triggerEvents”
     - “DeploymentStart”
     - “DeploymentSuccess”
     - “DeploymentFailure”
