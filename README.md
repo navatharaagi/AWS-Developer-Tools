@@ -1044,8 +1044,8 @@ aws deploy get-deployment-group --application-name <App-Name> --deployment-group
 2) Copy the entire JSON text block
 3) Create a .json file and open it with a text editor
 4) Copy the JSON text block into the text editor
-    5) Remove the following items:
-    - "deploymentGroupInfo": {
+5) Remove the following items:
+  - "deploymentGroupInfo": {
     -"deploymentGroupId": “XXXX”,
     - "deploymentGroupName": ”XXXX”,
     - The entire “targetRevision” section (if your file has it)
