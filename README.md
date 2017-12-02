@@ -1041,7 +1041,7 @@ $ls -l  /* permissions of html files must be 644 except index.html
 1) Run the command:
 ```sh
 aws deploy get-deployment-group --application-name <App-Name> --deployment-group-name <Deployment-Group-Name>```
-    2) Copy the entire JSON text block
+2) Copy the entire JSON text block
     3) Create a .json file and open it with a text editor
     4) Copy the JSON text block into the text editor
     5) Remove the following items:
