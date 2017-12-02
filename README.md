@@ -1073,4 +1073,5 @@ aws deploy get-deployment-group --application-name <App-Name> --deployment-group
 10) Save and exit
 11) Upload the .json file using the command:
 ```sh
-    aws deploy update-deployment-group --current-deploymentgroup-name <Deployment-Group-Name> --cli-input-json file://<FILENAME>.json
+  aws deploy update-deployment-group --current-deploymentgroup-name <Deployment-Group-Name> --cli-input-json file://<FILENAME>.json
+  ```
