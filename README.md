@@ -1143,8 +1143,8 @@ aws deploy get-application-revision --application-name <APP-NAME> --s3-location 
 6. Deployment Configuration details:
   - List Deployment Configurations:
 ```aws deploy list-deployment-configs```
-    - List detailed Deployment Configuration info:
-aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>
+  - List detailed Deployment Configuration info:
+```aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>```
 
 k.Stopping Deployments, Roll-Backs, and Redeployments
 Stopping a Deployment:
