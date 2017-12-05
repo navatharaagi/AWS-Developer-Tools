@@ -1237,5 +1237,5 @@ sudo ./install auto
 $cd downloads  /*cd to dir where key pair was downloaded
 $chmod 400 LiveLabKeyPair.pem
 $ssh -i "LiveLabKeyPair.pem” <public-ip of ec2>
-$sudo service codedeploy-agent status  /*to check the status
+$sudo service codedeploy-agent status  /*to check the code-deploy status
 ```
