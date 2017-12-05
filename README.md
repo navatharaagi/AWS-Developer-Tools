@@ -1039,7 +1039,9 @@ $aws deploy create-deployment-group --generate-cli-skeleton /*gives json formatt
 ```
 2) Copy the o/p & paste it in Editor & Fill out JSON file with all the info for the Deployment Group & save it  as .json file
 3) Upload the JSON file to create the new Deployment Group, which will include the SNS Trigger you added, by using the command:
- ```aws deploy create-deployment-group --cli-input-json file://<FILENAME>.json```
+ ```
+ aws deploy create-deployment-group --cli-input-json file://<FILENAME>.json
+ ```
 b. Adding a Trigger to an existing Deployment Group:
 1) Run the command:
 ```sh
