@@ -1174,8 +1174,10 @@ Understanding Roll-Back and Redeployments:
 [ec2@…]$nano  <copy & paste one of the cleanup file>  /*lists of all files that are in our deployment.
 ```
 - so that in the case of redeployment, CodeDeploy can try to delete these files,then install files that are redeployed in our Revision.
-- File location (Windows): C:\ProgramData\Amazon\CodeDeploy\deployment instructions\<DEPLOYMENT-GROUP-ID>-cleanup
-
+- File location (Windows):
+```sh
+C:\ProgramData\Amazon\CodeDeploy\deployment instructions\<DEPLOYMENT-GROUP-ID>-cleanup
+``` 
 l. Automating Deployments from S3 Using Lambda
 Process overview:
 1) Create a Lambda “execution role”: Give Lambda permission to access S3 & CodeDeploy
