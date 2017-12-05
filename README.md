@@ -1090,7 +1090,7 @@ $aws deploy get-deployment-group --application-name TestApplication --deployment
 4) Re-upload the .json file
 ##### j.Viewing Deployment Details and Error Logs
 ##### Viewing Deployment Details via AWS CONSOLE:
-1.Deployment details:
+1. Deployment details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployments—> lists deployments & its details
 2.Instance details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployments—>Deployments list—>select any one Deployment details->View All Instances—>View Events—>instance Failed/succeeded—> select Failed event “view logs”—>to view error to troubleshoot
