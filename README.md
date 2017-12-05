@@ -1109,11 +1109,9 @@ AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> sel
 aws deploy list-deployments --application-name <APP-NAME> --deployment-group-name <DEPLOY-GROUP-NAME>```
     - Optional:
 ```sh
---include-only-statuses <Failed Or Succeeded> --create-time-range start=<2014-08-19T00:00:00>,end=<2014-08-20T00:00:00>
-```
+--include-only-statuses <Failed Or Succeeded> --create-time-range start=<2014-08-19T00:00:00>,end=<2014-08-20T00:00:00>```
     - List detailed deployment info:
-```
-aws deploy get-deployment --deployment-id <ID #>```
+```aws deploy get-deployment --deployment-id <ID #>```
 2. Instance details:
     - List instances
 ```aws deploy list-deployment-instances --deployment-id <ID #>```
