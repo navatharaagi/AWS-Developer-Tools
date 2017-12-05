@@ -1041,8 +1041,9 @@ $aws deploy create-deployment-group --generate-cli-skeleton /*gives json formatt
  ```aws deploy create-deployment-group --cli-input-json file://<FILENAME>.json```
 b. Adding a Trigger to an existing Deployment Group:
 1) Run the command:
+```sh
 $aws deploy get-deployment-group --application-name TestApplication
---deployment-group-name TestDeploymentGroupName  /*gives json formatted o/p
+--deployment-group-name TestDeploymentGroupName  /*gives json formatted o/p ```
 2) Copy the entire JSON o/p text block
 3) Create a .json file and open it with a text editor
 $touch CLITriggerFile.json
