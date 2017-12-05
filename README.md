@@ -1136,7 +1136,8 @@ aws deploy get-deployment-group --application-name <APP-NAME> --deployment-group
 5. Application Revision details:
   - List Application Revisions:
 ```aws deploy list-application-revisions --application-name <APP-NAME>```
-    - List detailed Application Revision info:
+  - List detailed Application Revision info:
+```sh
 aws deploy get-application-revision --application-name <APP-NAME> --s3-location bucket=<S3-BUCKET-NAME>, bundleType=<TYPE>,eTag=<TAG-VALUE>,key=<FILE-NAME>
 6.Deployment Configuration details:
     - List Deployment Configurations:
