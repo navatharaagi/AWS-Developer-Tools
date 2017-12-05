@@ -1110,7 +1110,8 @@ aws deploy list-deployments --application-name <APP-NAME> --deployment-group-nam
 ```
   - Optional:
 ```sh
---include-only-statuses <Failed Or Succeeded> --create-time-range start=<2014-08-19T00:00:00>,end=<2014-08-20T00:00:00>```
+--include-only-statuses <Failed Or Succeeded> --create-time-range start=<2014-08-19T00:00:00>,end=<2014-08-20T00:00:00>
+```
   - List detailed deployment info:
 ```aws deploy get-deployment --deployment-id <ID #>```
 2. Instance details:
