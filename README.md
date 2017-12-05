@@ -1187,7 +1187,7 @@ Process overview:
 5) Upload the .zip file the an S3 bucket:
 ##### Creating the Lambda “Execution Role”:
 1) Create a custom IAM policy:
-- AWS—>IAM—>Policies—>Create New Policy—>Create our own Policy—> Policy Name “LambdaExecutionPolicy”—>Policy Document—> [Copy & Paste “CodeDeployLambdaExecutionPolicy” which is in git files—>Enter the appropriate  <Bucket Name>,<Region>,<Account-ID> & ID will be in our AWS-Settings-"My Account”] —> Validate Policy—>Create Policy(if its Valid).
+- AWS—>IAM—>Policies—>Create New Policy—>Create our own Policy—> Policy Name “LambdaExecutionPolicy”—> Policy Document—> [Copy & Paste “CodeDeployLambdaExecutionPolicy” which is in git files—>Enter the appropriate  <Bucket Name>,<Region>,<Account-ID> & ID will be in our AWS-Settings-"My Account”] —> Validate Policy—>Create Policy(if its Valid).
 2) Create a new Role:
      - For Role Type, select “AWS Lambda”
 AWS—>IAM—>Roles—>Create New Role—>”LambdaExecutionRole”—>Role Type—>select “AWS Lambda”—>Attach Policy—>select “LambdaExecutionPolicy”(which we created above)—>create
