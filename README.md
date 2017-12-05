@@ -1100,9 +1100,9 @@ AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> sel
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Applications—>lists Applications—>click on Application—> Deployment Group—>Details(click on Downward arrow ‘v’ beside deployment group)
 5. Application Revision details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Applications—>lists Applications—>click on Application-> Revisions—>gives detailed info
-6.Deployment Configuration details:
+6. Deployment Configuration details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployment Configuration
-Viewing Deployment Details via CLI:
+##### Viewing Deployment Details via CLI:
 1.Deployment details:
     - List Deployment ID numbers:
 aws deploy list-deployments --application-name <APP-NAME> --deployment-group-name <DEPLOY-GROUP-NAME>
