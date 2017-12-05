@@ -1217,4 +1217,4 @@ $ls /* including AutoRevision.zip files will be listed
 /*gives ETag as o/p
 ```
 - To check whether successfully deployed revision or not goto
-- AWS—>CodeDeploy—>AWSCOdeDeploy—>Deployments—>TestApplication-> status—>succeeded
+- AWS—>CodeDeploy—>AWSCodeDeploy—>Deployments—>TestApplication-> status—>succeeded
