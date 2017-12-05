@@ -1088,7 +1088,7 @@ $aws deploy get-deployment-group --application-name TestApplication --deployment
         - Add events , Remove events , Delete the entire contents of the “trigger configuration section”
 3) Save and exit
 4) Re-upload the .json file
-j.Viewing Deployment Details and Error Logs
+##### j.Viewing Deployment Details and Error Logs
 Viewing Deployment Details via AWS CONSOLE:
 1.Deployment details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployments—> lists deployments & its details
