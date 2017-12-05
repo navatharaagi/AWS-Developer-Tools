@@ -1141,8 +1141,8 @@ aws deploy get-deployment-group --application-name <APP-NAME> --deployment-group
 aws deploy get-application-revision --application-name <APP-NAME> --s3-location bucket=<S3-BUCKET-NAME>, bundleType=<TYPE>,eTag=<TAG-VALUE>,key=<FILE-NAME>
 ```
 6. Deployment Configuration details:
-    - List Deployment Configurations:
-aws deploy list-deployment-configs
+  - List Deployment Configurations:
+```aws deploy list-deployment-configs```
     - List detailed Deployment Configuration info:
 aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>
 
