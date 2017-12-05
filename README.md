@@ -1167,7 +1167,7 @@ Understanding Roll-Back and Redeployments:
     ```sh
     /opt/codedeploy-agent/deployment-root/deployment instructions/<DEPLOYMENT-GROUP-ID>-cleanup
     ```
-login to EC2 instance of deployed instance
+- login to EC2 instance of deployed instance
 [ec2@…]$cd /opt/codedeploy-agent/deployment-root/deployment instructions/
 [ec2@…]$ls   /*lists cleanup files including installed files
 [ec2@…]$nano  <copy & paste one of the cleanup file>  /*lists of all files that are in our deployment.
