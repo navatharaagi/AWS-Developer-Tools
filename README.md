@@ -1185,7 +1185,7 @@ Process overview:
 3) Register a Lambda Function: Setup the Lambda Function in AWS
 4) Bundle the source files into a .zip file:
 5) Upload the .zip file the an S3 bucket:
-Creating the Lambda “Execution Role”:
+##### Creating the Lambda “Execution Role”:
 1) Create a custom IAM policy:
 AWS—>IAM—>Policies—>Create New Policy—>Create our own Policy—> Policy Name “LambdaExecutionPolicy”—>Policy Document—> [Copy & Paste “CodeDeployLambdaExecutionPolicy” which is in git files—>Enter the appropriate  <Bucket Name>,<Region>,<Account-ID> & ID will be in our AWS-Settings-"My Account”] —> Validate Policy—>Create Policy(if its Valid).
 2) Create a new Role:
