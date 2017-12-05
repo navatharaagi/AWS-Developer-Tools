@@ -1202,7 +1202,7 @@ Process overview:
 ```sh
 $ls  /* we need to view “apsec.yml” file under our User1 account,if not move it by using move command.
 ```
-- Install zip if you don’t already have it installed
+- Install zip if we don’t already have it installed
 - Run the following command to properly create the zip file:
  zip -r <NAME-OF-ZIP-FILE>.zip appspec.yml <APP-DIRECTORY> -x "*/\.*”
  $zip -r  AutoRevision.zip  appspec.yml  local-wonderwidgets  -x  "*/\.*”  /* lists allies & folders that included in zip file [ here ‘x’ means exclude any hidden files/folders that meets these(*/\.*) parameters]
