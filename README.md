@@ -1133,8 +1133,8 @@ aws deploy get-deployment-instance --deployment-id <DEPLOYMENT ID> --instance-id
 ```sh
 aws deploy get-deployment-group --application-name <APP-NAME> --deployment-group-name <DEPLOYMENT-GROUP-NAME>
 ```
-5.Application Revision details:
-    - List Application Revisions:
+5. Application Revision details:
+  - List Application Revisions:
 aws deploy list-application-revisions --application-name <APP-NAME>
     - List detailed Application Revision info:
 aws deploy get-application-revision --application-name <APP-NAME> --s3-location bucket=<S3-BUCKET-NAME>, bundleType=<TYPE>,eTag=<TAG-VALUE>,key=<FILE-NAME>
