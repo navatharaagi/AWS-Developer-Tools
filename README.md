@@ -1105,8 +1105,9 @@ AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> sel
 ##### Viewing Deployment Details via CLI:
 1. Deployment details:
     - List Deployment ID numbers:
-```sh    
-aws deploy list-deployments --application-name <APP-NAME> --deployment-group-name <DEPLOY-GROUP-NAME>```
+```sh   
+aws deploy list-deployments --application-name <APP-NAME> --deployment-group-name <DEPLOY-GROUP-NAME>
+```
     - Optional:
 ```sh
 --include-only-statuses <Failed Or Succeeded> --create-time-range start=<2014-08-19T00:00:00>,end=<2014-08-20T00:00:00>```
