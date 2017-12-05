@@ -1205,8 +1205,10 @@ $ls  /* we need to view “apsec.yml” file under our User1 account,if not move
 - Install zip if we don’t already have it installed
 - Run the following command to properly create the zip file:
 ```zip -r <NAME-OF-ZIP-FILE>.zip appspec.yml <APP-DIRECTORY> -x "*/\.*”```
+```sh
  $zip -r  AutoRevision.zip  appspec.yml  local-wonderwidgets  -x  "*/\.*”  /* lists allies & folders that included in zip file [ here ‘x’ means exclude any hidden files/folders that meets these(*/\.*) parameters]
 $ls /* including AutoRevision.zip files will be listed
+```
 2) Upload the zip file to S3:
 - Run the S3 PUT command:
 aws s3api put-object --bucket <S3-BUCKET-NAME> - -key <ZIP-FILE-NAME> .zip - -body <ZIP-FILE-NAME> .zip --metadata application-name=<APP-NAME>, deploymentgroup-name=<DEPLOYMENT-GROUP-NAME>
