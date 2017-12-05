@@ -1068,7 +1068,8 @@ $nano CLITriggerFile.json   /*paste the copied JSON formatted o/p
  }
 ],
 6) Upload the .json file using the command:
-aws deploy update-deployment-group --current-deployment-group-name TestDeploymentGroupName --cli-input-json file://CLITriggerFile.json
+```sh
+$aws deploy update-deployment-group --current-deployment-group-name TestDeploymentGroupName --cli-input-json file://CLITriggerFile.json
 /*gives “hooksNotCleanedUp” as o/p
 c.Viewing, Modifying & Deleting a Trigger in an existing Deployment Group:
 1) To view the triggers in a Deployment Group, run:
