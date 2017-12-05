@@ -1129,8 +1129,10 @@ aws deploy get-deployment-instance --deployment-id <DEPLOYMENT ID> --instance-id
 4. Deployment Group details:
   - List Deployment Groups:
 ```aws deploy list-deployment-groups --application-name <APP-NAME>```
-    - List detailed Deployment Group info:
+  - List detailed Deployment Group info:
+```sh
 aws deploy get-deployment-group --application-name <APP-NAME> --deployment-group-name <DEPLOYMENT-GROUP-NAME>
+```
 5.Application Revision details:
     - List Application Revisions:
 aws deploy list-application-revisions --application-name <APP-NAME>
