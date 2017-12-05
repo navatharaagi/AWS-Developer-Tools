@@ -1047,6 +1047,7 @@ b. Adding a Trigger to an existing Deployment Group:
 ```$aws deploy get-deployment-group --application-name TestApplication
 --deployment-group-name TestDeploymentGroupName  /*gives json formatted o/p
 ```
+
 2) Copy the entire JSON o/p text block
 3) Create a .json file and open it with a text editor
 ```sh
