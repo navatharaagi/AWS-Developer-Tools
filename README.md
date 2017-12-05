@@ -1218,3 +1218,21 @@ $ls /* including AutoRevision.zip files will be listed
 ```
 - To check whether successfully deployed revision or not goto
 - AWS—>CodeDeploy—>AWSCodeDeploy—>Deployments—>TestApplication-> status—>succeeded
+CodeDeploy Basics example:
+- AWS—>IAM—>Create New Role—>Name->CodeDeployInstanceRole->create
+- AWS—>EC2—>Launch an Instance—>AMI—>Free Tier—>Configure Instance—>Auto-assign Public IP—>select Enable—>IAM Role—>select CodeDeployInstanceRole—>Advanced Details—>Copy & paste the following bash script—>Add Storage—>Tag Instance—>Name “LiveLabCodeDeployInstance”—>Configure SG—>Add—>SSH & HTTP “Anywhere”—>launch—>create a new keypair—>”LiveLabKeyPair”—> Download—>launch instance   
+#! /bin/bash
+sudo yum update
+sudo yum install ruby
+sudo yum install wget
+cd /home/ec2-user
+wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+
+- connect to running “LiveLabCodeDeployInstance” through ssh
+- goto CLI,
+$cd downloads  /*cd to dir where key pair was downloaded
+$chmod 400 LiveLabKeyPair.pem
+$ssh -i "LiveLabKeyPair.pem” <public-ip of ec2>
+$sudo service codedeploy-agent status  /*to check the status
