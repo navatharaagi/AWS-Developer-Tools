@@ -1156,7 +1156,7 @@ aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>
 1) While a deployment is deploying, run the command:
 ```stop-deployment --deployment-id <DEPLOYMENT-ID #>```
 - State of our Instances?
-    - Partial or full file installation, Partial or all scripts run, Nothing run or installed
+  - Partial or full file installation, Partial or all scripts run, Nothing run or installed
 Rolling-Back & Redeploying:
 - Understanding Roll-Back and Redeployments:
 1) CodeDeploy treats a “Redeployment” as just a deployment of an already deployed Revision.
