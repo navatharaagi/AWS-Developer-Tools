@@ -1163,7 +1163,10 @@ Understanding Roll-Back and Redeployments:
 2) CodeDeploy does not have an automatic “Roll-back” feature.
 - “Cleanup” file:
     - The cleanup files is where CodeDeploy stores information about the last installed files,
-    - File location (Linux): /opt/codedeploy-agent/deployment-root/deployment instructions/<DEPLOYMENT-GROUP-ID>-cleanup
+    - File location (Linux):
+    ```sh
+    /opt/codedeploy-agent/deployment-root/deployment instructions/<DEPLOYMENT-GROUP-ID>-cleanup
+    ```
 login to EC2 instance of deployed instance
 [ec2@…]$cd /opt/codedeploy-agent/deployment-root/deployment instructions/
 [ec2@…]$ls   /*lists cleanup files including installed files
