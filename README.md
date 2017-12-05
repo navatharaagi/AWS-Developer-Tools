@@ -1212,7 +1212,7 @@ $ls /* including AutoRevision.zip files will be listed
 2) Upload the zip file to S3:
 - Run the S3 PUT command:
 ```sh
-- aws s3api put-object --bucket <S3-BUCKET-NAME> - -key <ZIP-FILE-NAME> .zip - -body <ZIP-FILE-NAME> .zip --metadata application-name=<APP-NAME>, deploymentgroup-name=<DEPLOYMENT-GROUP-NAME>
+- aws s3api put-object --bucket <S3-BUCKET-NAME> - -key <ZIP-FILE-NAME> .zip --body <ZIP-FILE-NAME> .zip --metadata application-name=<APP-NAME>, deploymentgroup-name=<DEPLOYMENT-GROUP-NAME>
 $aws s3api put-object --bucket wonder widgets-deployment-test --key AutoRevision.zip --body AutoRevision.zip --metadata application-name=TestApplication, deploymentgroup-name=TestDeploymentGroupName
 /*gives ETag as o/p
 ```
