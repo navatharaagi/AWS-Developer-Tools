@@ -1031,50 +1031,44 @@ $ls -l  /* permissions of html files must be 644 except index.html
 - AWS CodeDeploy—Deployments(from dropdown list at the top of dashboard)—create a new deployment—Application—select “Test Application”—Deployment Group—select “TestDeploymentGroupName”—Revision Type—select “My application is stored in Amazon S3”—Revision Location—select ""s3://<wonderwidgets-deployment-test/wonderwidgetsFAIL.zip” —Deployment Description—“Fail”—Deployment Config—select “CodeDeployDefault:OneAtATime”—Deploy Now—status—failed
 - If we check our Email, we get notifications about Success,Creation &Failed deployment status.
 ##### Creating an SNS Triggers via AWS CLI:
-- When creating a new Deployment Group:
-1) Run the command:
-```aws deploy create-deployment-group --generate-cli-skeleton```
-2) Fill out JSON file will all the info for the Deployment Group
+Goto CLI, User1 login
+a. Create a new Deployment Group:
+1) $aws deploy create-deployment-group --generate-cli-skeleton /*gives json formatted outline
+2) Copy the o/p & paste it in Editor & Fill out JSON file with all the info for the Deployment Group & save it  as .json file
 3) Upload the JSON file to create the new Deployment Group, which will include the SNS Trigger you added, by using the command:
-```aws deploy create-deployment-group --cli-input-json file://<FILENAME>.json```
-
-- Adding a Trigger to an existing Deployment Group:
+ aws deploy create-deployment-group --cli-input-json file://<FILENAME>.json
+b. Adding a Trigger to an existing Deployment Group:
 1) Run the command:
-```sh
-aws deploy get-deployment-group --application-name <App-Name> --deployment-group-name <Deployment-Group-Name>
-```
-2) Copy the entire JSON text block
+$aws deploy get-deployment-group --application-name TestApplication
+--deployment-group-name TestDeploymentGroupName  /*gives json formatted o/p
+2) Copy the entire JSON o/p text block
 3) Create a .json file and open it with a text editor
-4) Copy the JSON text block into the text editor
-5) Remove the following items:
-  - "deploymentGroupInfo": {
-  - "deploymentGroupId": “XXXX”,
-  - "deploymentGroupName": ”XXXX”,
-  - The entire “targetRevision” section (if your file has it)
-  - The remaining “}” from when you deleted "deploymentGroupInfo” above
-6) Add the following JSON text:
-```sh
-     "triggerConfigurations": [
-     {
-        "triggerEvents": [ ],
-        "triggerTargetArn": "”,
-        "triggerName": “"
-     }
-    ],
-```
-7) Add one or more Events to “triggerEvents”
-  - “DeploymentStart”
-  - “DeploymentSuccess”
-  - “DeploymentFailure”
-  - “DeploymentStop”
-  - “InstanceStart”
-  - “InstanceSuccess”
-  - ”InstanceFailure”
-8) Add the Topic ARN for the SNS Topic you want to invoke to “triggerTargetArn”:
-9) Add a name to “triggerName”:
-10) Save and exit
-11) Upload the .json file using the command:
-```sh
-  aws deploy update-deployment-group --current-deploymentgroup-name <Deployment-Group-Name> --cli-input-json file://<FILENAME>.json
-  ```
-  
+$touch CLITriggerFile.json
+$nano CLITriggerFile.json   /*paste the copied JSON formatted o/p
+4) Remove the following items from the copied JSON file
+- "deploymentGroupInfo": {
+-"deploymentGroupId": “XXXX”,
+- "deploymentGroupName": ”XXXX”,
+- The entire “targetRevision” section (if your file has it)
+- The remaining “}” from when you deleted "deploymentGroupInfo” above
+5) Add the following JSON text at triggerConfigurations section & save it.
+ "triggerConfigurations": [
+ {
+    "triggerEvents": [
+                            “DeploymentStart”,”DeploymentFailure”
+                        ],
+    "triggerTargetArn": “copy Arn from AWS Console of SNS Topic for the "Trigger Topic" which we subscribed”,
+    "triggerName": “CLICreatedTrigger"
+ }
+],
+6) Upload the .json file using the command:
+aws deploy update-deployment-group --current-deployment-group-name TestDeploymentGroupName --cli-input-json file://CLITriggerFile.json
+/*gives “hooksNotCleanedUp” as o/p
+c.Viewing, Modifying & Deleting a Trigger in an existing Deployment Group:
+1) To view the triggers in a Deployment Group, run:
+$aws deploy get-deployment-group --application-name TestApplication --deployment-group-name TestDeploymentGroupName /*gives JSON formatted o/p including newly added TriggerArn
+2) To modify or delete triggers:
+    - Open the .json file:
+        - Add events , Remove events , Delete the entire contents of the “trigger configuration section”
+3) Save and exit
+4) Re-upload the .json file
