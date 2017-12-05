@@ -1103,7 +1103,7 @@ AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> sel
 6. Deployment Configuration details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployment Configuration
 ##### Viewing Deployment Details via CLI:
-1.Deployment details:
+1. Deployment details:
     - List Deployment ID numbers:
 ```sh    
 aws deploy list-deployments --application-name <APP-NAME> --deployment-group-name <DEPLOY-GROUP-NAME>
