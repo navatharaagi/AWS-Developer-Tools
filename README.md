@@ -1158,7 +1158,7 @@ aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>
 - State of our Instances?
   - Partial or full file installation, Partial or all scripts run, Nothing run or installed
 ##### Rolling-Back & Redeploying:
-- Understanding Roll-Back and Redeployments:
+Understanding Roll-Back and Redeployments:
 1) CodeDeploy treats a “Redeployment” as just a deployment of an already deployed Revision.
 2) CodeDeploy does not have an automatic “Roll-back” feature.
 - “Cleanup” file:
