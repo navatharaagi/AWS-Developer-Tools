@@ -1060,9 +1060,10 @@ $nano CLITriggerFile.json   /*paste the copied JSON formatted o/p
  "triggerConfigurations": [
  {
     "triggerEvents": [
-                            “DeploymentStart”,”DeploymentFailure”
-                        ],
-    "triggerTargetArn": “copy Arn from AWS Console of SNS Topic for the "Trigger Topic" which we subscribed”,
+      “DeploymentStart”,
+      ”DeploymentFailure”
+                      ],
+    "triggerTargetArn": <“copy Arn from AWS Console of SNS Topic for the "Trigger Topic" which we subscribed”>,
     "triggerName": “CLICreatedTrigger"
  }
 ],
