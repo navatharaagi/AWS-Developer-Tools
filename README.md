@@ -1088,3 +1088,110 @@ $aws deploy get-deployment-group --application-name TestApplication --deployment
         - Add events , Remove events , Delete the entire contents of the “trigger configuration section”
 3) Save and exit
 4) Re-upload the .json file
+j.Viewing Deployment Details and Error Logs
+Viewing Deployment Details via AWS CONSOLE:
+1.Deployment details:
+AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployments—> lists deployments & its details
+2.Instance details:
+AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployments—>Deployments list—>select any one Deployment details->View All Instances—>View Events—>instance Failed/succeeded—> select Failed event “view logs”—>to view error to troubleshoot
+3.Application details:
+AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Applications—>lists Applications & its details
+4.Deployment Group details:
+AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Applications—>lists Applications—>click on Application—> Deployment Group—>Details(click on Downward arrow ‘v’ beside deployment group)
+5.Application Revision details:
+AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Applications—>lists Applications—>click on Application-> Revisions—>gives detailed info
+6.Deployment Configuration details:
+AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployment Configuration
+Viewing Deployment Details via CLI:
+1.Deployment details:
+    - List Deployment ID numbers:
+aws deploy list-deployments --application-name <APP-NAME> --deployment-group-name <DEPLOY-GROUP-NAME>
+    - Optional:
+--include-only-statuses <Failed Or Succeeded> --create-time-range start=<2014-08-19T00:00:00>,end=<2014-08-20T00:00:00>
+    - List detailed deployment info:
+aws deploy get-deployment --deployment-id <ID #>
+2.Instance details:
+    - List instances
+aws deploy list-deployment-instances --deployment-id <ID #>
+    - List detailed information about an instance
+aws deploy get-deployment-instance --deployment-id <DEPLOYMENT ID> --instance-id <INSTANCE ID>
+3.Application details:
+    - List Applications:
+aws deploy list-applications  
+    - List detailed Application info:
+aws deploy get-application --application-name  <APP-NAME>
+4.Deployment Group details:
+    - List Deployment Groups:
+aws deploy list-deployment-groups --application-name <APP-NAME>
+    - List detailed Deployment Group info:
+aws deploy get-deployment-group --application-name <APP-NAME> --deployment-group-name <DEPLOYMENT-GROUP-NAME>
+5.Application Revision details:
+    - List Application Revisions:
+aws deploy list-application-revisions --application-name <APP-NAME>
+    - List detailed Application Revision info:
+aws deploy get-application-revision --application-name <APP-NAME> --s3-location bucket=<S3-BUCKET-NAME>, bundleType=<TYPE>,eTag=<TAG-VALUE>,key=<FILE-NAME>
+6.Deployment Configuration details:
+    - List Deployment Configurations:
+aws deploy list-deployment-configs
+    - List detailed Deployment Configuration info:
+aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>
+
+k.Stopping Deployments, Roll-Backs, and Redeployments
+Stopping a Deployment:
+- AWS Console:
+1) While a deployment is deploying, be on the “Deployments” page in CodeDeploy.
+AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> Create New Deployment—>Application—>”TestApplication”—> Deployment Group—>”TestDeploymentGroupName”—>Revision Type—>select “My application is stored in Amazon S3”—>Revision location—>select Revision location”—>Deployment description—>”STOP”—>Deployment Config—>Select “default one at a time”—>Deploy Now—>Actions—>Click on Stop button
+- AWS CLI:
+1) While a deployment is deploying, run the command:
+stop-deployment --deployment-id <DEPLOYMENT-ID #>
+- State of your Instances?
+    - Partial or full file installation, Partial or all scripts run, Nothing run or installed
+Rolling-Back & Redeploying:
+- Understanding Roll-Back and Redeployments:
+1) CodeDeploy treats a “Redeployment” as just a deployment of an already deployed Revision.
+2) CodeDeploy does not have an automatic “Roll-back” feature.
+- “Cleanup” file:
+    - The cleanup files is where CodeDeploy stores information about the last installed files,
+    - File location (Linux): /opt/codedeploy-agent/deployment-root/deployment instructions/<DEPLOYMENT-GROUP-ID>-cleanup
+login to EC2 instance of deployed instance
+[ec2@…]$cd /opt/codedeploy-agent/deployment-root/deployment instructions/
+[ec2@…]$ls   /*lists cleanup files including installed files
+[ec2@…]$nano  <copy & paste one of the cleanup file>  /*lists of all files that are in our deployment.
+-so that in the case of a redeployment, CodeDeploy can try to delete these files,then install files that are redeployed in our Revision.
+    - File location (Windows): C:\ProgramData\Amazon\CodeDeploy\deployment instructions\<DEPLOYMENT-GROUP-ID>-cleanup
+
+l. Automating Deployments from S3 Using Lambda
+Process overview:
+1) Create a Lambda “execution role”: Give Lambda permission to access S3 & CodeDeploy
+2) Configure a Lambda Function:  Prepare the code for the Lambda Function
+3) Register a Lambda Function: Setup the Lambda Function in AWS
+4) Bundle the source files into a .zip file:
+5) Upload the .zip file the an S3 bucket:
+Creating the Lambda “Execution Role”:
+1) Create a custom IAM policy:
+AWS—>IAM—>Policies—>Create New Policy—>Create our own Policy—> Policy Name “LambdaExecutionPolicy”—>Policy Document—> [Copy & Paste “CodeDeployLambdaExecutionPolicy” which is in git files—>Enter the appropriate  <Bucket Name>,<Region>,<Account-ID> & ID will be in our AWS-Settings-"My Account”] —> Validate Policy—>Create Policy(if its Valid).
+2) Create a new Role:
+     - For Role Type, select “AWS Lambda”
+AWS—>IAM—>Roles—>Create New Role—>”LambdaExecutionRole”—>Role Type—>select “AWS Lambda”—>Attach Policy—>select “LambdaExecutionPolicy”(which we created above)—>create
+Creating the Lambda Function:
+1) Get the Lambda Function code:
+2) Create a Lambda Function:
+AWS—>Lambda—>Create a Lambda Function—>Click “Skip”—>Name “CodeDeployLambdaAutomation" and [copy the script into the “code” section from  “CodeDeployLambdaAutomation” file]—>Lambda function handler & Role—>Role—>select “LambdaExecutionRole”—>Next—>Create function—>click Event Source/Triggers Tab—>Add an Event Source —>Select Source Type “S3"
+ —>Select Bucket “Appropriate target S3 Bucket” —>Set Event Type = Object Created (All) —> select “Enabled event source” —>“Submit”
+Preparing and Uploading the Source Files:
+1) Creating a .zip file of the source files:  
+- Make sure our appspec.yml file is moved outside our root application folder (should be one directory up)
+- Goto CLI,
+$ls  /* we need to view “apsec.yml” file under our User1 account,if not move it by using move command.
+- Install zip if you don’t already have it installed
+- Run the following command to properly create the zip file:
+ zip -r <NAME-OF-ZIP-FILE>.zip appspec.yml <APP-DIRECTORY> -x "*/\.*”
+ $zip -r  AutoRevision.zip  appspec.yml  local-wonderwidgets  -x  "*/\.*”  /* lists allies & folders that included in zip file [ here ‘x’ means exclude any hidden files/folders that meets these(*/\.*) parameters]
+$ls /* including AutoRevision.zip files will be listed
+2) Upload the zip file to S3:
+- Run the S3 PUT command:
+aws s3api put-object --bucket <S3-BUCKET-NAME> - -key <ZIP-FILE-NAME> .zip - -body <ZIP-FILE-NAME> .zip --metadata application-name=<APP-NAME>, deploymentgroup-name=<DEPLOYMENT-GROUP-NAME>
+$aws s3api put-object --bucket wonder widgets-deployment-test - -key AutoRevision.zip - -body AutoRevision.zip --metadata application-name=TestApplication, deploymentgroup-name=TestDeploymentGroupName
+/*gives ETag as o/p
+-To check whether successfully deployed revision or not goto
+AWS—>CodeDeploy—>AWSCOdeDeploy—>Deployments—>TestApplication-> status—>succeeded
