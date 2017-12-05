@@ -1046,8 +1046,10 @@ $aws deploy get-deployment-group --application-name TestApplication
 --deployment-group-name TestDeploymentGroupName  /*gives json formatted o/p ```
 2) Copy the entire JSON o/p text block
 3) Create a .json file and open it with a text editor
+```sh
 $touch CLITriggerFile.json
 $nano CLITriggerFile.json   /*paste the copied JSON formatted o/p
+```
 4) Remove the following items from the copied JSON file
 - "deploymentGroupInfo": {
 -"deploymentGroupId": “XXXX”,
