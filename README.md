@@ -1096,9 +1096,9 @@ AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> sel
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployments—>Deployments list—>select any one Deployment details->View All Instances—>View Events—>instance Failed/succeeded—> select Failed event “view logs”—>to view error to troubleshoot
 3. Application details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Applications—>lists Applications & its details
-4.Deployment Group details:
+4. Deployment Group details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Applications—>lists Applications—>click on Application—> Deployment Group—>Details(click on Downward arrow ‘v’ beside deployment group)
-5.Application Revision details:
+5. Application Revision details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Applications—>lists Applications—>click on Application-> Revisions—>gives detailed info
 6.Deployment Configuration details:
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> select Deployment Configuration
