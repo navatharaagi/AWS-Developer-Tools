@@ -1168,9 +1168,11 @@ Understanding Roll-Back and Redeployments:
     /opt/codedeploy-agent/deployment-root/deployment instructions/<DEPLOYMENT-GROUP-ID>-cleanup
     ```
 - login to EC2 instance of deployed instance
+```sh
 [ec2@…]$cd /opt/codedeploy-agent/deployment-root/deployment instructions/
 [ec2@…]$ls   /*lists cleanup files including installed files
 [ec2@…]$nano  <copy & paste one of the cleanup file>  /*lists of all files that are in our deployment.
+```
 -so that in the case of a redeployment, CodeDeploy can try to delete these files,then install files that are redeployed in our Revision.
     - File location (Windows): C:\ProgramData\Amazon\CodeDeploy\deployment instructions\<DEPLOYMENT-GROUP-ID>-cleanup
 
