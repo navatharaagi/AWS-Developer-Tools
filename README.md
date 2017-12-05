@@ -1031,7 +1031,7 @@ $ls -l  /* permissions of html files must be 644 except index.html
 - AWS CodeDeploy—>Deployments(from dropdown list at the top of dashboard)—>create a new deployment—>Application—>select “Test Application”—>Deployment Group—>select “TestDeploymentGroupName”—>Revision Type—>select “My application is stored in Amazon S3”—>Revision Location—>select ""s3://<wonderwidgets-deployment-test/wonderwidgetsFAIL.zip” —>Deployment Description—>“Fail”—>Deployment Config—>select “CodeDeployDefault:OneAtATime”—>Deploy Now—>status—>failed
 - If we check our Email, we get notifications about Success,Creation &Failed deployment status.
 ##### Creating an SNS Triggers via AWS CLI:
-Goto CLI, User1 login
+- Goto CLI, User1 login
 a. Create a new Deployment Group:
 1) Run the following command
 ```sh
