@@ -1147,7 +1147,6 @@ aws deploy get-application-revision --application-name <APP-NAME> --s3-location 
 ```sh
 aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>
 ```
-
 ##### k.Stopping Deployments, Roll-Backs, and Redeployments
 ##### Stopping a Deployment:
 - AWS Console:
