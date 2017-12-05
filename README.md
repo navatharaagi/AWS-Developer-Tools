@@ -1216,5 +1216,5 @@ aws s3api put-object --bucket <S3-BUCKET-NAME> - -key <ZIP-FILE-NAME> .zip - -bo
 $aws s3api put-object --bucket wonder widgets-deployment-test --key AutoRevision.zip --body AutoRevision.zip --metadata application-name=TestApplication, deploymentgroup-name=TestDeploymentGroupName
 /*gives ETag as o/p
 ```
--To check whether successfully deployed revision or not goto
-AWS—>CodeDeploy—>AWSCOdeDeploy—>Deployments—>TestApplication-> status—>succeeded
+- To check whether successfully deployed revision or not goto
+- AWS—>CodeDeploy—>AWSCOdeDeploy—>Deployments—>TestApplication-> status—>succeeded
