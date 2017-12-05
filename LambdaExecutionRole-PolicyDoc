@@ -1,3 +1,4 @@
+#
 {
  "Version": "2012-10-17",
  "Statement": [
@@ -20,7 +21,7 @@
   {
     "Effect": "Allow",
     "Action": "codedeploy:GetDeploymentConfig",
-    "Resource": "arn:aws:codedeploy:<REGION>:<ACCOUNTID>:deploymentconfig:*" 
+    "Resource": "arn:aws:codedeploy:<REGION>:<ACCOUNTID>:deploymentconfig:*"
   },
   {
     "Effect": "Allow",
