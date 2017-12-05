@@ -1072,6 +1072,7 @@ $nano CLITriggerFile.json   /*paste the copied JSON formatted o/p
     "triggerName": “CLICreatedTrigger"
  }
 ],
+```
 6) Upload the .json file using the command:
 ```sh
 $aws deploy update-deployment-group --current-deployment-group-name TestDeploymentGroupName --cli-input-json file://CLITriggerFile.json
