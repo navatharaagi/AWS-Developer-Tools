@@ -1154,7 +1154,7 @@ aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>
 - AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—>Create New Deployment—> Application—>”TestApplication”—> Deployment Group—>”TestDeploymentGroupName”—>Revision Type—>select “My application is stored in Amazon S3”—>Revision location—>select Revision location”—>Deployment description—>”STOP”—>Deployment Config—>Select “default one at a time”—>Deploy Now—>Actions—>Click on Stop button
 - AWS CLI:
 1) While a deployment is deploying, run the command:
-stop-deployment --deployment-id <DEPLOYMENT-ID #>
+```stop-deployment --deployment-id <DEPLOYMENT-ID #>```
 - State of your Instances?
     - Partial or full file installation, Partial or all scripts run, Nothing run or installed
 Rolling-Back & Redeploying:
