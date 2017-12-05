@@ -1061,6 +1061,7 @@ $nano CLITriggerFile.json   /*paste the copied JSON formatted o/p
 - The entire “targetRevision” section (if your file has it)
 - The remaining “}” from when you deleted "deploymentGroupInfo” above
 5) Add the following JSON text at triggerConfigurations section & save it.
+```sh
  "triggerConfigurations": [
  {
     "triggerEvents": [
