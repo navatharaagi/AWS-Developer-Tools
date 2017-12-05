@@ -1115,7 +1115,7 @@ aws deploy list-deployments --application-name <APP-NAME> --deployment-group-nam
     - List detailed deployment info:
 ```
 aws deploy get-deployment --deployment-id <ID #>```
-2.Instance details:
+2. Instance details:
     - List instances
 aws deploy list-deployment-instances --deployment-id <ID #>
     - List detailed information about an instance
