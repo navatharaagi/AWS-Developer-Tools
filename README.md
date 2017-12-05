@@ -1081,7 +1081,8 @@ $aws deploy update-deployment-group --current-deployment-group-name TestDeployme
 c. Viewing, Modifying & Deleting a Trigger in an existing Deployment Group:
 1) To view the triggers in a Deployment Group, run:
 ```sh
-$aws deploy get-deployment-group --application-name TestApplication --deployment-group-name TestDeploymentGroupName /*gives JSON formatted o/p including newly added TriggerArn ```
+$aws deploy get-deployment-group --application-name TestApplication --deployment-group-name TestDeploymentGroupName /*gives JSON formatted o/p including newly added TriggerArn
+```
 2) To modify or delete triggers:
     - Open the .json file:
         - Add events , Remove events , Delete the entire contents of the “trigger configuration section”
