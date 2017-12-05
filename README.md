@@ -1033,11 +1033,12 @@ $ls -l  /* permissions of html files must be 644 except index.html
 ##### Creating an SNS Triggers via AWS CLI:
 Goto CLI, User1 login
 a. Create a new Deployment Group:
+1) Run the following command
 ```sh
 $aws deploy create-deployment-group --generate-cli-skeleton /*gives json formatted outline ```
 2) Copy the o/p & paste it in Editor & Fill out JSON file with all the info for the Deployment Group & save it  as .json file
 3) Upload the JSON file to create the new Deployment Group, which will include the SNS Trigger you added, by using the command:
- aws deploy create-deployment-group --cli-input-json file://<FILENAME>.json
+ ```aws deploy create-deployment-group --cli-input-json file://<FILENAME>.json```
 b. Adding a Trigger to an existing Deployment Group:
 1) Run the command:
 $aws deploy get-deployment-group --application-name TestApplication
