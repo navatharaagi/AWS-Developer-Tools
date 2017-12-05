@@ -1233,7 +1233,9 @@ sudo ./install auto
 ```
 - connect to running “LiveLabCodeDeployInstance” through ssh
 - goto CLI,
+```sh
 $cd downloads  /*cd to dir where key pair was downloaded
 $chmod 400 LiveLabKeyPair.pem
 $ssh -i "LiveLabKeyPair.pem” <public-ip of ec2>
 $sudo service codedeploy-agent status  /*to check the status
+```
