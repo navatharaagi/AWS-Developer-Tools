@@ -1144,10 +1144,12 @@ aws deploy get-application-revision --application-name <APP-NAME> --s3-location 
   - List Deployment Configurations:
 ```aws deploy list-deployment-configs```
   - List detailed Deployment Configuration info:
-```aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>```
+```sh
+aws deploy get-deployment-config --deployment-config-name <CONFIG-NAME>
+```
 
 ##### k.Stopping Deployments, Roll-Backs, and Redeployments
-Stopping a Deployment:
+##### Stopping a Deployment:
 - AWS Console:
 1) While a deployment is deploying, be on the “Deployments” page in CodeDeploy.
 AWS—>CodeDeploy—>Click on Dropdown menu of AWS Codedeploy at the top—> Create New Deployment—>Application—>”TestApplication”—> Deployment Group—>”TestDeploymentGroupName”—>Revision Type—>select “My application is stored in Amazon S3”—>Revision location—>select Revision location”—>Deployment description—>”STOP”—>Deployment Config—>Select “default one at a time”—>Deploy Now—>Actions—>Click on Stop button
