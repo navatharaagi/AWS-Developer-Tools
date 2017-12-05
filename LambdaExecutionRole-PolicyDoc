@@ -20,7 +20,7 @@
   {
     "Effect": "Allow",
     "Action": "codedeploy:GetDeploymentConfig",
-    "Resource": "arn:aws:codedeploy:<REGION>:<ACCOUNTID>:deploymentconfig:*"
+    "Resource": "arn:aws:codedeploy:<REGION>:<ACCOUNTID>:deploymentconfig:*" 
   },
   {
     "Effect": "Allow",
