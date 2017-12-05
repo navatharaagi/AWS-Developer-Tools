@@ -1052,7 +1052,7 @@ $nano CLITriggerFile.json   /*paste the copied JSON formatted o/p
 ```
 4) Remove the following items from the copied JSON file
 - "deploymentGroupInfo": {
--"deploymentGroupId": “XXXX”,
+- "deploymentGroupId": “XXXX”,
 - "deploymentGroupName": ”XXXX”,
 - The entire “targetRevision” section (if your file has it)
 - The remaining “}” from when you deleted "deploymentGroupInfo” above
