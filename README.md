@@ -1199,7 +1199,9 @@ Process overview:
 1) Creating a .zip file of the source files:  
 - Make sure our appspec.yml file is moved outside our root application folder (should be one directory up)
 - Goto CLI,
+```sh
 $ls  /* we need to view “apsec.yml” file under our User1 account,if not move it by using move command.
+```
 - Install zip if you don’t already have it installed
 - Run the following command to properly create the zip file:
  zip -r <NAME-OF-ZIP-FILE>.zip appspec.yml <APP-DIRECTORY> -x "*/\.*”
