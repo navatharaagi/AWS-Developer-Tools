@@ -1194,7 +1194,7 @@ Process overview:
 1) Get the Lambda Function code:
 2) Create a Lambda Function:
 - AWS—>Lambda—>Create a Lambda Function—>Click “Skip”—>Name “CodeDeployLambdaAutomation" and [copy the script into the “code” section from  “CodeDeployLambdaAutomation” file]—>Lambda function handler & Role—>Role—>select “LambdaExecutionRole”—>Next—>Create function—>click Event Source/Triggers Tab—>Add an Event Source—>Select Source Type “S3"
- —>Select Bucket “Appropriate target S3 Bucket” —>Set Event Type = Object Created (All) —> select “Enabled event source” —>“Submit”
+ —>Select Bucket “Appropriate target S3 Bucket” —>Set Event Type = Object Created (All)—>select “Enabled event source” —>“Submit”
 ##### Preparing and Uploading the Source Files:
 1) Creating a .zip file of the source files:  
 - Make sure our appspec.yml file is moved outside our root application folder (should be one directory up)
