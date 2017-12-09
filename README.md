@@ -665,7 +665,7 @@ IAM—>Users—>Create user “Matt"—>Permissions—>Attach Policy—> “AWSC
 2. Create an Instance Profile
 - This allows you to launch EC2 instances that are configured for use with CodeDeploy.
   - Create another Instance Role Policy which gives access to get & list in all S3 Buckets
-- AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—>“CodeDeployDemo->EC2->Permissions”--Policy Document (Paste the following code in policy document)—create Policy
+- AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—>“CodeDeployDemo->EC2->Permissions”-->Policy Document (Paste the following code in policy document)—>create Policy
 ```sh
 {
   "Version": "2012-10-17",
