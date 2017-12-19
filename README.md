@@ -1281,7 +1281,7 @@ Continuous Integration: The practice of merging all developer working copies to 
 - A stage can only process one ```revision``` at a time.
 - Stages are connection through ```transitions```.
 3. Actions:
-- An action is a task performed on the artifact.
+- An action is a task performed on the ```artifact```.
 - Action tasks include:
   - Source: Monitors the “source” location (i.e. CodeCommit, S3, GitHub) for new commits or uploaded revision – and starts the release process if found
   - Build: Code is built (i.e. Jenkins)
