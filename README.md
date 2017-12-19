@@ -1249,7 +1249,7 @@ $sudo service codedeploy-agent status  /*to check the code-deploy status
 ##### Software Release Process:
 Source Files-—>Build-—>Deployment-—>Testing Environment-—>Deployment-->Production Environment. Including Customer Feedback & Developer Updates
 - Source Files: CodeCommit,S3,Github
-Build: Jenkins
-Deployment: CodeDeploy
-Testing Environment: Testers,EC2,Apica,Solano
+- Build: Jenkins
+- Deployment: CodeDeploy
+- Testing Environment: Testers,EC2,Apica,Solano
 Production Environment: EC2, Customers
