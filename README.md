@@ -1270,8 +1270,8 @@ Continuous Integration: The practice of merging all developer working copies to 
   - The bucket is named “codepipeline-<REGION>-<RANDOM_10_DIGIT_#>”
 - We can have up to 20 pipelines per AWS account
 - Pipelines must be in one of the following regions:
-    - us-east-1 , us-west-2 , eu-west-1
-2.Stages:
+  - us-east-1 , us-west-2 , eu-west-1
+2. Stages:
 - Each pipeline is broken up into broad sections called stages.
 - Stages are used to categorize, execute, and monitor actions.
 - Stages are completed in order – as configured in the pipeline.
