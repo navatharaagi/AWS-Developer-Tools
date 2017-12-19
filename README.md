@@ -1256,4 +1256,4 @@ Source Files-—>Build-—>Deployment-—>Testing Environment-—>Deployment-->P
 
 Continuous Delivery: A software engineering approach where teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims for building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. ```A straightforward and repeatable deployment process is important for continuous delivery.```
 
-- Continuous Integration: The practice of merging all developer working copies to a shared mainline (such as a master branch), at a continuous pace (often several times a day). Each addition (change) is built and tested as quickly as possible.
+Continuous Integration: The practice of merging all developer working copies to a shared mainline (such as a master branch), at a continuous pace (often several times a day). Each addition (change) is built and tested as quickly as possible.
