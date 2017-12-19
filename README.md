@@ -1247,8 +1247,8 @@ $sudo service codedeploy-agent status  /*to check the code-deploy status
 - Use existing tools : CodePipeline integrates with many other AWS services (CodeCommit, CodeDeploy, S3, OpsWorks), as well as other major developer and DevOps platforms such as Jenkins and GitHub.
 - Easy to visualize and view :  See each stage of the release process, their status, and position.
 ##### Software Release Process:
-Source Files-—>Build-—>Deployment-—>Testing Environment-—>Deployment-> Production Environment. Including Customer Feedback & Developer Updates
-Source Files: CodeCommit,S3,Github
+Source Files-—>Build-—>Deployment-—>Testing Environment-—>Deployment-->Production Environment. Including Customer Feedback & Developer Updates
+- Source Files: CodeCommit,S3,Github
 Build: Jenkins
 Deployment: CodeDeploy
 Testing Environment: Testers,EC2,Apica,Solano
