@@ -1267,7 +1267,8 @@ Continuous Integration: The practice of merging all developer working copies to 
   - Transitions (between each Stage)
 - The first time you create a pipeline (AWS Console) an S3 bucket is automatically created that will store the pipeline’s artifacts:
   - Created in the same region as your pipeline
-  - The bucket is named “codepipeline-<REGION>-<RANDOM_10_DIGIT_#>” ! - We can have up to 20 pipelines per AWS account
+  - The bucket is named “codepipeline-<REGION>-<RANDOM_10_DIGIT_#>”
+- We can have up to 20 pipelines per AWS account
 - Pipelines must be in one of the following regions:
     - us-east-1 , us-west-2 , eu-west-1
 2.Stages:
