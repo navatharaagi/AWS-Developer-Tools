@@ -1278,7 +1278,7 @@ Continuous Integration: The practice of merging all developer working copies to 
 - Every stage must have at least one action.
 - AWS default stages include:
   - Source,Build,Beta
-- A stage can only process one revision at a time.
+- A stage can only process one ```revision``` at a time.
 - Stages are connection through transitions.
 3. Actions:
 - An action is a task performed on the artifact.
@@ -1289,5 +1289,5 @@ Continuous Integration: The practice of merging all developer working copies to 
   - Deploy: Install the application files onto a fleet of instances
   - Invoke: Trigger a Lambda function
   - Approve: Require human approval before moving to the next stage
-  
+
 Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – are referred to as action “providers”
