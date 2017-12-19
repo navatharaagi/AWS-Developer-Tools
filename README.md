@@ -1258,13 +1258,13 @@ Continuous Delivery: A software engineering approach where teams produce softwar
 
 Continuous Integration: The practice of merging all developer working copies to a shared mainline (such as a master branch), at a continuous pace (often several times a day). Each addition (change) is built and tested as quickly as possible.
 
-##### AWS CodePipeline Concepts & Terminology: 
-1.Pipeline:
+##### AWS CodePipeline Concepts & Terminology:
+1. Pipeline:
 - A workflow framework that helps you create and manage the release process. (blueprint)
 - It is how you specify, build, coordinate, monitor, and execute your specific release process.
 - Consists of:
-    - Stages (which consist of Actions)
-    - Transitions (between each Stage)
+  - Stages (which consist of Actions)
+  - Transitions (between each Stage)
 - The first time you create a pipeline (AWS Console) an S3 bucket is automatically created that will store the pipeline’s artifacts:
     - Created in the same region as your pipeline
     - The bucket is named “codepipeline-<REGION>-<RANDOM_10_DIGIT_#>” ! - We can have up to 20 pipelines per AWS account
