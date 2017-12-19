@@ -1287,6 +1287,7 @@ Continuous Integration: The practice of merging all developer working copies to 
   - Build: Code is built (i.e. Jenkins)
   - Test: Run the code through a test provider (i.e. BlazeMeter, Apica, etc.)  
   - Deploy: Install the application files onto a fleet of instances
-    - Invoke: Trigger a Lambda function
-    - Approve: Require human approval before moving to the next stage
+  - Invoke: Trigger a Lambda function
+  - Approve: Require human approval before moving to the next stage
+  
 Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – are referred to as action “providers”
