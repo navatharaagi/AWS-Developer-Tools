@@ -1279,7 +1279,7 @@ Continuous Integration: The practice of merging all developer working copies to 
 - AWS default stages include:
   - Source,Build,Beta
 - A stage can only process one ```revision``` at a time.
-- Stages are connection through transitions.
+- Stages are connection through ```transitions```.
 3. Actions:
 - An action is a task performed on the artifact.
 - Action tasks include:
