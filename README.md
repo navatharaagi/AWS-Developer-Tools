@@ -1257,3 +1257,35 @@ Source Files-—>Build-—>Deployment-—>Testing Environment-—>Deployment-->P
 Continuous Delivery: A software engineering approach where teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims for building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. ```A straightforward and repeatable deployment process is important for continuous delivery.```
 
 Continuous Integration: The practice of merging all developer working copies to a shared mainline (such as a master branch), at a continuous pace (often several times a day). Each addition (change) is built and tested as quickly as possible.
+
+##### AWS CodePipeline Concepts & Terminology: 
+1.Pipeline:
+- A workflow framework that helps you create and manage the release process. (blueprint)
+- It is how you specify, build, coordinate, monitor, and execute your specific release process.
+- Consists of:
+    - Stages (which consist of Actions)
+    - Transitions (between each Stage)
+- The first time you create a pipeline (AWS Console) an S3 bucket is automatically created that will store the pipeline’s artifacts:
+    - Created in the same region as your pipeline
+    - The bucket is named “codepipeline-<REGION>-<RANDOM_10_DIGIT_#>” ! - We can have up to 20 pipelines per AWS account
+- Pipelines must be in one of the following regions:
+    - us-east-1 , us-west-2 , eu-west-1
+2.Stages:
+- Each pipeline is broken up into broad sections called stages.
+- Stages are used to categorize, execute, and monitor actions.
+- Stages are completed in order – as configured in the pipeline.
+- Every stage must have at least one action.
+- AWS default stages include:
+    - Source,Build,Beta
+ - A stage can only process one revision at a time.
+- Stages are connection through transitions.
+3.Actions:
+- An action is a task performed on the artifact.
+- Action tasks include:
+    - Source: Monitors the “source” location (i.e. CodeCommit, S3, GitHub) for new commits or uploaded revision – and starts the release process if found
+    - Build: Code is built (i.e. Jenkins)
+    - Test: Run the code through a test provider (i.e. BlazeMeter, Apica, etc.)  
+    - Deploy: Install the application files onto a fleet of instances
+    - Invoke: Trigger a Lambda function
+    - Approve: Require human approval before moving to the next stage
+Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – are referred to as action “providers”
