@@ -1239,7 +1239,7 @@ $chmod 400 LiveLabKeyPair.pem
 $ssh -i "LiveLabKeyPair.pem” <public-ip of ec2>
 $sudo service codedeploy-agent status  /*to check the code-deploy status
 ```
-#### CodePipeline
+### CodePipeline
 - CodePipeline is a continuous delivery service. It provides the tools to model, visualize, and automate the many steps that are required as part of the software release process.
 - Automation : We can easily automate the entire release process, from the source repository all the way to production servers.
 - Consistency :  Create and repeat a consistent set of steps each time you want to release or update your software.
