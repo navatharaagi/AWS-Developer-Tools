@@ -1297,5 +1297,5 @@ Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – 
 - For example: The un-built source files being passed into the “build” stage are the “input artifacts.” The built files (after running through Jenkins), are the “output artifacts.”
 - The “output artifacts” of a stage are then passed to the next stage via transitions.
 - Artifacts are stored in the S3 bucket that was created or designated when you create a pipeline.
-- Transitions: tell the artifact what stage to go to next, and act as a delivery system between them.
+- ```Transitions```: tell the artifact what stage to go to next, and act as a delivery system between them.
 - Transitions can be enabled or disabled to allow or prevent upcoming stages to be run.
