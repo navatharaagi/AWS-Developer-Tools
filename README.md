@@ -1251,8 +1251,8 @@ Source Files-—>Build-—>Deployment-—>Testing Environment-—>Deployment-->P
 - Source files which have to be built into an actually application,Once built application files to be deployed on to the Test Servers,Once the application is tested by Human testers,Automated s/w, or both.If bugs are found by testers then the code could be sent back to the developers & process can start it as new. If application is bug free then they can decide to deploy to Production servers where customers can access & use the s/w.  
 - Source Files:Uses  CodeCommit,S3,Github
 - Build: Uses Jenkins
-- Deployment: Uses CodeDeploy
-- Testing Environment: Uses Testers,EC2,Apica,Solano
+- Deployment: Uses like CodeDeploy
+- Testing Environment: Uses like Testers,EC2,Apica,Solano
 - Production Environment: Uses like EC2, Customers
 
 Continuous Delivery: A software engineering approach where teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims for building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. ```A straightforward and repeatable deployment process is important for continuous delivery.```
