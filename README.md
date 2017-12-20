@@ -1259,7 +1259,7 @@ Continuous Delivery: A software engineering approach where teams produce softwar
 
 Continuous Integration: The practice of merging all developer working copies to a shared mainline (such as a master branch), at a continuous pace (often several times a day). Each addition (change) is built and tested as quickly as possible.
 
-##### AWS CodePipeline Concepts & Terminology:
+#### AWS CodePipeline Concepts & Terminology:
 1. Pipeline:
 - A workflow framework that helps you create and manage the release process. (blueprint)
 - It is how you specify, build, coordinate, monitor, and execute your specific release process.
