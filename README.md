@@ -1246,7 +1246,7 @@ $sudo service codedeploy-agent status  /*to check the code-deploy status
 - Speed up the delivery process :  Speed up the release process through automation.
 - Use existing tools : CodePipeline integrates with many other AWS services (CodeCommit, CodeDeploy, S3, OpsWorks), as well as other major developer and DevOps platforms such as Jenkins and GitHub.
 - Easy to visualize and view :  See each stage of the release process, their status, and position.
-##### Common Software Release Process:
+#### Common Software Release Process:
 Source Files—>Build—>Deployment—>Testing Environment—>Deployment->Production Environment. Including Customer Feedback & Developer Updates
 - Source files which have to be built into an actually application,Once built application files to be deployed on to the Test Servers,Once the application is tested by Human testers,Automated s/w, or both.If bugs are found by testers then the code could be sent back to the developers & process can start it as new. If application is bug free then they can decide to deploy to Production servers where customers can access & use the s/w.  
 - Source Files: Uses like CodeCommit,S3,Github
