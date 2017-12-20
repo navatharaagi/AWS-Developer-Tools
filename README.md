@@ -1302,6 +1302,6 @@ Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – 
 - ```Transitions```: tell the artifact what stage to go to next, and act as a delivery system between them.
 - Transitions can be enabled or disabled to allow or prevent upcoming stages to be run.
 
-##### CodePipeline: Setup & Configuration
+#### CodePipeline: Setup & Configuration
 1. IAM Policy: Attach the “AWSCodePipelineFullAccess” IAM policy to any users or roles that we want to grant CodePipeline access.
 2. Install and configure the AWS CLI
