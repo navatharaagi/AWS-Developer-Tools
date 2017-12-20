@@ -1253,7 +1253,7 @@ Source Files-—>Build-—>Deployment-—>Testing Environment-—>Deployment-->P
 - Build: Uses Jenkins
 - Deployment: Uses CodeDeploy
 - Testing Environment: Uses Testers,EC2,Apica,Solano
-- Production Environment: Uses EC2, Customers
+- Production Environment: Uses like EC2, Customers
 
 Continuous Delivery: A software engineering approach where teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims for building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. ```A straightforward and repeatable deployment process is important for continuous delivery.```
 
