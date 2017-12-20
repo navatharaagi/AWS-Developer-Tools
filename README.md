@@ -1292,7 +1292,7 @@ Continuous Integration: The practice of merging all developer working copies to 
 
 Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – are referred to as action “providers”
 4.Revisions, Artifacts & Transitions:
-- ```Revision: is the general term used to describe the code “update” or version that is currently running through the pipeline.
+- ```Revision```: is the general term used to describe the code “update” or version that is currently running through the pipeline.
 - Artifacts: refer to the actual set of files (objects) that are being passed through the pipeline, and is categorized by input or output artifacts.
 - For example: The un-built source files being passed into the “build” stage are the “input artifacts.” The built files (after running through Jenkins), are the “output artifacts.”
 - The “output artifacts” of a stage are then passed to the next stage via transitions.
