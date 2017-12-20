@@ -1291,6 +1291,7 @@ Continuous Integration: The practice of merging all developer working copies to 
   - Approve: Require human approval before moving to the next stage
 
 Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – are referred to as action “providers”
+
 4.Revisions, Artifacts & Transitions:
 - ```Revision```: is the general term used to describe the code “update” or version that is currently running through the pipeline.
 - ```Artifacts```: refer to the actual set of files (objects) that are being passed through the pipeline, and is categorized by input or output artifacts.
