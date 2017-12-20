@@ -1272,7 +1272,7 @@ Continuous Integration: The practice of merging all developer working copies to 
 - Pipelines must be in one of the following regions:
   - us-east-1 , us-west-2 , eu-west-1
 2. Stages:
-- Each pipeline is broken up into broad sections called stages.
+- Each pipeline is broken up into broad sections called ```stages```.
 - Stages are used to categorize, execute, and monitor actions.
 - Stages are completed in order – as configured in the pipeline.
 - Every stage must have at least one action.
