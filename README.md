@@ -1293,7 +1293,7 @@ Continuous Integration: The practice of merging all developer working copies to 
 
 Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – are referred to as action “providers”
 
-4.Revisions, Artifacts & Transitions:
+4. Revisions, Artifacts & Transitions:
 - ```Revision```: is the general term used to describe the code “update” or version that is currently running through the pipeline.
 - ```Artifacts```: refer to the actual set of files (objects) that are being passed through the pipeline, and is categorized by input or output artifacts.
 - For example: The un-built source files being passed into the “build” stage are the “input artifacts.” The built files (after running through Jenkins), are the “output artifacts.”
@@ -1304,4 +1304,4 @@ Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – 
 
 ##### CodePipeline: Setup & Configuration
 1. IAM Policy: Attach the “AWSCodePipelineFullAccess” IAM policy to any users or roles that we want to grant CodePipeline access.
-2) Install and configure the AWS CLI
+2. Install and configure the AWS CLI
