@@ -1248,6 +1248,7 @@ $sudo service codedeploy-agent status  /*to check the code-deploy status
 - Easy to visualize and view :  See each stage of the release process, their status, and position.
 ##### Software Release Process:
 Source Files-—>Build-—>Deployment-—>Testing Environment-—>Deployment-->Production Environment. Including Customer Feedback & Developer Updates
+- Source files which have to be built into an actually application,Once built application files to be deployed on to the Test Servers,Once the application is tested by Human testers,Automated s/w, or both.If bugs are found by testers then the code could be sent back to the developers & process can start it as new. If application is bug free then they can decide to deploy to Production servers where customers can access & use the s/w.  
 - Source Files: CodeCommit,S3,Github
 - Build: Jenkins
 - Deployment: CodeDeploy
