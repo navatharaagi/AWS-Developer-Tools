@@ -1575,9 +1575,9 @@ two lines of text in the “jenkins” file:
 7) Restart Jenkins (run the command):
  ```service jenkins restart```
 ###### Step 7 - Configure Jenkins:
- 1) Navigate to the directory /var/lib/jenkins/secrets
- 2) Cat the file “initialAdminPassword”
- 3) Record the password
+1) Navigate to the directory /var/lib/jenkins/secrets
+2) Cat the file “initialAdminPassword”
+3) Record the password
  4) Open a browser and navigate to the address:
   <EC2_IP_ADDRESS>:8080
  5) When prompted, enter the password you just recorded
