@@ -1502,8 +1502,8 @@ and deployed HTML code).
 - Repository: <account_name>/aws-codepipeline-jenkinsaws-codedeploy_linux
 - Branch: master
 - Stage 2
-! Name: Build
-! Provider: Jenkins
+- Name: Build
+- Provider: Jenkins
 ! Stage 3
 ! Name: Beta
 ! Provider: CodeDeploy
