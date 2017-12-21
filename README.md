@@ -1307,7 +1307,7 @@ Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – 
 2. Install and configure the AWS CLI
 - AWS—>IAM—>Users—>select “user1”—>Attach Policy—> “AWSCodePipelineFullAccess”—>Attach
 
-CodePipeline Basics
+### CodePipeline Basics
 1.Creating a Simple Pipeline:
 - We are going to create a pipeline called “FirstTestPipeline” & this pipeline is going to incorporate & automate every step that our User1 pushes the commit to CodeCommit through those new files been deployed all the way to our EC2 instance.
 - Specifically anytime User1 pushes a commit to the Master branch of the repo “wonderwidgets”, CodePipeline will detect that a new commit has been pushed. CodePipeline then communicate it to CodeDeploy that the selected application & Deployment group should be launched. CodeDeploy will then create a new Revision, taking directions from the Appsec file & launch it to Deployment. As a result deployment has occurred with the New files & changes made to the “wonderwidgets” repo.
