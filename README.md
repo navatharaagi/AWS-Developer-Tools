@@ -1329,3 +1329,7 @@ Pipeline”.
 - Once the Pipeline is being created it will immediately Run & when it does Run, it takes the most recent version of the files of "wonderwidget" repo & Deploys them.
 - Now goto CLI, login to EC2 instance of which our files are deployed to
 ```sh
+$ls /*wonderwidgets dir has to be listed
+$cd wonderwidgets
+$ls -l  /* has to list pipeline.txt file ie.,it installed on our EC2
+```
