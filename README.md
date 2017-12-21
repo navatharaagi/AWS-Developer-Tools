@@ -1550,9 +1550,9 @@ yum install jenkins -y
 gem install rake
 gem install haml
 ```
-! Default storage
-! Give the instance a Name value
-! Create a new Security Group, and have these ports open:
+  - Default storage
+  - Give the instance a Name value
+  - Create a new Security Group, and have these ports open:
 ! SSH (22)
 ! HTTP (80)
 ! Custom TCP (8080)
