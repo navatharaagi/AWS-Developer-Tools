@@ -1630,7 +1630,7 @@ choose to “Create Role” and follow the instructions
 7) Review and Launch (click “Create pipeline”)
 ###### Step 9 - Run & View Results:
 1) Watch the Pipeline run
-! Hopefully there will not be any errors, and all stages will
+  - Hopefully there will not be any errors, and all stages will
 complete with a status of “succeeded”
 2) Verify that everything has worked successfully:
 ! In a web browser, navigate to:
