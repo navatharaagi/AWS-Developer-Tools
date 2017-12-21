@@ -1432,11 +1432,13 @@ aws codepipeline disable-stage-transition
 --transition-type Inbound
 --reason “<REASON>“
 ```
-If currently disabled:
+- If currently disabled:
 1) Run the command:
+```sh
 aws codepipeline enable-stage-transition
 --pipeline-name <PIPELINE_NAME>
 --stage-name <STAGE_NAME>
 --transition-type Inbound
+```
 4) Retry failed actions
 5) Delete pipelines
