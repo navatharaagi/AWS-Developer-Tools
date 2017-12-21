@@ -1487,7 +1487,7 @@ $ls /*has to list "appsec.yml","newfile.txt","secondfile.txt" files
 
 ### CodePipeline Advanced Features
 #### 1. Creating a Pipeline with GitHub (source) & Jenkins (build)
-Our Second Pipeline:
+##### Our Second Pipeline:
 ! This pipeline is going to use a code sample provided by
 AWS.
 ! The purpose of the Build Stage (Jenkins) in this example is
