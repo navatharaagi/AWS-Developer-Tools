@@ -1369,7 +1369,7 @@ save & exit
 $ls  /*has to list CLIPipelineTemplate.json
 $aws codepipeline create-pipeline --cli-input-json file://CLIPipelineTemplate.json  /* gives json formatted o/p ie.,2nd pipeline is created
 ```
-- Now goto AWS Console->CodePipeline->Click on "SimpleClIPipeline"->we can see that 'Source' stage as succeeded & 'Beta' stage (where Deployment occuring) in progress& succeeded.
+- Now goto AWS Console->CodePipeline->Click on "SimpleClIPipeline"->we can see that 'Source' stage as succeeded & 'Beta' stage (where Deployment occuring)in progress & then succeeded.
 - Now goto CLI, connect to EC2 instance
 ```sh
 $ls
