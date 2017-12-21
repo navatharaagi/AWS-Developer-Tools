@@ -1356,4 +1356,4 @@ file://<FILE-NAME>.json
 ```sh
 $cd local-wonderwidgets
 $ls    /*lists pipeline.txt file
-$
+$git branch CLIPipelineBranch  /*creating a new branch for second pipeline
