@@ -1480,3 +1480,5 @@ Applications, EC2 instances, or S3 buckets.
 - Goto CLI,
 $ssh into EC2
 $ls  /*lists "livelab"
+$cd livelab
+$ls /* lists "appsec.yml","newfile.txt","secondfile.txt" files
