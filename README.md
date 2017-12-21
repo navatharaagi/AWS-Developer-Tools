@@ -1497,10 +1497,10 @@ successfully, we will be able to access the target EC2
 instance via a web browser and view a web page (the built
 and deployed HTML code).
 - Stage 1
-- Name: Source
-- Provider: Github
-- Repository: <account_name>/aws-codepipeline-jenkinsaws-codedeploy_linux
-- Branch: master
+  - Name: Source
+  - Provider: Github
+  - Repository: <account_name>/aws-codepipeline-jenkinsaws-codedeploy_linux
+  - Branch: master
 - Stage 2
 - Name: Build
 - Provider: Jenkins
@@ -1508,4 +1508,4 @@ and deployed HTML code).
 - Name: Beta
 - Provider: CodeDeploy
 - Application: TestApplication
-! Deployment Group: TestDeploymentGroupName
+- Deployment Group: TestDeploymentGroupName
