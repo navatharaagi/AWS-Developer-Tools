@@ -1399,5 +1399,5 @@ changes, the pipeline will run all stages again.
   - “Retry” if the error was isolated to that action
   - “Release change” if the error requires corrected items from
 previous stages/actions
-***Push a new commit (if the error was in the source files)
+  - Push a new commit (if the error was in the source files)
 5) Delete pipelines
