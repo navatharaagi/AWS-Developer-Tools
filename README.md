@@ -1506,6 +1506,6 @@ and deployed HTML code).
 - Provider: Jenkins
 - Stage 3
 - Name: Beta
-! Provider: CodeDeploy
-! Application: TestApplication
+- Provider: CodeDeploy
+- Application: TestApplication
 ! Deployment Group: TestDeploymentGroupName
