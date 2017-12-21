@@ -1349,7 +1349,7 @@ then get:
 new pipeline.
 4) Generate the new pipeline by uploading it to AWS using the
 command:
-``` aws codepipeline create-pipeline --cli-input-json file://<FILE-NAME>.json```
+```aws codepipeline create-pipeline --cli-input-json file://<FILE-NAME>.json```
 
 - Goto CLI, @User1 login
 ```sh
