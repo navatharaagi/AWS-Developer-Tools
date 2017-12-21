@@ -1478,10 +1478,12 @@ Applications, EC2 instances, or S3 buckets.
 - Now goto AWS Console->CodePipeline->Get Started->Name-> "LiveLabPipeline"->Source Provider->select "AWS CodeCommit"->Repo name->"LiveLabRepo"->Branch name->select "Master"->Build Provider-> select "No Build"->Deployment provider->select "AWS CodeDeploy"->Application name->select "LiveLabApplication"->Deployment Group->"LiveLabDeploymentGroup"->Role name->click on "create role"->[automatically creates "AWS-CodePipeline-Service" role]->Review->create->Pipeline created->Source & Beta stages must succeed.
 - AWS->EC2->select "LiveLabCodeDeployInstance"->connect->copy ssh command
 - Goto CLI,
+```sh
 $ssh into EC2
 $ls  /*has to list "livelab"
 $cd livelab
 $ls /*has to list "appsec.yml","newfile.txt","secondfile.txt" files
+```
 
 ### CodePipeline Advanced Features
-#### 1. Creating a Pipeline with GitHub (source) & Jenkins (build) 
+#### 1. Creating a Pipeline with GitHub (source) & Jenkins (build)
