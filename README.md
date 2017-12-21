@@ -1403,4 +1403,10 @@ previous stages/actions
 5) Delete pipelines
 - AWS Console->CodePipeline->All Pipelines->click on a pipeline->Edit->Delete->enter name of the pipeline to confirm->Delete
 
-#### 3.Managing a Pipeline from the AWS C
+#### 3.Managing a Pipeline from the AWS CLI
+Items we can Manage in the AWS CLI:
+1) View pipelines and detailed pipeline information
+2) Edit pipelines
+3) Disable or enable transitions between stages
+4) Retry failed actions
+5) Delete pipelines 
