@@ -1461,4 +1461,8 @@ aws codepipeline retry-stage-execution --cli-input-json
  file://<RETRY_FILE_NAME>.json
  - “Retry” if the error was isolated to that action
  - Push a new commit (if the error was in the source files)
-5) Delete pipelines
+5) Delete pipelines:
+```aws codepipeline delete-pipeline --name <PIPELINE_NAME>```
+*Note: Deleting a pipeline does not delete other AWS resources
+that have been provisioned or utilized. Such as CodeDeploy
+Applications, EC2 instances, or S3 buckets.
