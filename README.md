@@ -1570,6 +1570,7 @@ two lines of text in the “jenkins” file:
  . /etc/init.d/functions:
 # Custom Path
 export PATH="/usr/local/bin:/usr/bin:$PATH”
+```
 6) Save and exit
 7) Restart Jenkins (run the command):
  service jenkins restart
