@@ -1525,8 +1525,8 @@ and deployed HTML code).
 1) Log into your GitHub account
 2) Navigate to this URL:
 ```sh
-! Linux: https://github.com/awslabs/aws-codepipeline-jenkins-awscodedeploy_linux
-! Windows: https://github.com/awslabs/AWSCodePipeline-JenkinsAWSCodeDeploy_windows
+- Linux: https://github.com/awslabs/aws-codepipeline-jenkins-awscodedeploy_linux
+- Windows: https://github.com/awslabs/AWSCodePipeline-JenkinsAWSCodeDeploy_windows
 ```
 3) Click on “Fork”
   - This will copy this repository to your own GitHub account
