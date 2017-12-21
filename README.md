@@ -1592,7 +1592,6 @@ two lines of text in the “jenkins” file:
 14) Enter a name for the Jenkins Project and select “Freestyle project”, click “OK”
 15) Under “General” check the box next to “Execute concurrent builds if necessary”
 16) Under “Source Code Management”, select “AWS CodePipeline”
-- Set “AWS Region” to the region your CodePipeline S3
-bucket and Pipeline are (or will be) located in
-- For “Category” select “Build”
+  - Set “AWS Region” to the region your CodePipeline S3 bucket and Pipeline are (or will be) located in
+  - For “Category” select “Build”
 - Leave every other field blank or it’s default entry
