@@ -1396,8 +1396,8 @@ changes, the pipeline will run all stages again.
 - If an action fails:
 - Troubleshoot and fix the issue
 - Click on “Retry” OR “Release change” (at the top):
-- “Retry” if the error was isolated to that action
-- “Release change” if the error requires corrected items from
+  - “Retry” if the error was isolated to that action
+  - “Release change” if the error requires corrected items from
 previous stages/actions
 ***Push a new commit (if the error was in the source files)
 5) Delete pipelines
