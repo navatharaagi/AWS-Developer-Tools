@@ -1343,11 +1343,11 @@ then get:
   - Service role ARN
   - S3 bucket location for artifacts
 - To get the template, run the command:
-```aws codepipeline get-pipeline -–name <PIPELINE_NAME>```
+```aws codepipeline get-pipeline --name <PIPELINE_NAME>```
 2) Create a .json file and copy/paste the JSON template into it.
-3) Edit the JSON template to the specifications you want for the
+3) Edit the JSON template to the specifications we want for the
 new pipeline.
 4) Generate the new pipeline by uploading it to AWS using the
 command:
-aws codepipeline create-pipeline --cli-input-json
+```aws codepipeline create-pipeline --cli-input-json
 file://<FILE-NAME>.json
