@@ -1634,4 +1634,4 @@ choose to “Create Role” and follow the instructions
 complete with a status of “succeeded”
 2) Verify that everything has worked successfully:
 - In a web browser, navigate to:
- <EC2_IP_ADDRESS>/index.html
+  ```<EC2_IP_ADDRESS>/index.html```
