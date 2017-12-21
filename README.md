@@ -1633,5 +1633,5 @@ choose to “Create Role” and follow the instructions
   - Hopefully there will not be any errors, and all stages will
 complete with a status of “succeeded”
 2) Verify that everything has worked successfully:
-! In a web browser, navigate to:
+- In a web browser, navigate to:
  <EC2_IP_ADDRESS>/index.html
