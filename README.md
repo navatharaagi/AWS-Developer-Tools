@@ -1382,8 +1382,15 @@ Items We can Manage in the AWS Console:
 - AWS Console->CodePipeline->All Pipelines->click on a pipeline for detailed info
 2) Edit pipelines
 - AWS Console->CodePipeline->All Pipelines->click on a pipeline->Edit
-Any time that you edit a pipeline and “Save pipeline changes”
-changes, the pipeline will run all stages again. 
+- Any time that we edit a pipeline and “Save pipeline changes”
+changes, the pipeline will run all stages again.
 3) Disable or enable transitions between stages
+If currently enabled:
+1) Click on the “down arrow” transition icon between stages
+2) Enter a reason why you are disabling the transition
+3) Click “disable”
+- If currently disabled:
+1) Click on the “down arrow” transition icon between stages
+2) Click “enable”
 4) Retry failed actions
 5) Delete pipelines
