@@ -1521,7 +1521,7 @@ and deployed HTML code).
 8) Create a new Pipeline
 9) Run Pipeline and view results
 
-Step 1 - Getting the Source Files into GitHub:
+###### Step 1 - Getting the Source Files into GitHub:
 1) Log into your GitHub account
 2) Navigate to this URL:
 ```sh
