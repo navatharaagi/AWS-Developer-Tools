@@ -1556,5 +1556,5 @@ gem install haml
     - SSH (22)
     - HTTP (80)
     - Custom TCP (8080)
-! Launch & select or create a key pair
+  - Launch & select or create a key pair
 2) Wait for the instance to finish initializing before moving on
