@@ -1422,7 +1422,7 @@ we want for our updated/edit Pipeline
 - Upload the edited .json structure file to AWS:
 ```codepipeline update-pipeline --cli-input-json
 file://<FILE_NAME>.json```
-3) Disable or enable transitions between stages
+3) Disable or enable transitions between stages:
 - If currently enabled:
 ```sh
 aws codepipeline disable-stage-transition
@@ -1441,7 +1441,7 @@ aws codepipeline enable-stage-transition
 4) Retry failed actions:
 - View the most recent “status” of each action the pipeline,
 and identify the action that failed:
-aws codepipeline get-pipeline-state --name <PIPELINE_NAME>
+```aws codepipeline get-pipeline-state --name <PIPELINE_NAME>```
 2) Identify and note the stage that failed & the
 “pipelineExecutionID”
 3) Create a .json file and open it in a plain-text editor
