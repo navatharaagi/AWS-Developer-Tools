@@ -1339,8 +1339,8 @@ $ls -l /* has to list pipeline.txt file ie.,file installed on our EC2
 existing pipeline (created in the AWS Console), because you
 then get:
 - Template outline (all sections/formatting)
-! Prepopulated fields (such as):
-! Service role ARN
+- Prepopulated fields (such as):
+- Service role ARN
 ! S3 bucket location for artifacts
 ! To get the template, run the command:
 aws codepipeline get-pipeline –name <PIPELINE_NAME>
