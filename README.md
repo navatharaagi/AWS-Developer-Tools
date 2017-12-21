@@ -1306,3 +1306,6 @@ Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – 
 1. IAM Policy: Attach the “AWSCodePipelineFullAccess” IAM policy to any users or roles that we want to grant CodePipeline access.
 2. Install and configure the AWS CLI
 - AWS—>IAM—>Users—>select “user1”—>Attach Policy—> “AWSCodePipelineFullAccess”—>Attach
+
+Creating a codepipeline(AWS Console)
+ 
