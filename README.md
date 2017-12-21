@@ -1379,6 +1379,7 @@ $ls -l  /* has to list anotherfile.txt with same updated timeline
 #### 2.Managing a Pipeline from the AWS Console
 Items We can Manage in the AWS Console:
 1) View pipelines and detailed pipeline information
+- AWS Console->CodePipeline->All Pipelines->click on a pipeline for detailed info
 2) Edit pipelines
 3) Disable or enable transitions between stages
 4) Retry failed actions
