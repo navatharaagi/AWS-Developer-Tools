@@ -1441,7 +1441,7 @@ aws codepipeline enable-stage-transition
 --transition-type Inbound
 ```
 4) Retry failed actions
-1) View the most recent “status” of each action the pipeline,
+- View the most recent “status” of each action the pipeline,
 and identify the action that failed:
 aws codepipeline get-pipeline-state --name <PIPELINE_NAME>
 2) Identify and note the stage that failed & the
@@ -1460,5 +1460,5 @@ appropriate information where required:
 aws codepipeline retry-stage-execution --cli-input-json
  file://<RETRY_FILE_NAME>.json
 ! “Retry” if the error was isolated to that action
-! Push a new commit (if the error was in the source files) 
+! Push a new commit (if the error was in the source files)
 5) Delete pipelines
