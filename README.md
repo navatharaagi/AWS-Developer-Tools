@@ -1492,12 +1492,12 @@ $ls /*has to list "appsec.yml","newfile.txt","secondfile.txt" files
 AWS.
 - The purpose of the Build Stage (Jenkins) in this example is
 to convert Haml code to HTML code.
-! Once the pipeline has been created, configured, and run
+- Once the pipeline has been created, configured, and run
 successfully, we will be able to access the target EC2
 instance via a web browser and view a web page (the built
 and deployed HTML code).
-! Stage 1
-! Name: Source
+- Stage 1
+- Name: Source
 ! Provider: Github
 ! Repository: <account_name>/aws-codepipeline-jenkinsaws-codedeploy_linux
 ! Branch: master
