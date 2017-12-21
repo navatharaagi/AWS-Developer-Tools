@@ -1358,3 +1358,6 @@ $cd local-wonderwidgets
 $ls    /*lists pipeline.txt file
 $git branch CLIPipelineBranch  /*creating a new branch for second pipeline
 $git checkout CLIPipelineBranch
+$touch anotherfile.txt
+$git add anotherfile.txt
+$git commit -m "file for 2nd pipeline"
