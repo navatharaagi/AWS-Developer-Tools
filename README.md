@@ -1519,4 +1519,11 @@ and deployed HTML code).
 6) Configure Jenkins to access Rake on that EC2 server
 7) Configure Jenkins on that EC2 server
 8) Create a new Pipeline
-  9) Run Pipeline and view results
+9) Run Pipeline and view results
+##### Step 1 - Getting the Source Files into GitHub:
+1) Log into your GitHub account
+2) Navigate to this URL:
+! Linux: https://github.com/awslabs/aws-codepipeline-jenkins-awscodedeploy_linux
+! Windows: https://github.com/awslabs/AWSCodePipeline-JenkinsAWSCodeDeploy_windows
+3) Click on “Fork”
+! This will copy this repository to your own GitHub account
