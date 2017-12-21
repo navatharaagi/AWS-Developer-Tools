@@ -1365,4 +1365,4 @@ $git push origin CLIPipelineBranch
 $cd ..
 $aws codepipeline get-pipeline --name FirstTestPipeline /*gives json template, Copy it
 $touch CLIPipelineTemplate.json
-$nano CLIPipelineTemplate.json
+$nano CLIPipelineTemplate.json  /*paste the copied json template
