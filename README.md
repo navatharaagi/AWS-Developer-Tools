@@ -1445,7 +1445,7 @@ and identify the action that failed:
 - Identify and note the stage that failed & the
 “pipelineExecutionID”
 - Create a .json file and open it in a plain-text editor
-4) Input the following lines into the .json file and fill in the
+- Input the following lines into the .json file and fill in the
 appropriate information where required:
 {
 "pipelineName": “<PIPELINE_NAME>“,
@@ -1453,8 +1453,8 @@ appropriate information where required:
 "pipelineExecutionId": “<ID #>“,
 "retryMode": "FAILED_ACTIONS”
 }
-5) Troubleshoot and fix the issue
-6) Upload the .json file to re-run the failed action:
+- Troubleshoot and fix the issue
+- Upload the .json file to re-run the failed action:
 aws codepipeline retry-stage-execution --cli-input-json
  file://<RETRY_FILE_NAME>.json
 ! “Retry” if the error was isolated to that action
