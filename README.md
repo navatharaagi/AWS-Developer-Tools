@@ -1374,6 +1374,6 @@ $aws codepipeline create-pipeline --cli-input-json file://CLIPipelineTemplate.js
 ```sh
 $ls
 $cd wonderwidgets
-$ls -l  /* has to list anotherfile.txt
+$ls -l  /* has to list anotherfile.txt with same updated timeline 
 ```
 #### 2.Managing a Pipeline from the AWS Console
