@@ -1537,10 +1537,11 @@ and deployed HTML code).
 ###### Step 4 - Install Jenkins:
 ###### Step 5 - Install Rake & Haml:
 1) Launch a new instance with the following settings:
-! AMI: Amazon Linux AMI
-! Instance Type: t2.micro
-! Set the IAM role to the “Jenkins” role you just created
-! Under “Advanced Details” insert the following Bash Script:
+- AMI: Amazon Linux AMI
+- Instance Type: t2.micro
+- Set the IAM role to the “Jenkins” role you just created
+- Under “Advanced Details” insert the following Bash Script:
+```sh
 #! /bin/bash
 yum update -y
 wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
