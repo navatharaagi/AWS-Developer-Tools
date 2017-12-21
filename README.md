@@ -1549,6 +1549,7 @@ rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 yum install jenkins -y
 gem install rake
 gem install haml
+```
 ! Default storage
 ! Give the instance a Name value
 ! Create a new Security Group, and have these ports open:
