@@ -1418,7 +1418,10 @@ aws codepipeline get-pipeline --name <PIPELINE_NAME>
 ><FILE_NAME>.json /*giving '>'for o/p of get-pipelinein to. json file
 ```
 - Edit the contents of the .json file to meet specifications
-you want for your updated/edit Pipeline:
+we want for our updated/edit Pipeline
+- Upload the edited .json structure file to AWS:
+codepipeline update-pipeline --cli-input-json
+file://<FILE_NAME>.json
 3) Disable or enable transitions between stages
 4) Retry failed actions
 5) Delete pipelines
