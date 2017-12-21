@@ -1412,7 +1412,7 @@ Items we can Manage in the AWS CLI:
 - To view the most recent “status” of each action of a pipeline:
 ```aws codepipeline get-pipeline-state --name <PIPELINE_NAME>```
 2) Edit pipelines:
-- Download the pipeline structure JSON file:
+- ```Download``` the pipeline structure JSON file:
 ```sh
 aws codepipeline get-pipeline --name <PIPELINE_NAME> ><FILE_NAME>.json
 /*giving '>' here i.e., o/p of get-pipeline i/p to. json file
