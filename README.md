@@ -1425,11 +1425,13 @@ file://<FILE_NAME>.json```
 3) Disable or enable transitions between stages
 - If currently enabled:
 1) Run the command:
+```sh
 aws codepipeline disable-stage-transition
 --pipeline-name <PIPELINE_NAME>
 --stage-name <STAGE_NAME>
 --transition-type Inbound
 --reason “<REASON>“
+```
 If currently disabled:
 1) Run the command:
 aws codepipeline enable-stage-transition
