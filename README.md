@@ -1381,6 +1381,9 @@ Items We can Manage in the AWS Console:
 1) View pipelines and detailed pipeline information
 - AWS Console->CodePipeline->All Pipelines->click on a pipeline for detailed info
 2) Edit pipelines
+- AWS Console->CodePipeline->All Pipelines->click on a pipeline->Edit
+Any time that you edit a pipeline and “Save pipeline changes”
+changes, the pipeline will run all stages again. 
 3) Disable or enable transitions between stages
 4) Retry failed actions
 5) Delete pipelines
