@@ -1470,4 +1470,4 @@ aws codepipeline retry-stage-execution --cli-input-json file://<RETRY_FILE_NAME>
 that have been provisioned or utilized. Such as CodeDeploy
 Applications, EC2 instances, or S3 buckets.
 
-#### CodePipeline  "Simple Two-Stage Pipeline" example
+#### CodePipeline  "Simple Two-Stage Pipeline" example (Continuation of CodeDeploy Basic Example)
