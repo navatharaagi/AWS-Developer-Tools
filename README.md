@@ -1336,13 +1336,13 @@ $ls -l /* has to list pipeline.txt file ie.,file installed on our EC2
 ##### Creating a Pipeline (AWS CLI)
 1) Generate a CodePipeline JSON Template:
 - The easiest way to do this is to generate the template from an
-existing pipeline (created in the AWS Console), because you
+existing pipeline (created in the AWS Console), because we
 then get:
 - Template outline (all sections/formatting)
 - Prepopulated fields (such as):
-- Service role ARN
-! S3 bucket location for artifacts
-! To get the template, run the command:
+  - Service role ARN
+  - S3 bucket location for artifacts
+- To get the template, run the command:
 aws codepipeline get-pipeline –name <PIPELINE_NAME>
 2) Create a .json file and copy/paste the JSON template into it.
 3) Edit the JSON template to the specifications you want for the
