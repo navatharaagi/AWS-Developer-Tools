@@ -1367,3 +1367,4 @@ $aws codepipeline get-pipeline --name FirstTestPipeline /*gives json template, C
 $touch CLIPipelineTemplate.json
 $nano CLIPipelineTemplate.json  /*[ paste the copied json template & Edit "BranchName":"CLIPipelineBranch" & End of the template edit "name":"SimpleCLIPipeline" ]
 save & exit
+$ls  /*has to list CLIPipelineTemplate.json
