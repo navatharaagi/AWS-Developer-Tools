@@ -1597,9 +1597,9 @@ two lines of text in the “jenkins” file:
   - Leave every other field blank or it’s default entry
 17) Under “Build Triggers” check “Poll SCM”
   - In the “schedule” field, input “* * * * *” (that is five asterisks,each separated by a space)
-  ! This will have Jenkins poll AWS CodePipeline every minute
+  - This will have Jenkins poll AWS CodePipeline every minute
   18) Under “Build” click on “Add build step”
-  ! Select “Execute shell”
+  - Select “Execute shell”
   ! In the “Command” field, type in “rake”
   19) Under “Post Build Actions” click in “Add post-build action”
   ! Select “AWS CodePipeline Publisher”
