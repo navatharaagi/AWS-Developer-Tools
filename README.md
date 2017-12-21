@@ -1414,8 +1414,7 @@ Items we can Manage in the AWS CLI:
 2) Edit pipelines:
 - ```Download``` the pipeline structure JSON file:
 ```sh
-aws codepipeline get-pipeline --name <PIPELINE_NAME> ><FILE_NAME>.json
-/*giving '>' here i.e., o/p of get-pipeline i/p to. json file
+aws codepipeline get-pipeline --name <PIPELINE_NAME> ><FILE_NAME>.json /*giving '>' here i.e., o/p of get-pipeline i/p to. json file
 ```
 - Edit the contents of the .json file to meet specifications
 we want for our updated/edit Pipeline
