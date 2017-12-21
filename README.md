@@ -1499,7 +1499,7 @@ and deployed HTML code).
 - Stage 1
   - Name: Source
   - Provider: Github
-  - Repository: <account_name>/aws-codepipeline-jenkinsaws-codedeploy_linux
+  - Repository: ```<account_name>/aws-codepipeline-jenkinsaws-codedeploy_linux```
   - Branch: master
 - Stage 2
   - Name: Build
