@@ -1528,4 +1528,4 @@ and deployed HTML code).
 ! Windows: https://github.com/awslabs/AWSCodePipeline-JenkinsAWSCodeDeploy_windows
 ```
 3) Click on “Fork”
-! This will copy this repository to your own GitHub account
+  - This will copy this repository to your own GitHub account
