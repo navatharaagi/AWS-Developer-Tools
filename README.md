@@ -1586,12 +1586,10 @@ two lines of text in the “jenkins” file:
 8) Install Plugins (Manage Jenkins -> Manage Plugins -> Available) and search for “AWS CodePipeline Plugin” and check the box next to the plugin
 9) Do the same but this time search for “Rake plugin”
 10) Click on “Download now and install after restart”
-11) Click on “Restart Jenkins when installation is complete and no jobs are running”. Jenkins will restart and install
-the plugins
+11) Click on “Restart Jenkins when installation is complete and no jobs are running”. Jenkins will restart and install the plugins
 12) Sign back into Jenkins
 13) Dashboard -> Create new jobs
-14) Enter a name for the Jenkins Project and select
-“Freestyle project”, click “OK”
+14) Enter a name for the Jenkins Project and select “Freestyle project”, click “OK”
 15) Under “General” check the box next to “Execute
 concurrent builds if necessary”
 16) Under “Source Code Management”, select “AWS
