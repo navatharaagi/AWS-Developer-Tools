@@ -1406,7 +1406,8 @@ previous stages/actions
 #### 3.Managing a Pipeline from the AWS CLI
 Items we can Manage in the AWS CLI:
 1) View pipelines and detailed pipeline information
+
 2) Edit pipelines
 3) Disable or enable transitions between stages
 4) Retry failed actions
-5) Delete pipelines 
+5) Delete pipelines
