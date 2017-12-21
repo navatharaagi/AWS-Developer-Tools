@@ -1611,10 +1611,10 @@ two lines of text in the “jenkins” file:
 “Create pipeline”
 2) Give the pipeline a name
 3) Set the “Source Provider” to “GitHub”
-- Select “Connect to Github”
-- Authorize GitHub if prompted
-- For “Repository” select the AWS Repository we “forked” in step 1
-- For “Branch” select “master”
+  - Select “Connect to Github”
+  - Authorize GitHub if prompted
+  - For “Repository” select the AWS Repository we “forked” in step 1
+  - For “Branch” select “master”
 4) Set the “Build provider” to “add Jenkins”
 ! “Provider name” must match what is in the “Provider” field in
 Jenkins (“Jenkins” is default)
