@@ -1368,3 +1368,5 @@ $touch CLIPipelineTemplate.json
 $nano CLIPipelineTemplate.json  /*[ paste the copied json template & Edit "BranchName":"CLIPipelineBranch" & End of the template edit "name":"SimpleCLIPipeline" ]
 save & exit
 $ls  /*has to list CLIPipelineTemplate.json
+$aws codepipeline create-pipeline --cli-input-json
+file://<FILE-NAME>.json
