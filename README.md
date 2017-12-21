@@ -1442,9 +1442,9 @@ aws codepipeline enable-stage-transition
 - View the most recent “status” of each action the pipeline,
 and identify the action that failed:
 ```aws codepipeline get-pipeline-state --name <PIPELINE_NAME>```
-2) Identify and note the stage that failed & the
+- Identify and note the stage that failed & the
 “pipelineExecutionID”
-3) Create a .json file and open it in a plain-text editor
+- Create a .json file and open it in a plain-text editor
 4) Input the following lines into the .json file and fill in the
 appropriate information where required:
 {
