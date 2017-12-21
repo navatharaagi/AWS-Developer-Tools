@@ -1374,3 +1374,7 @@ file://CLIPipelineTemplate.json /* gives json formatted o/p ie.,2nd pipeline is 
 - Now goto AWS Console->CodePipeline->Click on "SimpleClIPipeline"->we can see that 'Source' stage as succeeded & 'Beta' stage (where Deployment occuring) in progress& succeeded.
 - Now goto CLI, connect to EC2 instance
 ```sh
+$ls
+$cd wonderwidgets
+$ls -l  /* has to list anotherfile.txt
+```
