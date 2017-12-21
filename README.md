@@ -1333,3 +1333,4 @@ $ls /*wonderwidgets dir has to be listed
 $cd wonderwidgets
 $ls -l /* has to list pipeline.txt file ie.,file installed on our EC2
 ```
+##### Creating a Pipeline (AWS CLI)
