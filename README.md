@@ -1460,7 +1460,7 @@ appropriate information where required:
 ```
 aws codepipeline retry-stage-execution --cli-input-json
  file://<RETRY_FILE_NAME>.json
- ```
+```
  - “Retry” if the error was isolated to that action
  - Push a new commit (if the error was in the source files)
 5) Delete pipelines:
