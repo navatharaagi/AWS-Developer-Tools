@@ -1583,7 +1583,5 @@ two lines of text in the “jenkins” file:
 5) When prompted, enter the password you just recorded from the Jenkins EC2 instance
 6) Install suggested plugins
 7) Create admin account credentials
-8) Install Plugins (Manage Jenkins -> Manage Plugins ->
- Available) and search for “AWS CodePipeline Plugin”
- and check the box next to the plugin
+8) Install Plugins (Manage Jenkins -> Manage Plugins -> Available) and search for “AWS CodePipeline Plugin” and check the box next to the plugin
  9) Do the same but this time search for “Rake plugin”
