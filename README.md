@@ -1412,6 +1412,9 @@ Items we can Manage in the AWS CLI:
 - To view the most recent “status” of each action of a pipeline:
 ```aws codepipeline get-pipeline-state --name <PIPELINE_NAME>```
 2) Edit pipelines
+Download the pipeline structure JSON file:
+aws codepipeline get-pipeline --name <PIPELINE_NAME>
+><FILE_NAME>.json
 3) Disable or enable transitions between stages
 4) Retry failed actions
 5) Delete pipelines
