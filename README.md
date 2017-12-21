@@ -1574,3 +1574,17 @@ two lines of text in the “jenkins” file:
 6) Save and exit
 7) Restart Jenkins (run the command):
  ```service jenkins restart```
+###### Step 7 - Configure Jenkins:
+ 1) Navigate to the directory /var/lib/jenkins/secrets
+ 2) Cat the file “initialAdminPassword”
+ 3) Record the password
+ 4) Open a browser and navigate to the address:
+  <EC2_IP_ADDRESS>:8080
+ 5) When prompted, enter the password you just recorded
+ from the Jenkins EC2 instance
+ 6) Install suggested plugins
+ 7) Create admin account credentials
+ 8) Install Plugins (Manage Jenkins -> Manage Plugins ->
+ Available) and search for “AWS CodePipeline Plugin”
+ and check the box next to the plugin
+ 9) Do the same but this time search for “Rake plugin”
