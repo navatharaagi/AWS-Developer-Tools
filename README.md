@@ -1532,3 +1532,26 @@ and deployed HTML code).
 ##### Step 2 - Creating an IAM Role for Jenkins:
 1) Create a new role and attached the following policy to it: “AWSCodePipelineCustomActionAccess”
 2) Give the role a name that will make it obvious it is going to be used for a Jenkins server, like “JenkinsEC2Role”
+Step 3 - Launch a new EC2 Instance:
+Step 4 - Install Jenkins:
+Step 5 - Install Rake & Haml:
+1) Launch a new instance with the following settings:
+! AMI: Amazon Linux AMI
+! Instance Type: t2.micro
+! Set the IAM role to the “Jenkins” role you just created
+! Under “Advanced Details” insert the following Bash Script:
+#! /bin/bash
+yum update -y
+wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+yum install jenkins -y
+gem install rake
+gem install haml
+! Default storage
+! Give the instance a Name value
+! Create a new Security Group, and have these ports open:
+! SSH (22)
+! HTTP (80)
+! Custom TCP (8080)
+! Launch & select or create a key pair
+2) Wait for the instance to finish initializing before moving on
