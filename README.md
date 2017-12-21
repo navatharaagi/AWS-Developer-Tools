@@ -1530,7 +1530,7 @@ and deployed HTML code).
 3) Click on “Fork”
   - This will copy this repository to your own GitHub account
 ##### Step 2 - Creating an IAM Role for Jenkins:
-  1) Create a new role and attached the following policy to it:
+1) Create a new role and attached the following policy to it:
   “AWSCodePipelineCustomActionAccess”
-  2) Give the role a name that will make it obvious it is going to
+2) Give the role a name that will make it obvious it is going to
   be used for a Jenkins server, like “JenkinsEC2Role”
