@@ -1312,9 +1312,8 @@ Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – 
 - We are going to create a pipeline called “FirstTestPipeline” & this pipeline is going to incorporate & automate every step that our User1 pushes the commit to CodeCommit through those new files been deployed all the way to our EC2 instance.
 - Specifically anytime User1 pushes a commit to the Master branch of the repo “wonderwidgets”, CodePipeline will detect that a new commit has been pushed. CodePipeline then communicate it to CodeDeploy that the selected application & Deployment group should be launched. CodeDeploy will then create a new Revision, taking directions from the Appsec file & launch it to Deployment. As a result deployment has occurred with the New files & changes made to the “wonderwidgets” repo.
 
-1) Previously we moved the AppSpec file from inside the “localwonderwidgets” repository to the “home” directory of our User1.
+1) Previously we moved the AppSpec file from inside the “local-wonderwidgets” repository to the “home” directory of our User1.
 2) Now move the AppSpec file back into the “local-wonderwidgets” directory from “home” directory of our User1. – which is where it needs to be located for standard CodeDeploy execution protocol.
 3) Add a new file to the “local-wonderwidgets” directory called “Pipeline.txt” – which we will use to verify that our files have deployed correctly once we have created and executed the new pipeline.
-Creating a Pipeline (AWS Console)
-Creating a codepipeline(AWS Console)
+##### Creating a Pipeline (AWS Console)
 - AWS Console->CodePipeline->
