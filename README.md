@@ -1594,4 +1594,16 @@ two lines of text in the “jenkins” file:
 16) Under “Source Code Management”, select “AWS CodePipeline”
   - Set “AWS Region” to the region your CodePipeline S3 bucket and Pipeline are (or will be) located in
   - For “Category” select “Build”
-- Leave every other field blank or it’s default entry
+  - Leave every other field blank or it’s default entry
+17) Under “Build Triggers” check “Poll SCM”
+  ! In the “schedule” field, input “* * * * *” (that is five asterisks,
+  each separated by a space)
+  ! This will have Jenkins poll AWS CodePipeline every minute
+  18) Under “Build” click on “Add build step”
+  ! Select “Execute shell”
+  ! In the “Command” field, type in “rake”
+  19) Under “Post Build Actions” click in “Add post-build action”
+  ! Select “AWS CodePipeline Publisher”
+  ! Under “Output Locations” click “Add”
+  ! Leave the “Location” field empty
+  20) Click “Save”
