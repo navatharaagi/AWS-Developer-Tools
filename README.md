@@ -1553,7 +1553,7 @@ gem install haml
   - Default storage
   - Give the instance a Name value
   - Create a new Security Group, and have these ports open:
-! SSH (22)
+- SSH (22)
 ! HTTP (80)
 ! Custom TCP (8080)
 ! Launch & select or create a key pair
