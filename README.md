@@ -1565,6 +1565,7 @@ gem install haml
 4) Open the file “jenkins” using nano (nano jenkins)
 5) Insert the following (bottom) two lines of text after the (top)
 two lines of text in the “jenkins” file:
+```sh
  # Source function library.
  . /etc/init.d/functions:
 # Custom Path
