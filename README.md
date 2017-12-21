@@ -1479,6 +1479,6 @@ Applications, EC2 instances, or S3 buckets.
 - AWS->EC2->select "LiveLabCodeDeployInstance"->connect->copy ssh command
 - Goto CLI,
 $ssh into EC2
-$ls  /*lists "livelab"
+$ls  /*has to list "livelab"
 $cd livelab
-$ls /* lists "appsec.yml","newfile.txt","secondfile.txt" files
+$ls /*has to list "appsec.yml","newfile.txt","secondfile.txt" files
