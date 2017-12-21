@@ -1407,6 +1407,7 @@ previous stages/actions
 Items we can Manage in the AWS CLI:
 1) View pipelines and detailed pipeline information
 ```aws codepipeline list-pipelines ```
+- For detailed info
 ```aws codepipeline get-pipeline --name <PIPELINE_NAME> ```
 2) Edit pipelines
 3) Disable or enable transitions between stages
