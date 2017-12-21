@@ -1394,7 +1394,7 @@ changes, the pipeline will run all stages again.
   2) Click “enable”
 4) Retry failed actions
 - If an action fails:
-2) Troubleshoot and fix the issue
+- Troubleshoot and fix the issue
 3) Click on “Retry” OR “Release change” (at the top):
 ! “Retry” if the error was isolated to that action
 ! “Release change” if the error requires corrected items from
