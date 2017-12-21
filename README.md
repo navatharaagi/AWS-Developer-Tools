@@ -1456,7 +1456,7 @@ appropriate information where required:
 }
 ```
 - Troubleshoot and fix the issue
-- Upload the .json file to re-run the failed action:
+- Upload the .json file to ```re-run``` the failed action:
 ```
 aws codepipeline retry-stage-execution --cli-input-json file://<RETRY_FILE_NAME>.json
 ```
