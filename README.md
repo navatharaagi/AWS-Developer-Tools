@@ -1605,4 +1605,21 @@ two lines of text in the “jenkins” file:
   - Select “AWS CodePipeline Publisher”
   - Under “Output Locations” click “Add”
   - Leave the “Location” field empty
-  20) Click “Save”
+20) Click “Save”
+Step 8 - Create a new Pipeline:
+1) Navigate CodePipeline in the AWS Console & click
+“Create pipeline”
+2) Give the pipeline a name
+3) Set the “Source Provider” to “GitHub”
+! Select “Connect to Github”
+! Authorize GitHub if prompted
+! For “Repository” select the AWS Repository we “forked” in
+step 1
+! For “Branch” select “master”
+4) Set the “Build provider” to “add Jenkins”
+! “Provider name” must match what is in the “Provider” field in
+Jenkins (“Jenkins” is default)
+! For “Server URL” enter the IP Address of the EC2 server that
+Jenkins is installed on (http://IP_ADDRESS)
+! For “Project name” enter the name you gave the “Project”
+you just created in Jenkins
