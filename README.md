@@ -1517,6 +1517,6 @@ and deployed HTML code).
 4) Install Jenkins on that EC2 server
 5) Install Rake and HAML on that EC2 server
 6) Configure Jenkins to access Rake on that EC2 server
-  7) Configure Jenkins on that EC2 server
-  8) Create a new Pipeline
+7) Configure Jenkins on that EC2 server
+8) Create a new Pipeline
   9) Run Pipeline and view results
