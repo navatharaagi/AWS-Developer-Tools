@@ -1471,5 +1471,8 @@ that have been provisioned or utilized. Such as CodeDeploy
 Applications, EC2 instances, or S3 buckets.
 
 #### CodePipeline  "Simple Two-Stage Pipeline" example (Continuation of CodeDeploy Basic Example)
-- we already have 2 running EC2 instances,
--In CodeCommit we have "LiveLabRepo" with "appsec.yml","newfile.txt","secondfile.txt" files
+- Previously we have 2 running EC2 instances, "LiveLabCodeDeployInstance", "LocalDevServer"
+- In CodeCommit, we have "LiveLabRepo" with "appsec.yml","newfile.txt","secondfile.txt" files in "Master" branch
+- In Codedeploy, we have "LiveLabApplication" with "LiveLabDeploymentGroup"
+
+-  
