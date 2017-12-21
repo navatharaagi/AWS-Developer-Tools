@@ -1602,7 +1602,7 @@ two lines of text in the “jenkins” file:
   - Select “Execute shell”
   - In the “Command” field, type in “rake”
 19) Under “Post Build Actions” click in “Add post-build action”
-  ! Select “AWS CodePipeline Publisher”
-  ! Under “Output Locations” click “Add”
-  ! Leave the “Location” field empty
+  - Select “AWS CodePipeline Publisher”
+  - Under “Output Locations” click “Add”
+  - Leave the “Location” field empty
   20) Click “Save”
