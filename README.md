@@ -1393,4 +1393,11 @@ changes, the pipeline will run all stages again.
   1) Click on the “down arrow” transition icon between stages
   2) Click “enable”
 4) Retry failed actions
+- If an action fails, the action will look like this:
+2) Troubleshoot and fix the issue
+3) Click on “Retry” OR “Release change” (at the top):
+! “Retry” if the error was isolated to that action
+! “Release change” if the error requires corrected items from
+previous stages/actions
+***Push a new commit (if the error was in the source files)
 5) Delete pipelines
