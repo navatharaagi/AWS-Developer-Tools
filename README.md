@@ -1475,4 +1475,5 @@ Applications, EC2 instances, or S3 buckets.
 - In CodeCommit, we have "LiveLabRepo" with "appsec.yml","newfile.txt","secondfile.txt" files in "Master" branch
 - In Codedeploy, we have "LiveLabApplication" with "LiveLabDeploymentGroup"
 
-- Now goto AWS Console->CodePipeline->Get Started->Name-> "LiveLabPipeline"->Source Provider->select "AWS CodeCommit"->Repo name->"LiveLabRepo"->Branch name->select "Master"->Build Provider-> select "No Build"->Deployment provider->select "AWS CodeDeploy"->Application name->select "LiveLabApplication"->Deployment Group->"LiveLabDeploymentGroup"->Role name->click on "create role"->[automatically creates "AWS-CodePipeline-Service" role]  
+- Now goto AWS Console->CodePipeline->Get Started->Name-> "LiveLabPipeline"->Source Provider->select "AWS CodeCommit"->Repo name->"LiveLabRepo"->Branch name->select "Master"->Build Provider-> select "No Build"->Deployment provider->select "AWS CodeDeploy"->Application name->select "LiveLabApplication"->Deployment Group->"LiveLabDeploymentGroup"->Role name->click on "create role"->[automatically creates "AWS-CodePipeline-Service" role]->Review->create.
+  
