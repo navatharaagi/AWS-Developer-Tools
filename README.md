@@ -1369,4 +1369,6 @@ $nano CLIPipelineTemplate.json  /*[ paste the copied json template & Edit "Branc
 save & exit
 $ls  /*has to list CLIPipelineTemplate.json
 $aws codepipeline create-pipeline --cli-input-json
-file://CLIPipelineTemplate.json /*gives json formatted o/p
+file://CLIPipelineTemplate.json /* gives json formatted o/p ie.,2nd pipeline is created
+```
+- Now goto AWS Console->
