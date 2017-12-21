@@ -1367,8 +1367,8 @@ $touch CLIPipelineTemplate.json
 $nano CLIPipelineTemplate.json  /*[ paste the copied json template & Edit "BranchName":"CLIPipelineBranch" & End of the template edit "name":"SimpleCLIPipeline" ]
 save & exit
 $ls  /*has to list CLIPipelineTemplate.json
-$aws codepipeline create-pipeline --cli-input-json
-file://CLIPipelineTemplate.json /* gives json formatted o/p ie.,2nd pipeline is created
+$aws codepipeline create-pipeline --cli-input-json file://CLIPipelineTemplate.json  
+/* gives json formatted o/p ie.,2nd pipeline is created
 ```
 - Now goto AWS Console->CodePipeline->Click on "SimpleClIPipeline"->we can see that 'Source' stage as succeeded & 'Beta' stage (where Deployment occuring) in progress& succeeded.
 - Now goto CLI, connect to EC2 instance
