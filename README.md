@@ -1596,7 +1596,7 @@ two lines of text in the “jenkins” file:
   - For “Category” select “Build”
   - Leave every other field blank or it’s default entry
 17) Under “Build Triggers” check “Poll SCM”
-  ! In the “schedule” field, input “* * * * *” (that is five asterisks,
+  - In the “schedule” field, input “* * * * *” (that is five asterisks,
   each separated by a space)
   ! This will have Jenkins poll AWS CodePipeline every minute
   18) Under “Build” click on “Add build step”
