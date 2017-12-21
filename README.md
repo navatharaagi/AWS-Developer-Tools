@@ -1401,3 +1401,4 @@ changes, the pipeline will run all stages again.
 previous stages/actions
   - Push a new commit (if the error was in the source files)
 5) Delete pipelines
+AWS Console->CodePipeline->All Pipelines->click on a pipeline->Edit->Delete->enter name of the pipeline to confirm->Delete
