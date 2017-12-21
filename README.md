@@ -1190,6 +1190,7 @@ Process overview:
 - AWS—>IAM—>Policies—>Create New Policy—>Create our own Policy—>Policy Name “LambdaExecutionPolicy”->Policy Document—>[Copy & Paste “CodeDeployLambdaExecutionPolicy” which is in git files—>Enter the appropriate  <Bucket Name>,<Region>,<Account-ID> & ID will be in our AWS-Settings-"My Account”] —> Validate Policy—>Create Policy(if its Valid).
 2) Create a new Role:
 - AWS—>IAM—>Roles—>Create New Role—>”LambdaExecutionRole”—>Role Type—>select “AWS Lambda”—>Attach Policy—>select “LambdaExecutionPolicy”(which we created above)—>create
+
 ##### Creating the Lambda Function:
 1) Get the Lambda Function code:
 2) Create a Lambda Function:
@@ -1468,3 +1469,5 @@ aws codepipeline retry-stage-execution --cli-input-json file://<RETRY_FILE_NAME>
 - Note: Deleting a pipeline does not delete other AWS resources
 that have been provisioned or utilized. Such as CodeDeploy
 Applications, EC2 instances, or S3 buckets.
+
+#### CodePipeline  "Simple Two-Stage Pipeline" example
