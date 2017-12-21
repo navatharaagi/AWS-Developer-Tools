@@ -1374,6 +1374,12 @@ $aws codepipeline create-pipeline --cli-input-json file://CLIPipelineTemplate.js
 ```sh
 $ls
 $cd wonderwidgets
-$ls -l  /* has to list anotherfile.txt with same updated timeline 
+$ls -l  /* has to list anotherfile.txt with same updated timeline
 ```
 #### 2.Managing a Pipeline from the AWS Console
+Items We can Manage in the AWS Console:
+1) View pipelines and detailed pipeline information
+2) Edit pipelines
+3) Disable or enable transitions between stages
+4) Retry failed actions
+5) Delete pipelines
