@@ -1511,11 +1511,9 @@ and deployed HTML code).
   - Deployment Group: TestDeploymentGroupName
 
 ##### Our Second Pipeline Setup & Configuration:
-  1) “Fork” the AWS GitHub Repository (containing the un-built
-  source files) to our own GitHub Repository
-  2) Create an IAM role for the EC2 instance that Jenkins will
-  be installed on
-  3) Launch a new EC2 Server
+1) “Fork” the AWS GitHub Repository (containing the un-built source files) to our own GitHub Repository
+2) Create an IAM role for the EC2 instance that Jenkins will be installed on
+3) Launch a new EC2 Server
   4) Install Jenkins on that EC2 server
   5) Install Rake and HAML on that EC2 server
   6) Configure Jenkins to access Rake on that EC2 server
