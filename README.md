@@ -1622,8 +1622,8 @@ Jenkins (“Jenkins” is default)
 Jenkins is installed on (http://IP_ADDRESS)
   - For “Project name” enter the name you gave the “Project” you just created in Jenkins
 5) Set the “Deployment provider” to “CodeDeploy”
-- For “Application name” enter the name of the CodeDeploy Application you want to use
-- For “Deployment group” enter the name of the Deployment Group you want to use
+  - For “Application name” enter the name of the CodeDeploy Application you want to use
+  - For “Deployment group” enter the name of the Deployment Group you want to use
 6) Set the “Role name” to the AWS CodePipeline service role that
 you already have created (if you followed the earlier videos) OR
 choose to “Create Role” and follow the instructions
