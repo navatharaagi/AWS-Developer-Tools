@@ -1363,4 +1363,6 @@ $git add anotherfile.txt
 $git commit -m "file for 2nd pipeline"
 $git push origin CLIPipelineBranch
 $cd ..
-$aws codepipeline get-pipeline --name FirstTestPipeline /*gives json template
+$aws codepipeline get-pipeline --name FirstTestPipeline /*gives json template, Copy it
+$touch CLIPipelineTemplate.json
+$nano CLIPipelineTemplate.json
