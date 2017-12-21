@@ -1573,4 +1573,4 @@ export PATH="/usr/local/bin:/usr/bin:$PATH”
 ```
 6) Save and exit
 7) Restart Jenkins (run the command):
- service jenkins restart
+ ```service jenkins restart```
