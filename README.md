@@ -1568,8 +1568,8 @@ two lines of text in the “jenkins” file:
 ```sh
  # Source function library.
  . /etc/init.d/functions:
-# Custom Path
-export PATH="/usr/local/bin:/usr/bin:$PATH”
+ # Custom Path
+ export PATH="/usr/local/bin:/usr/bin:$PATH”
 ```
 6) Save and exit
 7) Restart Jenkins (run the command):
