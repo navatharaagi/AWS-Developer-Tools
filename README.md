@@ -1457,8 +1457,10 @@ appropriate information where required:
 ```
 - Troubleshoot and fix the issue
 - Upload the .json file to re-run the failed action:
-```aws codepipeline retry-stage-execution --cli-input-json
- file://<RETRY_FILE_NAME>.json```
+```
+aws codepipeline retry-stage-execution --cli-input-json
+ file://<RETRY_FILE_NAME>.json
+ ```
  - “Retry” if the error was isolated to that action
  - Push a new commit (if the error was in the source files)
 5) Delete pipelines:
