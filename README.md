@@ -1561,7 +1561,7 @@ gem install haml
 ###### Step 6 - Configure Environment for Rake:
 1) SSH into the EC2 server you just created
 2) Switch to root user (command: ```sudo su```)
-3) Navigate to the directory etc/init.d
+3) Navigate to the directory ```etc/init.d```
 4) Open the file “jenkins” using nano (nano jenkins)
 5) Insert the following (bottom) two lines of text after the (top)
 two lines of text in the “jenkins” file:
