@@ -1424,7 +1424,6 @@ we want for our updated/edit Pipeline
 file://<FILE_NAME>.json```
 3) Disable or enable transitions between stages
 - If currently enabled:
-1) Run the command:
 ```sh
 aws codepipeline disable-stage-transition
 --pipeline-name <PIPELINE_NAME>
@@ -1433,14 +1432,13 @@ aws codepipeline disable-stage-transition
 --reason “<REASON>“
 ```
 - If currently disabled:
-1) Run the command:
 ```sh
 aws codepipeline enable-stage-transition
 --pipeline-name <PIPELINE_NAME>
 --stage-name <STAGE_NAME>
 --transition-type Inbound
 ```
-4) Retry failed actions
+4) Retry failed actions:
 - View the most recent “status” of each action the pipeline,
 and identify the action that failed:
 aws codepipeline get-pipeline-state --name <PIPELINE_NAME>
