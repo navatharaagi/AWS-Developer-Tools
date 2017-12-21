@@ -1558,3 +1558,17 @@ gem install haml
     - Custom TCP (8080)
   - Launch & select or create a key pair
 2) Wait for the instance to finish initializing before moving on
+###### Step 6 - Configure Environment for Rake:
+1) SSH into the EC2 server you just created
+2) Switch to root user (command: sudo su)
+3) Navigate to the directory etc/init.d
+4) Open the file “jenkins” using nano (nano jenkins)
+5) Insert the following (bottom) two lines of text after the (top)
+two lines of text in the “jenkins” file:
+ # Source function library.
+ . /etc/init.d/functions:
+# Custom Path
+export PATH="/usr/local/bin:/usr/bin:$PATH”
+6) Save and exit
+7) Restart Jenkins (run the command):
+ service jenkins restart
