@@ -1482,3 +1482,5 @@ $ssh into EC2
 $ls  /*has to list "livelab"
 $cd livelab
 $ls /*has to list "appsec.yml","newfile.txt","secondfile.txt" files
+
+### CodePipeline Advanced Features
