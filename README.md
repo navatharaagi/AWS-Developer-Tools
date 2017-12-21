@@ -1331,5 +1331,5 @@ Pipeline”.
 ```sh
 $ls /*wonderwidgets dir has to be listed
 $cd wonderwidgets
-$ls -l  /* has to list pipeline.txt file ie.,it installed on our EC2
+$ls -l /* has to list pipeline.txt file ie.,file installed on our EC2
 ```
