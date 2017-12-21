@@ -1378,3 +1378,4 @@ $ls
 $cd wonderwidgets
 $ls -l  /* has to list anotherfile.txt
 ```
+#### 2.Managing a Pipeline from the AWS Console 
