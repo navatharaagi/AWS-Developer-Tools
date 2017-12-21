@@ -1351,7 +1351,6 @@ new pipeline.
 command:
 ```sh
 aws codepipeline create-pipeline --cli-input-json file://<FILE-NAME>.json ```
-
 - Goto CLI, @User1 login
 ```sh
 $cd local-wonderwidgets
