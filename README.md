@@ -1628,7 +1628,7 @@ Jenkins is installed on (http://IP_ADDRESS)
 you already have created (if you followed the earlier videos) OR
 choose to “Create Role” and follow the instructions
 7) Review and Launch (click “Create pipeline”)
-Step 9 - Run & View Results:
+###### Step 9 - Run & View Results:
 1) Watch the Pipeline run
 ! Hopefully there will not be any errors, and all stages will
 complete with a status of “succeeded”
