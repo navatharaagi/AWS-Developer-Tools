@@ -1535,7 +1535,7 @@ and deployed HTML code).
 2) Give the role a name that will make it obvious it is going to be used for a Jenkins server, like “JenkinsEC2Role”
 ###### Step 3 - Launch a new EC2 Instance:
 ###### Step 4 - Install Jenkins:
-Step 5 - Install Rake & Haml:
+###### Step 5 - Install Rake & Haml:
 1) Launch a new instance with the following settings:
 ! AMI: Amazon Linux AMI
 ! Instance Type: t2.micro
