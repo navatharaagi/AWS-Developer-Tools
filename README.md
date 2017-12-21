@@ -1409,6 +1409,8 @@ Items we can Manage in the AWS CLI:
 ```aws codepipeline list-pipelines ```
 - For detailed info
 ```aws codepipeline get-pipeline --name <PIPELINE_NAME> ```
+- To view the most recent “status” of each action of a pipeline:
+```aws codepipeline get-pipeline-state --name <PIPELINE_NAME>```
 2) Edit pipelines
 3) Disable or enable transitions between stages
 4) Retry failed actions
