@@ -1308,4 +1308,4 @@ Note: Services, such as CodeCommit, Github, Jenkins, Apica, CodeDeploy, etc – 
 - AWS—>IAM—>Users—>select “user1”—>Attach Policy—> “AWSCodePipelineFullAccess”—>Attach
 
 Creating a codepipeline(AWS Console)
- 
+- AWS Console->CodePipeline-> 
