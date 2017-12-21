@@ -1616,11 +1616,11 @@ two lines of text in the “jenkins” file:
   - For “Repository” select the AWS Repository we “forked” in step 1
   - For “Branch” select “master”
 4) Set the “Build provider” to “add Jenkins”
-- “Provider name” must match what is in the “Provider” field in
+  - “Provider name” must match what is in the “Provider” field in
 Jenkins (“Jenkins” is default)
-- For “Server URL” enter the IP Address of the EC2 server that
+  - For “Server URL” enter the IP Address of the EC2 server that
 Jenkins is installed on (http://IP_ADDRESS)
-- For “Project name” enter the name you gave the “Project” you just created in Jenkins
+  - For “Project name” enter the name you gave the “Project” you just created in Jenkins
 5) Set the “Deployment provider” to “CodeDeploy”
 - For “Application name” enter the name of the CodeDeploy Application you want to use
 - For “Deployment group” enter the name of the Deployment Group you want to use
