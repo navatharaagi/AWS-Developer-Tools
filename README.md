@@ -1631,7 +1631,7 @@ save & exit
 #cd /
 #cd /var/lib/jenkins/secrets
 #cat initialAdminPassword  /* copy or write it down the given pwd [restart jenkins before accessing this file, if not folder will not exists]
-#
+```
 
 ###### Step 8 - Create a new Pipeline:
 1) Navigate CodePipeline in the AWS Console & click
