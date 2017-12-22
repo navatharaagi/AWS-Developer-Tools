@@ -1632,7 +1632,8 @@ save & exit
 #cd /var/lib/jenkins/secrets
 #cat initialAdminPassword  /* copy or write it down the given pwd [restart jenkins before accessing this file, if not folder will not exists]
 ```
-- Goto browser, copy & paste
+- Goto browser,copy & paste <JenkinsPipelineTest EC2 Public Ip>:8080
+ 
 
 ###### Step 8 - Create a new Pipeline:
 1) Navigate CodePipeline in the AWS Console & click
