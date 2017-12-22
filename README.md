@@ -1586,6 +1586,8 @@ two lines of text in the “jenkins” file:
 ```sh
 $sudo su   /*switch to root user
 #cd etc/init.d
+#ls  /* has to list jenkins
+
 
 ###### Step 7 - Configure Jenkins:
 1) Navigate to the directory /var/lib/jenkins/secrets
