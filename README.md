@@ -1575,6 +1575,7 @@ two lines of text in the “jenkins” file:
 ```sh
  # Source function library.
  . /etc/init.d/functions:
+ 
  # Custom Path
  export PATH="/usr/local/bin:/usr/bin:$PATH”
 ```
@@ -1587,7 +1588,7 @@ two lines of text in the “jenkins” file:
 $sudo su   /*switch to root user
 #cd etc/init.d
 #ls  /* has to list jenkins file
-#nano jenkins 
+#nano jenkins  /* [Insert ]
 
 
 ###### Step 7 - Configure Jenkins:
