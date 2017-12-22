@@ -1627,7 +1627,11 @@ save & exit
 20) Click “Save”
 
 - Continuation from step 6,ie.,after restarting jenkins
- 
+```sh
+#cd /
+#cd /var/lib/jenkins/secrets
+
+
 ###### Step 8 - Create a new Pipeline:
 1) Navigate CodePipeline in the AWS Console & click
 “Create pipeline”
