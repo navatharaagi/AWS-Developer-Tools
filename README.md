@@ -1533,6 +1533,7 @@ and deployed HTML code).
 ###### Step 2 - Creating an IAM Role for Jenkins:
 1) Create a new role and attached the following policy to it: “AWSCodePipelineCustomActionAccess”
 2) Give the role a name that will make it obvious it is going to be used for a Jenkins server, like “JenkinsEC2Role”
+
 - AWS Console->IAM->Roles->Create new role->Role name-> “JenkinsEC2Role”->Next->select Role Type->Amazon EC2->Attach Policy->
 “AWSCodePipelineCustomActionAccess”->Next->create Role
 ###### Step 3 - Launch a new EC2 Instance:
@@ -1561,7 +1562,7 @@ gem install haml
   - Launch & select or create a key pair
 2) Wait for the instance to finish initializing before moving on
 
-- AWS Console->EC2->Amazon Linux AMI->select Free Tier micro-> Configure Instance Details->IAM Role->select “JenkinsEC2Role”-> Advanced Details->copy & paste above bash script from above steps-> Next->Next->Tag Instance->Name->Value "JenkinsPipelineTest"-> configure SG->Add Rule HTTP(80)-Anywhere,Custom TCP (8080)-Anywhere ->Review & Launch->choose an existing keypair->"codedeploykey"-> launch instance-> 
+- AWS Console->EC2->Amazon Linux AMI->select Free Tier micro-> Configure Instance Details->IAM Role->select “JenkinsEC2Role”-> Advanced Details->copy & paste above bash script from above steps-> Next->Next->Tag Instance->Name->Value "JenkinsPipelineTest"-> configure SG->Add Rule HTTP(80)-Anywhere,Custom TCP (8080)-Anywhere ->Review & Launch->choose an existing keypair->"codedeploykey"-> launch instance->
 
 ###### Step 6 - Configure Environment for Rake:
 1) SSH into the EC2 server you just created
