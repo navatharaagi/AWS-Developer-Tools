@@ -1584,6 +1584,7 @@ two lines of text in the “jenkins” file:
 
 - Goto CLI, ssh into "JenkinsPipelineTest" EC2 instance which we launched
 ```sh
+$sudo su   /*switch to root user
 
 ###### Step 7 - Configure Jenkins:
 1) Navigate to the directory /var/lib/jenkins/secrets
