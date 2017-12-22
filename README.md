@@ -1630,6 +1630,7 @@ save & exit
 ```sh
 #cd /
 #cd /var/lib/jenkins/secrets
+#cat initialAdminPassword  /*[restart the jenkins before accessing this file, if not folder will not exists]
 
 
 ###### Step 8 - Create a new Pipeline:
