@@ -1589,6 +1589,7 @@ $sudo su   /*switch to root user
 #cd etc/init.d
 #ls  /* has to list jenkins file
 #nano jenkins  /* [Insert #custom path by following above 5th point]
+save & exit
 
 
 
