@@ -1586,7 +1586,8 @@ two lines of text in the “jenkins” file:
 ```sh
 $sudo su   /*switch to root user
 #cd etc/init.d
-#ls  /* has to list jenkins
+#ls  /* has to list jenkins file
+#nano jenkins 
 
 
 ###### Step 7 - Configure Jenkins:
