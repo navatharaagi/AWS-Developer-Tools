@@ -1582,7 +1582,9 @@ two lines of text in the “jenkins” file:
 7) Restart Jenkins (run the command):
  ```service jenkins restart```
 
-- Goto CLI, connect to "JenkinsPipelineTest"
+- Goto CLI, ssh into "JenkinsPipelineTest" EC2 instance which we launched
+```sh
+
 ###### Step 7 - Configure Jenkins:
 1) Navigate to the directory /var/lib/jenkins/secrets
 2) Cat the file “initialAdminPassword”
