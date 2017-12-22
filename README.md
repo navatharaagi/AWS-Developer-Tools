@@ -1533,6 +1533,8 @@ and deployed HTML code).
 ###### Step 2 - Creating an IAM Role for Jenkins:
 1) Create a new role and attached the following policy to it: “AWSCodePipelineCustomActionAccess”
 2) Give the role a name that will make it obvious it is going to be used for a Jenkins server, like “JenkinsEC2Role”
+- AWS Console->IAM->Roles->Create new role->Role name-> “JenkinsEC2Role”->Next->select Role Type->Amazon EC2->Attach Policy->
+“AWSCodePipelineCustomActionAccess”->Next->create
 ###### Step 3 - Launch a new EC2 Instance:
 ###### Step 4 - Install Jenkins:
 ###### Step 5 - Install Rake & Haml:
