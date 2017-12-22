@@ -1681,10 +1681,10 @@ will proceed to the next stage or action.
 - Approval actions are generally used when you want a
 human to:
 - Perform a code review or change management review
-! Test the application/perform quality assurance
+- Test the application/perform quality assurance
 ! Approval actions can be implemented during any stage of
 a pipeline.
-! However, they are generally added after the built
+- However, they are generally added after the built
 application has been deployed onto test servers, and
 before the built application is deployed to production
 servers. (Beta -> Approval -> Production)
