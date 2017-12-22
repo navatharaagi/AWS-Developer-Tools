@@ -1590,7 +1590,8 @@ $sudo su   /*switch to root user
 #ls  /* has to list jenkins file
 #nano jenkins  /* [Insert #custom path by following above 5th point]
 save & exit
-
+#service jenkins restart
+```
 
 
 ###### Step 7 - Configure Jenkins:
