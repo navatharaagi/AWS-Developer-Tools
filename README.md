@@ -1634,7 +1634,7 @@ save & exit
 ```
 - Goto browser,copy & paste <JenkinsPipelineTest EC2 Public Ip>:8080
 - Should open Unlock Jenkins page, Paste before copied pwd
-- Customize Jenkins->Click on Install Suggested Plugins->Enter required Credentials to login->Manage Jenkins->Manage Plugins->click on "Available" Tab->    
+- Customize Jenkins->Click on Install Suggested Plugins->Enter required Credentials to login->Manage Jenkins->Manage Plugins->click on "Available" Tab->search & select “AWS CodePipeline Plugin” & "Rake Plugin"    
 
 ###### Step 8 - Create a new Pipeline:
 1) Navigate CodePipeline in the AWS Console & click
