@@ -1536,6 +1536,7 @@ and deployed HTML code).
 - AWS Console->IAM->Roles->Create new role->Role name-> “JenkinsEC2Role”->Next->select Role Type->Amazon EC2->Attach Policy->
 “AWSCodePipelineCustomActionAccess”->Next->create
 ###### Step 3 - Launch a new EC2 Instance:
+- AWS Console->EC2->Amazon Linux AMI->select Free Tier micro-> Configure
 ###### Step 4 - Install Jenkins:
 ###### Step 5 - Install Rake & Haml:
 1) Launch a new instance with the following settings:
