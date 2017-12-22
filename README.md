@@ -1689,4 +1689,6 @@ before the built application is deployed to production
 servers. (Beta -> Approval -> Production)
 ! Approval actions utilize AWS SNS Topics to notify the
 target human tester that whatever needs to be reviewed is
-ready for review 
+ready for review
+
+Approval Action  
