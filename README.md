@@ -1673,7 +1673,8 @@ complete with a status of “succeeded”
 - After successful pipeline creation, goto AWS->EC2->[copy Public IP address of EC2 instance "CodeDeployTestInstance" which we targeted in our deployment group that we deployed code to which is currently running Haml code that was converted into HTML code, not the "JenkinsPipelineTest" one the jenkins installed on for this pipeline]
 - Goto browser Paste ""<EC2_IP_ADDRESS>/index.html" ->launches congrats page for our AWS CodePipeline.
 
-Approval Actions:
+#### Creating Approval Actions
+##### Approval Actions:
 ! Approval actions allow for a pause in the pipeline, and
 require a human to manually “approve” before the pipeline
 will proceed to the next stage or action.
@@ -1691,4 +1692,4 @@ servers. (Beta -> Approval -> Production)
 target human tester that whatever needs to be reviewed is
 ready for review
 
-Approval Action  
+Approval Action(5-stage) Pipeline:
