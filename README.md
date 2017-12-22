@@ -1626,7 +1626,8 @@ save & exit
   - Leave the “Location” field empty
 20) Click “Save”
 
-
+- Continuation from step 6,ie.,after restarting jenkins
+ 
 ###### Step 8 - Create a new Pipeline:
 1) Navigate CodePipeline in the AWS Console & click
 “Create pipeline”
