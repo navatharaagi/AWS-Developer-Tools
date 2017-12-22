@@ -1634,7 +1634,7 @@ save & exit
 ```
 - Goto browser,copy & paste <JenkinsPipelineTest EC2 Public Ip>:8080
 - Should open Unlock Jenkins page, Paste before copied pwd
-- Customize Jenkins->Click on Install Suggested Plugins->Enter required Credentials to login->Manage Jenkins->Manage Plugins->click on "Available" Tab->search & select “AWS CodePipeline Plugin” & "Rake Plugin"->click on "Download now & install after restart"->click on "restart Jenkins when installation is complete & no jobs are running"    
+- Customize Jenkins->Click on Install Suggested Plugins->Enter required Credentials to login->Manage Jenkins->Manage Plugins->click on "Available" Tab->search & select “AWS CodePipeline Plugin” & "Rake Plugin"->click on "Download now & install after restart"->click on "restart Jenkins when installation is complete & no jobs are running"->sign back in->back to Dashboard->create new job->enter an item Name->"JenkinsPipelineProject"->select Free style project->ok->select "Execute Concurrent Builds if necessary"->SCM->select "AWS CodePipeline"->AWS Region->us-east-1 ->Category->Build->Build Triggers->Poll SCM->* * * * *->Build->Add Build step->Execute Shell->enter rake i command->Post-Build Actions ->Add post-build action->select "AWS CodePipeline Publisher"->output locations->click Add->leave "location" blank->save   
 
 ###### Step 8 - Create a new Pipeline:
 1) Navigate CodePipeline in the AWS Console & click
