@@ -1525,7 +1525,7 @@ and deployed HTML code).
 1) Log into your GitHub account
 2) Navigate to this URL:
 ```sh
-- Linux: https://github.com/awslabs/aws-codepipeline-jenkins-awscodedeploy_linux
+- Linux: https://github.com/awslabs/aws-codepipeline-jenkins-aws-codedeploy_linux
 - Windows: https://github.com/awslabs/AWSCodePipeline-JenkinsAWSCodeDeploy_windows
 ```
 3) Click on “Fork”
