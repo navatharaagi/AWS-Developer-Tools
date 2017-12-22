@@ -1658,6 +1658,9 @@ Jenkins is installed on (http://IP_ADDRESS)
 you already have created (if you followed the earlier videos) OR
 choose to “Create Role” and follow the instructions
 7) Review and Launch (click “Create pipeline”)
+
+- AWS Console->CodePipeline->Create Pipeline->Name->"JenkinsPipeline"
+->Next->Source Provider->Github->connect to Github->Authorize Github if prompted->Repository->select the AWS Repository we “forked” in step 1->
 ###### Step 9 - Run & View Results:
 1) Watch the Pipeline run
   - Hopefully there will not be any errors, and all stages will
