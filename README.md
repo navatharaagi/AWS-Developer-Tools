@@ -1660,7 +1660,7 @@ choose to “Create Role” and follow the instructions
 7) Review and Launch (click “Create pipeline”)
 
 - AWS Console->CodePipeline->Create Pipeline->Name->"JenkinsPipeline"
-->Next->Source Provider->Github->connect to Github->Authorize Github if prompted->Repository->select the AWS Repository we “forked” in step 1->Branch->select "master"->Next->Build Provider->select "Add Jenkins"->Provider name->"Jenkins"(which should same as in Jenkins Page->configure->SCM->Provider->"Jenkins")->Server URL-> http://Public_IP_ADDRESS of "JenkinsPipelineTest" EC2 instance-> Project name->"JenkinsPipelineProject"(which is a jenkins job name) ->Deployment provider->AWS CodeDeploy->Application name->Test Application->Deployment Group->TestDeploymentGroupName->Next-> 
+->Next->Source Provider->Github->connect to Github->Authorize Github if prompted->Repository->select the AWS Repository we “forked” in step 1->Branch->select "master"->Next->Build Provider->select "Add Jenkins"->Provider name->"Jenkins"(which should same as in Jenkins Page->configure->SCM->Provider->"Jenkins")->Server URL-> http://Public_IP_ADDRESS of "JenkinsPipelineTest" EC2 instance-> Project name->"JenkinsPipelineProject"(which is a jenkins job name) ->Deployment provider->AWS CodeDeploy->Application name->Test Application->Deployment Group->TestDeploymentGroupName->Next->Role name->create role(which creates "AWS Codepipeline Service" if its already not created before)->Next-> 
 
 ###### Step 9 - Run & View Results:
 1) Watch the Pipeline run
