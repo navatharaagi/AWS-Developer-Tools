@@ -1678,9 +1678,9 @@ complete with a status of “succeeded”
 - Approval actions allow for a pause in the pipeline, and
 require a human to manually “approve” before the pipeline
 will proceed to the next stage or action.
-! Approval actions are generally used when you want a
+- Approval actions are generally used when you want a
 human to:
-! Perform a code review or change management review
+- Perform a code review or change management review
 ! Test the application/perform quality assurance
 ! Approval actions can be implemented during any stage of
 a pipeline.
