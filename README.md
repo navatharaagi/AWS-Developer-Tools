@@ -1633,7 +1633,8 @@ save & exit
 #cat initialAdminPassword  /* copy or write it down the given pwd [restart jenkins before accessing this file, if not folder will not exists]
 ```
 - Goto browser,copy & paste <JenkinsPipelineTest EC2 Public Ip>:8080
- 
+- Should open Unlock Jenkins page, Paste before copied pwd
+- Customize Jenkins->Click on Install Suggested Plugins->Enter required Credentials to login->Manage Jenkins->Manage Plugins->click on "Available" Tab->    
 
 ###### Step 8 - Create a new Pipeline:
 1) Navigate CodePipeline in the AWS Console & click
