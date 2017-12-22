@@ -1593,7 +1593,6 @@ save & exit
 #service jenkins restart
 ```
 
-
 ###### Step 7 - Configure Jenkins:
 1) Navigate to the directory /var/lib/jenkins/secrets
 2) Cat the file “initialAdminPassword”
