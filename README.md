@@ -1675,7 +1675,7 @@ complete with a status of “succeeded”
 
 #### Creating Approval Actions
 ##### Approval Actions:
-! Approval actions allow for a pause in the pipeline, and
+- Approval actions allow for a pause in the pipeline, and
 require a human to manually “approve” before the pipeline
 will proceed to the next stage or action.
 ! Approval actions are generally used when you want a
