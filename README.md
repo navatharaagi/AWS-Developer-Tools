@@ -1585,7 +1585,7 @@ two lines of text in the “jenkins” file:
 
 - Goto CLI, ssh into "JenkinsPipelineTest" EC2 instance which we launched
 ```sh
-$sudo su   /*switch to root user
+$sudo su   /* switch to root user
 #cd etc/init.d
 #ls  /* has to list jenkins file
 #nano jenkins  /* [Insert #custom path by following above 5th point]
