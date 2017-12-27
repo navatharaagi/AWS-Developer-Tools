@@ -1683,8 +1683,7 @@ will proceed to the next stage or action.
 - Test the application/perform quality assurance
 - Approval actions can be implemented during any stage of a pipeline.
 - However, they are generally added after the built pplication has been deployed onto test servers, and before the built application is deployed to production servers. (Beta -> Approval -> Production)
-- Approval actions utilize AWS SNS Topics to notify the
-target human tester that whatever needs to be reviewed is
+- Approval actions utilize AWS SNS Topics to notify the target human tester that whatever needs to be reviewed is
 ready for review
 
 ##### Approval Action(5-stage) Pipeline:
