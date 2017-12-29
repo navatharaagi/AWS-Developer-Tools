@@ -1563,7 +1563,7 @@ gem install haml
   - Launch & select or create a key pair
 2) Wait for the instance to finish initializing before moving on
 
-- AWS Console->EC2->Amazon Linux AMI->select Free Tier micro-> Configure Instance Details->IAM Role->select “JenkinsEC2Role” -> Advanced Details->copy & paste above bash script from above steps -> Next-> Next-> Tag Instance-> Name-> Value "JenkinsPipelineTest"-> configure SG-> Add Rule HTTP(80)-Anywhere,Custom TCP (8080)-Anywhere ->Review & Launch->choose an existing keypair->"codedeploykey"-> launch instance.
+- AWS Console->EC2->Amazon Linux AMI->select Free Tier micro-> Configure Instance Details->IAM Role->select “JenkinsEC2Role” -> Advanced Details->copy & paste above bash script from above steps -> Next-> Next-> Tag Instance-> Name-> Value "JenkinsPipelineTest"-> configure SG-> Add Rule HTTP(80)-Anywhere,Custom TCP (8080)-Anywhere -> Review & Launch->choose an existing keypair->"codedeploykey"-> launch instance.
 
 ###### Step 6 - Configure Environment for Rake:
 1) SSH into the EC2 server you just created
