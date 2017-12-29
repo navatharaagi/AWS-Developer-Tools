@@ -1693,5 +1693,5 @@ will proceed to the next stage or action.
   - Make sure whoever is going to review and either “approve” or
 “disapprove” the approval action has the proper permissions to do so.
 2) SNS Topic:
-! Have an SNS topic setup with the person who will be doing to
+  - Have an SNS topic setup with the person who will be doing to
 review as a subscriber.
