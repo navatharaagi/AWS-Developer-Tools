@@ -1697,12 +1697,11 @@ will proceed to the next stage or action.
 review as a subscriber.
 
 ##### Adding an Approval Action:
-1) Navigate to CodePipeline and select the pipeline you want
-to add the Approval action to.
+1) Navigate to CodePipeline and select the pipeline you want to add the Approval action to.
 2) Click “edit” to open the pipeline editing framework.
 3) Add a new “stage” and give it a name
 4) Add a new “action”:
-! For “Action category” select “Approval”
+  - For “Action category” select “Approval”
 ! Give the action a name
 ! For “Approval type” select “Manual approval”
 ! For “SNS topic ARN” select the SNS Topic that your
