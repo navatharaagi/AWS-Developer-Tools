@@ -1702,8 +1702,8 @@ review as a subscriber.
 3) Add a new “stage” and give it a name
 4) Add a new “action”:
   - For “Action category” select “Approval”
-! Give the action a name
-! For “Approval type” select “Manual approval”
+  - Give the action a name
+  - For “Approval type” select “Manual approval”
 ! For “SNS topic ARN” select the SNS Topic that your
 reviewer is subscribed to
 ! For “URL for review” (optional) insert the location where the
