@@ -1690,7 +1690,7 @@ will proceed to the next stage or action.
 
 ##### Approval Action Prerequisites:
 1) Permissions:
-! Make sure whoever is going to review and either “approve” or
+- Make sure whoever is going to review and either “approve” or
 “disapprove” the approval action has the proper permissions
 to do so.
 2) SNS Topic:
