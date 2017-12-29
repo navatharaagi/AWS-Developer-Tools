@@ -1704,7 +1704,7 @@ review as a subscriber.
   - For “Action category” select “Approval”
   - Give the action a name
   - For “Approval type” select “Manual approval”
-! For “SNS topic ARN” select the SNS Topic that your
+  - For “SNS topic ARN” select the SNS Topic that your
 reviewer is subscribed to
 ! For “URL for review” (optional) insert the location where the
 reviewer must to navigate to in order to review the code or
