@@ -1687,3 +1687,12 @@ will proceed to the next stage or action.
 
 ##### Approval Action(5-stage) Pipeline:
 - Once our code pulled from Github->Run & Built through Jenkins-> Deployed on to our "CodeDeployTestInstance"->An SNS Topic will be send to our Tester, notifying them that the code is ready for Review. This Tester then have an option to Approve/Disapprove of the current state of the code of our Application.If Approve is selected ->the Built Application then be Passed into a second CodeDeploy Application called "ProductionApplication" & deployed on to a new instance called "CodeDeployProductionInstance"
+
+##### Approval Action Prerequisites:
+1) Permissions:
+! Make sure whoever is going to review and either “approve” or
+“disapprove” the approval action has the proper permissions
+to do so.
+2) SNS Topic:
+! Have an SNS topic setup with the person who will be doing to
+review as a subscriber.
