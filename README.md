@@ -1695,3 +1695,21 @@ will proceed to the next stage or action.
 2) SNS Topic:
   - Have an SNS topic setup with the person who will be doing to
 review as a subscriber.
+
+##### Adding an Approval Action:
+1) Navigate to CodePipeline and select the pipeline you want
+to add the Approval action to.
+2) Click “edit” to open the pipeline editing framework.
+3) Add a new “stage” and give it a name
+4) Add a new “action”:
+! For “Action category” select “Approval”
+! Give the action a name
+! For “Approval type” select “Manual approval”
+! For “SNS topic ARN” select the SNS Topic that your
+reviewer is subscribed to
+! For “URL for review” (optional) insert the location where the
+reviewer must to navigate to in order to review the code or
+application
+! For “Comments” (optional) provide a comment to the
+reviewer or leave it blank
+5) Click “Add action”
