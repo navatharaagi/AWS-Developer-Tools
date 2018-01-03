@@ -1739,16 +1739,16 @@ six actions provided by AWS.
 - A “job worker” is the custom software that will be the
 provider for your custom action.
 - The “job worker” is responsible for:
-- Polling CodePipeline for “job request” (for the custom action)
-- Executing the job
-- Retuning the execution status to CodePipeline
+  - Polling CodePipeline for “job request” (for the custom action)
+  - Executing the job
+  - Retuning the execution status to CodePipeline
 - “Job request” are created automatically by CodePipeline
 when a custom action is added to a pipeline.
 - When a “job worker” detects a “job request” (through
 polling) it must be configured to complete the following:
-- Acknowledge (to CodePipeline) that it has detected the job
+  - Acknowledge (to CodePipeline) that it has detected the job
 request
-- Pull the target (input) artifacts from the pipeline’s S3 bucket
-- Execute the custom job (perform actions on the artifacts)
-- Push the (output) artifacts back to the pipeline’s S3 bucket
-- Return the job results to CodePipeline (succeeded or failed)
+  - Pull the target (input) artifacts from the pipeline’s S3 bucket
+  - Execute the custom job (perform actions on the artifacts)
+  - Push the (output) artifacts back to the pipeline’s S3 bucket
+  - Return the job results to CodePipeline (succeeded or failed)
