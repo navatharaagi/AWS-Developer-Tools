@@ -1785,9 +1785,9 @@ will take the user to a web page containing information about the build project 
 - When a “job worker” detects a “job request” (through polling) it must be configured to complete the following:
   - Acknowledge (to CodePipeline) that it has detected the job
   request
-  ! Pull the target (input) artifacts from the configured S3 bucket
-  ! Execute the custom job (perform actions on the artifacts)
-  ! Push the (output) artifacts back to the S3 bucket
+  - Pull the target (input) artifacts from the configured S3 bucket
+  - Execute the custom job (perform actions on the artifacts)
+  - Push the (output) artifacts back to the S3 bucket
   ! Return the job results to CodePipeline (succeeded or failed)
   1) Configure Permissions for the job worker:
   ! EC2 Instance with an IAM Instance role (easiest option)
