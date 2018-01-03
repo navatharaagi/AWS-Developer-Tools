@@ -1771,9 +1771,9 @@ will take the user to a web page containing information about the build project 
   - “executionUrlTemplate”: This is a dynamic link that when clicked will take the user to web page containing information specific to the more current run of the action.
   - “name”: This will be displayed as the prompt in the “Action
   Configuration” section when adding this action.
-  ! “description”: This will be displayed under the entry field for
+  - “description”: This will be displayed under the entry field for
   “ProjectName” in the “Action Configuration” section.
-  ! “inputArtifactDetails” & “outputArtifactDetails”: Setting the
+  - “inputArtifactDetails” & “outputArtifactDetails”: Setting the
   min/max number for each will set the size limit for the number
   of artifacts that can be used by the action.
   3) Save and exit the file
