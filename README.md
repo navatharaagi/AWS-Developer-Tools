@@ -1709,3 +1709,5 @@ review as a subscriber.
 reviewer must to navigate to in order to review the code or application
   - For “Comments” (optional) provide a comment to the reviewer or leave it blank
 5) Click “Add action”
+
+- AWS Console
