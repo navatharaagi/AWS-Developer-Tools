@@ -1758,7 +1758,7 @@ request
 - A custom action, once created, can be added to a pipeline via either the AWS CLI or AWS Console.
 - The job worker must be created, configured, and provided by us.
 
-Creating a Custom Action (CLI):
+##### Creating a Custom Action (CLI):
 1) Create a .json file, open it with nano, and paste in the
 contents of the “custom action” template.
 2) Edit the JSON formatted “custom action” template.
@@ -1774,4 +1774,4 @@ will take the user to a web page containing information about
 the build project (or test environment, etc).
 ! “executionUrlTemplate”: This is a dynamic link that when
 clicked will take the user to web page containing information
-specific to the more current run of the action. 
+specific to the more current run of the action.
