@@ -1798,4 +1798,4 @@ will take the user to a web page containing information about the build project 
   - For updates & succeeded status: ```PutJobSuccessResult```
     - With continuation token allows you to update the action in the
     AWS console to include the ```ExternalExecutionID``` that will populate the link in “executionUrlTemplate”
-  - For failure: PutJobFailureResult:
+  - For failure: ```PutJobFailureResult```
