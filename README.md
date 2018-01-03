@@ -1730,7 +1730,7 @@ six actions provided by AWS.
 - Such actions may include utilizing an:
 - Internally developed build process
 - Internally developed test software
-! Custom actions are generally defined into a:
+- Custom actions are generally defined into a:
 ! Build action
 ! Deploy action
 ! Test action
