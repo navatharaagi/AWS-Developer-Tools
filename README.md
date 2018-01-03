@@ -1793,12 +1793,6 @@ $aws codepipeline create-custom-action-type --cli-input-json file://mycustomacti
 - After successful "Build" stage, Click on "MyCustomBuild" under "CustomBuild".
 - https://my-build-instance/job/LACustomBuild URL will be opened, but no page will be loaded because we didn't added any Job workers as of now.
 
-
-
-
-
-
-
 ##### Creating a Job Worker (concepts):
 - When a “job worker” detects a “job request” (through polling) it must be configured to complete the following:
   - Acknowledge (to CodePipeline) that it has detected the job
