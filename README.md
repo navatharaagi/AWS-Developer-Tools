@@ -1731,8 +1731,8 @@ six actions provided by AWS.
   - Internally developed build process
   - Internally developed test software
 - Custom actions are generally defined into a:
-- Build action
-- Deploy action
+  - Build action
+  - Deploy action
 - Test action
 - Invoke action
 - Custom actions must be accompanied with a “job worker”
