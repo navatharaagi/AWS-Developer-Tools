@@ -1750,5 +1750,5 @@ polling) it must be configured to complete the following:
 request
 - Pull the target (input) artifacts from the pipeline’s S3 bucket
 - Execute the custom job (perform actions on the artifacts)
-! Push the (output) artifacts back to the pipeline’s S3 bucket
-! Return the job results to CodePipeline (succeeded or failed)
+- Push the (output) artifacts back to the pipeline’s S3 bucket
+- Return the job results to CodePipeline (succeeded or failed)
