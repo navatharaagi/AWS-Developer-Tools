@@ -1,0 +1,26 @@
+{
+    "category": "Action-Category",
+    "provider": "My-Build-Provider-Name",
+    "version": "1",
+    "settings": {
+        "entityUrlTemplate": "https://my-build-instance/job/{Config:ProjectName}/",
+        "executionUrlTemplate": "https://my-build-instance/job/{Config:ProjectName}/lastSuccessfulBuild/{ExternalExecutionId}/"
+    },
+    "configurationProperties": [{
+        "name": "ProjectName",
+        "required": true,
+        "key": true,
+        "secret": false,
+        "queryable": false,
+        "description": "The name of the build project must be provided when this action is added to the pipeline.",
+        "type": "String"
+    }],
+    "inputArtifactDetails": {
+        "maximumCount": integer,
+        "minimumCount": integer
+    },
+    "outputArtifactDetails": {
+        "maximumCount": integer,
+        "minimumCount": integer
+    }
+}
