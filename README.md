@@ -1760,7 +1760,7 @@ request
 
 ##### Creating a Custom Action (CLI):
 1) Create a .json file, open it with nano, and paste in the
-contents of the “custom action” template.
+contents of the ```custom action``` template.
 2) Edit the JSON formatted “custom action” template.
 ! This template is a sample provided by AWS and can be
 edited (and added to) to meet you needs.
