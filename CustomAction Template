@@ -1,6 +1,6 @@
 {
     "category": "Build",    /* Action-Category
-    "provider": "My-Build-Provider-Name",
+    "provider": "",
     "version": "1",
     "settings": {
         "entityUrlTemplate": "https://my-build-instance/job/{Config:ProjectName}/",
