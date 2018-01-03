@@ -1789,8 +1789,8 @@ Save & exit
 $aws codepipeline create-custom-action-type --cli-input-json file://mycustomaction.json  /*gives json formatted o/p
 ```
 
-- Goto AWS Console-->CodePipeline-->JenkinsPipeline-->Edit-->Add Action at "Build" Stage by clicking on "Action"-->Action Category select "Build"-->Action Name "CustomBuild"-->Build Provider select "MyCustomBuild"-->ProjectName "LACustomBuild"-->Input artifact #1 select "MyAppBuild"--> Input artifact #2 select "MyApp"-->output artifact #1 select "MyApp1"--> Add Action.
-  
+- Goto AWS Console-->CodePipeline-->JenkinsPipeline-->Edit-->Add Action at "Build" Stage by clicking on "Action"-->Action Category select "Build"-->Action Name "CustomBuild"-->Build Provider select "MyCustomBuild"-->ProjectName "LACustomBuild"-->Input artifact #1 select "MyAppBuild"--> Input artifact #2 select "MyApp"-->output artifact #1 select "MyApp1"--> Add Action-->Save Pipeline Changes
+
 
 
 
