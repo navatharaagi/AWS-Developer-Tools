@@ -1715,4 +1715,6 @@ reviewer must to navigate to in order to review the code or application
 - Add another stage, that will take effect after the Approval stage is approved.For that, add Production Stage & set that as Deployment Stage to the Production Deployment Application that we setup in CodeDeploy.
 
 - AWS Console-->CodePipeline-->select the pipeline that we want to add the Action to i.e.,"JenkinsPipeline"-->Edit-->Click on "Stage" at the bottom to add a new stage-->Name "Production"-->Click on "Action" to add a new Action--> select “Action category” as “Deploy”-->Give Action Name as "ProductionDeploy"-->“Deployment Provider” as “AWSCodeDeploy”--> "Application name" select newly created "ProductionApplication"-->Deployment Group "ProductionDeploymentGroup"--> "Input Artifact" select "MyAppBuild" (which is a Post Build Application, which is passed in Beta stage)--> click "Add action"-->Save Pipeline changes-->Release Change
-(to re-run the entire pipeline)
+(to re-run the entire pipeline).
+
+- After successful Source,Build,Beta stages - Approval Stage waits for our approval->  
