@@ -1785,6 +1785,7 @@ will take the user to a web page containing information about the build project 
 ```sh
 $touch mycustomaction.json
 $nano mycustomaction.json /*Copy "CustomAction Template" & Paste here
+Save & exit
 
 
 
