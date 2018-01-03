@@ -1782,9 +1782,8 @@ will take the user to a web page containing information about the build project 
   file://<FILE_NAME>.json```
 
 ##### Creating a Job Worker (concepts):
-  ! When a “job worker” detects a “job request” (through
-  polling) it must be configured to complete the following:
-  ! Acknowledge (to CodePipeline) that it has detected the job
+- When a “job worker” detects a “job request” (through polling) it must be configured to complete the following:
+  - Acknowledge (to CodePipeline) that it has detected the job
   request
   ! Pull the target (input) artifacts from the configured S3 bucket
   ! Execute the custom job (perform actions on the artifacts)
