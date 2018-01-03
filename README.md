@@ -1776,7 +1776,7 @@ will take the user to a web page containing information about the build project 
   - “inputArtifactDetails” & “outputArtifactDetails”: Setting the
   min/max number for each will set the size limit for the number
   of artifacts that can be used by the action.
-  3) Save and exit the file
+3) Save and exit the file
   4) Create the custom action by uploading the .json file to
   AWS (by using the command):
   aws codepipeline create-custom-action-type --cli-input-json
