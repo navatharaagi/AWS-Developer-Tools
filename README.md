@@ -1794,7 +1794,7 @@ will take the user to a web page containing information about the build project 
   - Identity Federation (Active Directory, Amazon Cognito)
 2) Configure AWS API calls:
   - For polling: ```PollForJobs```
-  - For job acknowledgement: AcknowledgeJob
+  - For job acknowledgement: ```AcknowledgeJob```
   - For updates & succeeded status: PutJobSuccessResult
     - With continuation token allows you to update the action in the
     AWS console to include the ExternalExecutionID that will populate the link in “executionUrlTemplate”
