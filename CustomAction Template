@@ -16,8 +16,8 @@
         "type": "String"
     }],
     "inputArtifactDetails": {
-        "maximumCount": integer,
-        "minimumCount": integer
+        "maximumCount": 2,
+        "minimumCount": 1
     },
     "outputArtifactDetails": {
         "maximumCount": integer,
