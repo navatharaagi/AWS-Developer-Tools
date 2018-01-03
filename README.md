@@ -1787,7 +1787,9 @@ $touch mycustomaction.json
 $nano mycustomaction.json /*Copy "CustomAction Template" & Paste here
 Save & exit
 $aws codepipeline create-custom-action-type --cli-input-json file://mycustomaction.json  /*gives json formatted o/p
-``` 
+```
+
+- Goto  
 
 
 
