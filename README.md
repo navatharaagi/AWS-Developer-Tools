@@ -1710,4 +1710,4 @@ reviewer must to navigate to in order to review the code or application
   - For “Comments” (optional) provide a comment to the reviewer or leave it blank
 5) Click “Add action”
 
-- AWS Console-->CodePipeline-->select the pipeline that we want to add the Action to i.e.,"JenkinsPipeline"-->Edit-->Click on "Stage" at the bottom to add a new stage-->Name "Approval"-->Click on "Action" to add a new Action--> select “Action category” as “Approval”-->Give Action Name as "Approval Action"-->
+- AWS Console-->CodePipeline-->select the pipeline that we want to add the Action to i.e.,"JenkinsPipeline"-->Edit-->Click on "Stage" at the bottom to add a new stage-->Name "Approval"-->Click on "Action" to add a new Action--> select “Action category” as “Approval”-->Give Action Name as "Approval Action"-->select “Approval type” as “Manual approval”
