@@ -1728,8 +1728,8 @@ reviewer must to navigate to in order to review the code or application
 pipeline which are outside the scope of the default set of
 six actions provided by AWS.
 - Such actions may include utilizing an:
-- Internally developed build process
-- Internally developed test software
+  - Internally developed build process
+  - Internally developed test software
 - Custom actions are generally defined into a:
 - Build action
 - Deploy action
