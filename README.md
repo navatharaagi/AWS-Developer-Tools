@@ -1764,10 +1764,10 @@ contents of the ```custom action``` template.
 2) Edit the JSON formatted “custom action” template.
 - This template is a sample provided by AWS and can be
 edited (and added to) to meet you needs.
-! “category”: Configure this field to one of the six categories
+- “category”: Configure this field to one of the six categories
 provided by AWS (Approve, Build, Source, Invoke, Deploy, or
 Test).
-! “provider”: This will be the display name under “build
+- “provider”: This will be the display name under “build
 provider”.
 ! “entityUrlTemplate”: This is a static link that when clicked on
 will take the user to a web page containing information about
