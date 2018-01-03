@@ -1814,3 +1814,4 @@ $aws codepipeline create-custom-action-type --cli-input-json file://mycustomacti
   - To ```download``` pipeline artifacts from S3, you must create a S3 Client that uses “signature version 4 signing” (Sig V4).
   - To ```upload``` pipeline artifacts to S3, you must configure the S3 ```PutObject``` request to use encryption.
   - Currently only SSE-KMS is supported for encryption.
+  
