@@ -1784,7 +1784,7 @@ will take the user to a web page containing information about the build project 
 - Goto CLI, User1 login
 ```sh
 $touch mycustomaction.json
-$nano mycustomaction.json /*Copy "CustomAction Tempalte" 
+$nano mycustomaction.json /*Copy "CustomAction Template" 
 
 
 
