@@ -1,5 +1,5 @@
 {
-    "category": "Action-Category",
+    "category": "Build",    /* Action-Category
     "provider": "My-Build-Provider-Name",
     "version": "1",
     "settings": {
