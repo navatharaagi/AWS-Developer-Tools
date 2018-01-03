@@ -1723,8 +1723,8 @@ reviewer must to navigate to in order to review the code or application
 - Goto EC2->Select "CodeDeployProductionInstance"->Copy Public Ip-> <Paste it in browser>/index.html->Congrats page should display.
 
 #### 3.Creating Custom Actions
-Custom Actions:
-! Custom actions allow you to include activities in your
+##### Custom Actions:
+- Custom actions allow you to include activities in your
 pipeline which are outside the scope of the default set of
 six actions provided by AWS.
 ! Such actions may include utilizing an:
@@ -1735,4 +1735,4 @@ six actions provided by AWS.
 ! Deploy action
 ! Test action
 ! Invoke action
-! Custom actions must be accompanied with a “job worker” 
+! Custom actions must be accompanied with a “job worker”
