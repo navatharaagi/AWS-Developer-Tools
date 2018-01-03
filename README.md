@@ -1710,4 +1710,4 @@ reviewer must to navigate to in order to review the code or application
   - For “Comments” (optional) provide a comment to the reviewer or leave it blank
 5) Click “Add action”
 
-- AWS Console-->CodePipeline-->select the pipeline that we want to add the Action to i.e.,"JenkinsPipeline"--> 
+- AWS Console-->CodePipeline-->select the pipeline that we want to add the Action to i.e.,"JenkinsPipeline"-->Edit--> 
