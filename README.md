@@ -1800,8 +1800,8 @@ will take the user to a web page containing information about the build project 
     AWS console to include the ```ExternalExecutionID``` that will populate the link in “executionUrlTemplate”
   - For failure: ```PutJobFailureResult```
 3) Configure an Amazon S3 Client to retrieve and put artifacts
-  - To download pipeline artifacts from S3, you must create a S3
+  - To ```download``` pipeline artifacts from S3, you must create a S3
   Client that uses “signature version 4 signing” (Sig V4).
   - To upload pipeline artifacts to S3, you must configure the S3
   PutObject request to use encryption.
-  ! Currently only SSE-KMS is supported for encryption.
+  - Currently only SSE-KMS is supported for encryption.
