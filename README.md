@@ -1733,6 +1733,6 @@ six actions provided by AWS.
 - Custom actions are generally defined into a:
   - Build action
   - Deploy action
-- Test action
-- Invoke action
+  - Test action
+  - Invoke action
 - Custom actions must be accompanied with a “job worker”
