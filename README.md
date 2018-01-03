@@ -1781,7 +1781,7 @@ will take the user to a web page containing information about the build project 
 ```aws codepipeline create-custom-action-type --cli-input-json
   file://<FILE_NAME>.json```
 
-  Creating a Job Worker (concepts):
+##### Creating a Job Worker (concepts):
   ! When a “job worker” detects a “job request” (through
   polling) it must be configured to complete the following:
   ! Acknowledge (to CodePipeline) that it has detected the job
@@ -1800,4 +1800,4 @@ will take the user to a web page containing information about the build project 
   ! With continuation token allows you to update the action in the
   AWS console to include the ExternalExecutionID that will
   populate the link in “executionUrlTemplate”
-  ! For failure: PutJobFailureResult: 
+  ! For failure: PutJobFailureResult:
