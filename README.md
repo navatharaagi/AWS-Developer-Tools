@@ -1789,6 +1789,7 @@ $nano mycustomaction.json /*Copy "CustomAction Template" & Paste here
 
 
 
+
 ##### Creating a Job Worker (concepts):
 - When a “job worker” detects a “job request” (through polling) it must be configured to complete the following:
   - Acknowledge (to CodePipeline) that it has detected the job
