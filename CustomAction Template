@@ -20,7 +20,7 @@
         "minimumCount": 1
     },
     "outputArtifactDetails": {
-        "maximumCount": integer,
-        "minimumCount": integer
+        "maximumCount": 2,
+        "minimumCount": 1
     }
 }
