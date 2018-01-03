@@ -1769,7 +1769,7 @@ provided by AWS (Approve, Build, Source, Invoke, Deploy, or Test).
   - “entityUrlTemplate”: This is a static link that when clicked on
 will take the user to a web page containing information about the build project (or test environment, etc).
   - “executionUrlTemplate”: This is a dynamic link that when clicked will take the user to web page containing information specific to the more current run of the action.
-  ! “name”: This will be displayed as the prompt in the “Action
+  - “name”: This will be displayed as the prompt in the “Action
   Configuration” section when adding this action.
   ! “description”: This will be displayed under the entry field for
   “ProjectName” in the “Action Configuration” section.
