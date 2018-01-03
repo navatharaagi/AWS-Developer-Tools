@@ -1779,4 +1779,25 @@ will take the user to a web page containing information about the build project 
 3) Save and exit the file
 4) Create the custom action by uploading the .json file to AWS (by using the command):
 ```aws codepipeline create-custom-action-type --cli-input-json
-  file://<FILE_NAME>.json
+  file://<FILE_NAME>.json```
+
+  Creating a Job Worker (concepts):
+  ! When a “job worker” detects a “job request” (through
+  polling) it must be configured to complete the following:
+  ! Acknowledge (to CodePipeline) that it has detected the job
+  request
+  ! Pull the target (input) artifacts from the configured S3 bucket
+  ! Execute the custom job (perform actions on the artifacts)
+  ! Push the (output) artifacts back to the S3 bucket
+  ! Return the job results to CodePipeline (succeeded or failed)
+  1) Configure Permissions for the job worker:
+  ! EC2 Instance with an IAM Instance role (easiest option)
+  ! Identity Federation (Active Directory, Amazon Cognito)
+  2) Configure AWS API calls:
+  ! For polling: PollForJobs
+  ! For job acknowledgement: AcknowledgeJob
+  ! For updates & succeeded status: PutJobSuccessResult
+  ! With continuation token allows you to update the action in the
+  AWS console to include the ExternalExecutionID that will
+  populate the link in “executionUrlTemplate”
+  ! For failure: PutJobFailureResult: 
