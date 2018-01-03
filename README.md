@@ -1782,6 +1782,7 @@ will take the user to a web page containing information about the build project 
   file://<FILE_NAME>.json```
 
 - Goto CLI, User1 login
+```sh
 
 
 
