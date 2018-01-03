@@ -1788,8 +1788,8 @@ will take the user to a web page containing information about the build project 
   - Pull the target (input) artifacts from the configured S3 bucket
   - Execute the custom job (perform actions on the artifacts)
   - Push the (output) artifacts back to the S3 bucket
-  ! Return the job results to CodePipeline (succeeded or failed)
-  1) Configure Permissions for the job worker:
+  - Return the job results to CodePipeline (succeeded or failed)
+1) Configure Permissions for the job worker:
   ! EC2 Instance with an IAM Instance role (easiest option)
   ! Identity Federation (Active Directory, Amazon Cognito)
   2) Configure AWS API calls:
