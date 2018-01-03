@@ -1789,7 +1789,7 @@ Save & exit
 $aws codepipeline create-custom-action-type --cli-input-json file://mycustomaction.json  /*gives json formatted o/p
 ```
 
-- Goto AWS Console-->CodePipeline-->JenkinsPipeline-->Edit-->Add Action at "Build" Stage by clicking on "Action"
+- Goto AWS Console-->CodePipeline-->JenkinsPipeline-->Edit-->Add Action at "Build" Stage by clicking on "Action"-->Action Category select "Build"--> 
 
 
 
