@@ -1769,9 +1769,9 @@ provided by AWS (Approve, Build, Source, Invoke, Deploy, or
 Test).
 - “provider”: This will be the display name under “build
 provider”.
-! “entityUrlTemplate”: This is a static link that when clicked on
+- “entityUrlTemplate”: This is a static link that when clicked on
 will take the user to a web page containing information about
 the build project (or test environment, etc).
-! “executionUrlTemplate”: This is a dynamic link that when
+- “executionUrlTemplate”: This is a dynamic link that when
 clicked will take the user to web page containing information
 specific to the more current run of the action.
