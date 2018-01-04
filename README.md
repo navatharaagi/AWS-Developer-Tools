@@ -1789,7 +1789,7 @@ Save & exit
 $aws codepipeline create-custom-action-type --cli-input-json file://mycustomaction.json  /*gives json formatted o/p
 ```
 
-- Goto AWS Console->CodePipeline->JenkinsPipeline->Edit->Add Action at "Build" Stage by clicking on "Action"->Action Category select "Build"->Action Name "CustomBuild"-->Build Provider select "MyCustomBuild"-->ProjectName "LACustomBuild"-->Input artifact #1 select "MyAppBuild"--> Input artifact #2 select "MyApp"-->output artifact #1 select "MyApp1"--> Add Action-->Save Pipeline Changes.
+- Goto AWS Console->CodePipeline->JenkinsPipeline->Edit->Add Action at "Build" Stage by clicking on "Action"->Action Category select "Build"->Action Name "CustomBuild"->Build Provider select "MyCustomBuild"-->ProjectName "LACustomBuild"->Input artifact #1 select "MyAppBuild"--> Input artifact #2 select "MyApp"-->output artifact #1 select "MyApp1"--> Add Action-->Save Pipeline Changes.
 - After successful "Build" stage, Click on "MyCustomBuild" under "CustomBuild" ```https://my-build-instance/job/LACustomBuild``` URL will be opened, but no page will be loaded because we didn't added any Job workers as of now.
 
 ##### Creating a Job Worker (concepts):
