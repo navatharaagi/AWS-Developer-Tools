@@ -1667,7 +1667,7 @@ choose to “Create Role” and follow the instructions
   - Hopefully there will not be any errors, and all stages will
 complete with a status of “succeeded”
 2) Verify that everything has worked successfully:
-- In a web browser, navigate to:
+  - In a web browser, navigate to:
   ```<EC2_IP_ADDRESS>/index.html```
 
 - After successful pipeline creation, goto AWS->EC2->[copy Public IP address of EC2 instance "CodeDeployTestInstance" which we targeted in our deployment group that we deployed code to which is currently running Haml code that was converted into HTML code, not the "JenkinsPipelineTest" one the jenkins installed on for this pipeline]
