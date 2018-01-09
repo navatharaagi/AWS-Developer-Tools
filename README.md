@@ -1720,7 +1720,7 @@ reviewer must to navigate to in order to review the code or application
 - After successful Source,Build, Beta stages - Approval Stage waits for our approval->[Goto Email which subscribed for SNS notifications->Click on Approval Email->Click on Content to Review URL to Approve]->then Click on Review->Add Comments "All Good to go"->Approve->After this "Production" stage completes successfully.
 
 - Now our Build Application should Deployed on  our "ProductionInstance" Successfully. To Check that,
-- Goto EC2-->Select "CodeDeployProductionInstance"->Copy Public Ip--> <Paste it in browser>/index.html->Congrats page should display.
+- Goto EC2-->Select "CodeDeployProductionInstance"->Copy Public Ip--><Paste it in browser>/index.html->Congrats page should display.
 
 #### 3.Creating Custom Actions
 ##### Custom Actions:
