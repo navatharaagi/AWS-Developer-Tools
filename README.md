@@ -1488,8 +1488,7 @@ $ls /*has to list "appsec.yml","newfile.txt","secondfile.txt" files
 ### CodePipeline Advanced Features
 #### 1. Creating a Pipeline with GitHub (source) & Jenkins (build)
 ##### Our Second Pipeline:
-- This pipeline is going to use a code sample provided by
-AWS.
+- This pipeline is going to use a code sample provided by AWS.
 - The purpose of the Build Stage (Jenkins) in this example is to convert Haml code to HTML code.
 - Once the pipeline has been created, configured, and run successfully, we will be able to access the target EC2 instance via a web browser and view a web page (the built and deployed HTML code).
 - Stage 1
