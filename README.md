@@ -1441,8 +1441,7 @@ aws codepipeline enable-stage-transition
 --transition-type Inbound
 ```
 4) Retry failed actions:
-- View the most recent “status” of each action the pipeline,
-and identify the action that failed:
+- View the most recent “status” of each action the pipeline, and identify the action that failed:
 ```aws codepipeline get-pipeline-state --name <PIPELINE_NAME>```
 - Identify and note the stage that failed &the “pipelineExecutionID”
 - Create a .json file and open it in a plain-text editor
