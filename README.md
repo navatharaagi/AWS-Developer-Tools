@@ -1472,7 +1472,7 @@ Applications, EC2 instances, or S3 buckets.
 
 #### CodePipeline  "Simple Two-Stage Pipeline" example (Continuation of CodeDeploy Basic Example)
 - Previously we have 2 running EC2 instances, "LiveLabCodeDeployInstance", "LocalDevServer"
-- In CodeCommit, we have "LiveLabRepo" with "appsec.yml", "newfile.txt","secondfile.txt" files in "Master" branch
+- In CodeCommit, we have "LiveLabRepo" with "appsec.yml", "newfile.txt", "secondfile.txt" files in "Master" branch
 - In Codedeploy, we have "LiveLabApplication" with "LiveLabDeploymentGroup"
 
 - Now goto AWS Console->CodePipeline->Get Started->Name-> "LiveLabPipeline"->Source Provider->select "AWS CodeCommit"->Repo name->"LiveLabRepo"->Branch name->select "Master"->Build Provider-> select "No Build"->Deployment provider->select "AWS CodeDeploy"->Application name->select "LiveLabApplication"->Deployment Group->"LiveLabDeploymentGroup"->Role name->click on "create role"->[automatically creates "AWS-CodePipeline-Service" role]->Review->create->Pipeline created->Source & Beta stages must succeed.
