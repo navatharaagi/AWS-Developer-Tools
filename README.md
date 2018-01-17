@@ -1327,7 +1327,7 @@ Pipeline”.
 6) Create/Select an AWS Service Role (permissions).
 7) Review the Pipeline & create it.
 8) View the results.
-- AWS Console->CodePipeline->Get started->Pipeline Name “FirstTestPipeline”->Next->Source provider->select AWS CodeCommit->Repository Name->select "wonderwidgets"->Branch name->select "Master"->Next->Build provider->select "No Build"->Next-> Deployment Provider->select "AWS CodeDeploy"->Application Name->select "TestApplication"->Deployment group->select "TestDeploymentGroupName"->Next->AWS Service Role->Role name->click on "create role"->[Automatically creates role name with policy]->Allow->Next->Review->Create->view the results of Source & Beta (which has to be succeeded one stage after other)
+- AWS Console->CodePipeline->Get started->Pipeline Name “FirstTestPipeline”->Next->Source provider->select AWS CodeCommit->Repository Name->select "wonderwidgets"->Branch name ->select "Master"->Next->Build provider->select "No Build"->Next-> Deployment Provider->select "AWS CodeDeploy"->Application Name->select "TestApplication"->Deployment group->select "TestDeploymentGroupName"->Next->AWS Service Role->Role name->click on "create role"->[Automatically creates role name with policy]->Allow->Next->Review->Create->view the results of Source & Beta (which has to be succeeded one stage after other)
 - Once the Pipeline is being created it will immediately Run & when it does Run, it takes the most recent version of the files of "wonderwidget" repo & Deploys them.
 - Now goto CLI, login to EC2 instance of which our files are deployed to
 ```sh
