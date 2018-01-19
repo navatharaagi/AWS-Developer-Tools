@@ -1222,7 +1222,7 @@ $ls /* including AutoRevision.zip files will be listed
 
 #### CodeDeploy Basic example:
 - AWS—>IAM—>Create New Role—>Name->CodeDeployInstanceRole->create
-- AWS—>EC2—>Launch an Instance—>AMI—>Free Tier—>Configure Instance—>Auto-assign Public IP—>select Enable—>IAM Role—>select CodeDeployInstanceRole—>Advanced Details—>Copy & paste the following bash script—>Add Storage—>Tag Instance—>Name “LiveLabCodeDeployInstance”—>Configure SG—>Add—>SSH & HTTP “Anywhere”—>launch—>create a new keypair—>”LiveLabKeyPair”—> Download—>launch instance
+- AWS—>EC2—>Launch an Instance—>AMI—>Free Tier—>Configure Instance —>Auto-assign Public IP—>select Enable—>IAM Role—>select CodeDeployInstanceRole—>Advanced Details—>Copy & paste the following bash script—>Add Storage—>Tag Instance—>Name “LiveLabCodeDeployInstance”—>Configure SG—>Add—>SSH & HTTP “Anywhere”—>launch—>create a new keypair—>”LiveLabKeyPair”—> Download—>launch instance
 ```sh  
 #! /bin/bash
 sudo yum update
