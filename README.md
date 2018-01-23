@@ -1020,7 +1020,7 @@ $ls -l  /* permissions of html files must be 644 except index.html
     - AWS Console
     - AWS CLI
 - SNS Triggers:
-    - Deployment Status: Deployment Starts, Deployment succeeds , Deployment fails , Deployment Stops
+    - Deployment Status: Deployment Starts, Deployment succeeds, Deployment fails , Deployment Stops
     - Instance Status:  Instance Starts , Instance Succeeds , Instance Fails
 ##### Add SNS Triggers via AWS Console:
 - Must have a SNS Topic “Trigger Topic" created & subscribed to our Email
