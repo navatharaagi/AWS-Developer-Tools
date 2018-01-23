@@ -978,7 +978,7 @@ We can deploy a revision to an instance via:
 - AWS CLI
 - AWS API
 ##### Deploying a Revision via the AWS Console:
-- AWS—>CodeDeploy—>Get started—>custom deployment—>skip walk through—>Select Deployments (from AWS CodeDeploy drop down at the top of the dashboard) —>Application—>“TestApplication”(which we created above)—> Deployment group—>“TestDeploymentGroupName”—>Revision type—>select "My application is stored in Amazon S3”—>revision location—> "s3://<wonderwidgets-deployment-test/wonderwidgets.zip”—>description—>“test”—> Deployment configuration—>select “CodeDeployDefault:AllAtOnce”—>Deploy Now—>check status
+- AWS—>CodeDeploy—>Get started—>custom deployment—>skip walk through—>Select Deployments (from AWS CodeDeploy drop down at the top of the dashboard) —>Application—>“TestApplication”(which we created above)—> Deployment group—> “TestDeploymentGroupName”—>Revision type—>select "My application is stored in Amazon S3”—>revision location—> "s3://<wonderwidgets-deployment-test/wonderwidgets.zip”—>description—>“test”—> Deployment configuration—>select “CodeDeployDefault:AllAtOnce”—>Deploy Now—>check status
 - AWS—>EC2—>CodeDeployTestInstance(running)—>Connect it through SSH
 ```sh
 $ssh into ec2
@@ -1021,7 +1021,7 @@ $ls -l  /* permissions of html files must be 644 except index.html
     - AWS CLI
 - SNS Triggers:
     - Deployment Status: Deployment Starts, Deployment succeeds, Deployment fails , Deployment Stops
-    - Instance Status:  Instance Starts , Instance Succeeds , Instance Fails
+    - Instance Status:  Instance Starts , Instance Succeeds, Instance Fails
 ##### Add SNS Triggers via AWS Console:
 - Must have a SNS Topic “Trigger Topic" created & subscribed to our Email
 - AWS—>CodeDeploy—>click on “Test Application”(which we created before)—>open up the details of our “TestDeploymentGroupName” —>Triggers—>Create Trigger—>Trigger Name—>“CodeDeployTrigger” —>Events—>select “Deployments status(All)—>Amazon SNS Topic—>select “Trigger Topic”(which is created before & subscribed to our Email.If not created already, create it first & then add SNStriggers)—>create Trigger
