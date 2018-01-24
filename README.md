@@ -951,7 +951,7 @@ $nano appsec.yml    /*to edit file. [check appsec.yml file in github]
 Application Revision:
 - Revision is simply the bundle(zip/tar file) containing the current group of files that we want to deploy.
 1. select a repository type : where we want to store our bundled src files, so CodeDeploy can access them for deployment.
-- CodeDeploy can be setup to access src files from AWS S3 Bucket,GitHub,BitBucket
+- CodeDeploy can be setup to access src files from AWS S3 Bucket, GitHub,BitBucket
 2. Bundle(.zip)our src files &push(upload) it to the repo we select (above) to use.
 
 - we have to push our src files from CodeCommit to an S3 bucket, & deploy our files from there.
@@ -978,7 +978,7 @@ We can deploy a revision to an instance via:
 - AWS CLI
 - AWS API
 ##### Deploying a Revision via the AWS Console:
-- AWS—>CodeDeploy—>Get started—>custom deployment—>skip walk through—>Select Deployments (from AWS CodeDeploy drop down at the top of the dashboard) —>Application—>“TestApplication”(which we created above)—> Deployment group—> “TestDeploymentGroupName” —>Revision type—>select "My application is stored in Amazon S3”—> revision location—> "s3://<wonderwidgets-deployment-test/wonderwidgets.zip”—>description—>“test”—> Deployment configuration—>select “CodeDeployDefault:AllAtOnce”—>Deploy Now—>check status
+- AWS—>CodeDeploy—>Get started—>custom deployment—>skip walk through—>Select Deployments (from AWS CodeDeploy drop down at the top of the dashboard) —>Application—>“TestApplication”(which we created above)—> Deployment group—> “TestDeploymentGroupName” —>Revision type—>select "My application is stored in Amazon S3”—> revision location—> "s3://<wonderwidgets-deployment-test/wonderwidgets.zip” —>description—>“test”—> Deployment configuration—>select “CodeDeployDefault:AllAtOnce”—>Deploy Now—>check status
 - AWS—>EC2—>CodeDeployTestInstance(running)—>Connect it through SSH
 ```sh
 $ssh into ec2
