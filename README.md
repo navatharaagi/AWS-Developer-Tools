@@ -625,7 +625,7 @@ AWS—>IAM—>Encryption Keys—>aws/codecommit(which will be created automatica
 #### 2.Setup and Configuration (Roles and Policies)
 1. Provision an IAM user with a custom CodeDeploy Policy
 - Gives a non-admin user the rights to manage all the elements needed to use CodeDeploy.
-  - AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—>“CodeDeployCustomUser”—>Policy Document (Paste the following code in policy document)—>create Policy
+  - AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—> “CodeDeployCustomUser”—>Policy Document (Paste the following code in policy document)—>create Policy
 ```sh
 {
   "Version": "2012-10-17",
