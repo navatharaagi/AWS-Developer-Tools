@@ -665,7 +665,7 @@ IAM—>Users—>Create user “Matt"—>Permissions—>Attach Policy—> “AWSC
 2. Create an Instance Profile
 - This allows you to launch EC2 instances that are configured for use with CodeDeploy.
   - Create another Instance Role Policy which gives access to get & list in all S3 Buckets
-- AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—>“CodeDeployDemo->EC2->Permissions”-->Policy Document (Paste the following code in policy document)—>create Policy
+- AWS—>IAM—>Policies—>Create Policy—>Create Own Policy—> “CodeDeployDemo->EC2->Permissions”-->Policy Document (Paste the following code in policy document)—>create Policy
 ```sh
 {
   "Version": "2012-10-17",
@@ -737,7 +737,7 @@ sudo service codedeploy-agent status
   - Fix: Launch a new instance and double check the bash script for errors, OR double check the permissions policy attached to the Instance Profile (make sure it allows access to S3)
 
 - AWS—>EC2—>SG—>create a SG—>“CodeDeploySG” with SSH,HTTP Allow Rules
-- AWS—>EC2—>Amazon Linux AMI—>Configure Instance—>IAM Role—> "CodeDeployDemo-EC2”—>Advanced Details—>Copy & paste above bash script [Edit Bucket name: aws-codedeploy-us-west-1  & Region Name:us-west-1]—>Next—>Next—>Tag—>Name->“CodeDeployTestInstance”—>Configure SG—>select existing SG->“CodeDeploySG”—>review & launch—>create new key->pair & download it.
+- AWS—>EC2—>Amazon Linux AMI—>Configure Instance—>IAM Role—> "CodeDeployDemo-EC2”—>Advanced Details—>Copy & paste above bash script [Edit Bucket name: aws-codedeploy-us-west-1  & Region Name:us-west-1]—>Next—>Next—>Tag—>Name->“CodeDeployTestInstance”—>Configure SG—>select existing SG->“CodeDeploySG”—>review & launch—> create new key->pair & download it.
 - After EC2 running,SSH into it to connect through CLI
 ```sh
 $sudo service codedeploy-agent status /*to see the agent status
