@@ -59,7 +59,7 @@ exports.handler = function(event, context) {
     console.log('Received event:');
     console.log(JSON.stringify(event, null, '  '));
 
-    // Get the object from the event
+    // Get the object from event
     bucket = event.Records[0].s3.bucket.name;
     key = event.Records[0].s3.object.key;
 
