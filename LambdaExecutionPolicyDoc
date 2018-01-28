@@ -33,7 +33,7 @@
     "Resource": "arn:aws:codedeploy:<REGION>:<ACCOUNTID>:application:*"
   },
   {
-    "Effect": "Allow",
+    "Effect": "Allow"
     "Action": "codedeploy:CreateDeployment",
     "Resource": "arn:aws:codedeploy:<REGION>:<ACCOUNTID>:deploymentgroup:*"
    }
