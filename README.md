@@ -38,9 +38,9 @@ $python --version  /* to check whether python installed or not
 @root$sudo yum install python3  /* to install python for CentOS
 @root$sudo apt-get install python3 /* for  Debian distributions
 @root$pip --help   /* to check pip installation
-@root$curl -0 https://bootstrap.pypa.io/get-pip.py    /* to install pip
+@root$curl -0 https://bootstrap.pypa.io/get-pip.py /* to install pip
 @root$sudo python3 get-pip.py
-@root$sudo pip install awscli     /* to install AWS CLI
+@root$sudo pip install awscli   /* to install AWS CLI
 @root$sudo pip3 install awscli --ignore-installed six   /* if we get "error:six" while AWS installation,install this ignore command
 @root$aws configure
 AWS Access Key ID : Copy & paste access key of IAM user (code commit)
