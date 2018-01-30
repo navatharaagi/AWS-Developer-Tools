@@ -55,7 +55,7 @@ Note: if we want to use another IAM user,we should give that IAM User AWS access
 @root$ssh-keygen   /*to generate a rsa key pair
 enter file to save key: codecommitkey  /* can give any name
 enter password/passphrase:            /* don’t enter anything
-@root$ls         /* lists codecommitkey , codecommitkey.pub files  
+@root$ls     /* lists codecommitkey , codecommitkey.pub files  
 @root$cat codecommitkey.pub    /*copy the key
 ```
 - Goto AWS Console:
