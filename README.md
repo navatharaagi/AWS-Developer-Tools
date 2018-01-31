@@ -66,13 +66,13 @@ Paste the copied key of codecommitkey.pub—>upload—SSH Key ID—>copy ssh id
 - Goto CLI:
 ```sh
 @root$touch config
-@root$nano config        /*to edit config file in nano editor,paste the following code
+@root$nano config    /*to edit config file in nano editor,paste the following code
 Host git-codecommit.*.amazonaws.com
             User <Input SSH key>   /*paste copied ssh id
             Identityfile ~/.ssh/<NAME of PUB FILE> /*codecommitkey is name of pub file
 save & exit
 @root$chmod 600 config
-@root$ssh git-codecommit.us-east-1.amazonaws.com    /* Successfully authenticates
+@root$ssh git-codecommit.us-east-1.amazonaws.com /* Successfully authenticates
 ```
 #### 6. OSX/Linux: Configure the Credential Helper (HTTP)
 ```sh
