@@ -196,7 +196,7 @@ save & exit
 $git add what_is_www
 $git commit -m “User2 conflicts added to file"
 $git push <remote name>  <branch name>  /*gives error and asks to merge changes
-$git pull <remote name>  <branch name>  /*gives conflict automatic merge failed error
+$git pull <remote name>  <branch name>   /*gives conflict automatic merge failed error
 $nano What_is_www   /*can view file with HEAD pointer & commit-id
 #!/bin/bash
 #My first script
