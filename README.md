@@ -106,7 +106,7 @@ $git pull   /* (Deny the given notification) will get already up to date
 ```sh
 ( “CLI-Repo” is a repo name here we are using )
 $aws codecommit create-repository --repository-name CLI-Repo --repository-description “My description”  /* to create a “CLI-Repo” repo with description
-$aws codecommit list-repositories    /* to list repos
+$aws codecommit list-repositories  /* to list repos
 $aws codecommit get-repository --repository-name CLI-Repo /* to get one repo
 $aws codecommit batch-get-repositories --repository-name <Repo1> <Repo2> /* to get one json formatted info of two or more repos
 $aws codecommit update-repository-name --old-name CLIRepo --new-name newReponame /* to change repo name, can check it out by ‘list-repos’ cmnd
