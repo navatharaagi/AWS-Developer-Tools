@@ -138,7 +138,7 @@ save & exit
 $chmod 755 what_is_www  /* changing permissions to execute
 $./what_is_www
 hello
-$git status  /*tells us that there are untracked files “what_is_www”
+$git status /*tells us that there are untracked files “what_is_www”
 $git add what_is_www   /* to add file to commit
 $git status     /* gives changes committed
 $git rm --cached what_is_www /* to remove file, if it added by mistake
