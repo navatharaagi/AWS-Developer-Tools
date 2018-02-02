@@ -221,7 +221,7 @@ $git push <remote name>  <branch name>
 ```sh
 $git pull <remote name>  <branch name>
 $nano what_is_www  /* can view the User2 conflict which changed by User2.
--Now User1 & User2 both have updated repos
+- Now User1 & User2 both have updated repos
 ```
 #### 4.Branches (local)
 - Assume we have User1,User2 & User3
@@ -229,7 +229,7 @@ $nano what_is_www  /* can view the User2 conflict which changed by User2.
 $cd User3_local repo   
 $ls    /*which has the updated repo with files same as User1, User2
 - Now User3 wants to make changes by developing a new feature. so User3 creates a new branch “new_feature”
-$git checkout -b new_feature   /*creates new branch & switches into it
+$git checkout -b new_feature  /*creates new branch & switches into it
 $touch  widgets.html  
 $nano widgets.html
 $git branch  /*lists all branches,* points to the current branch
