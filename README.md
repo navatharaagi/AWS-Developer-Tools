@@ -220,7 +220,7 @@ $git push <remote name>  <branch name>
 - Now User1, doesn’t have the latest changes in the file. So just pull the changes to User1 local repo
 ```sh
 $git pull <remote name>  <branch name>
-$nano what_is_www  /*can view the User2 conflict which changed by User2.
+$nano what_is_www  /* can view the User2 conflict which changed by User2.
 -Now User1 & User2 both have updated repos
 ```
 #### 4.Branches (local)
