@@ -246,7 +246,7 @@ $git add widgets.html
 $git commit -m “new_feature addition”  /*now changes in the file committed
 $git checkout master  /* Now if we change branch & check the file
 $nano widgets.html /* file will be empty, since file is no longer  with this branch
-$ls    /*there will be no “widgets.html” file in this branch
+$ls    /* there will be no “widgets.html” file in this branch
 ```
 - Now to incorporate  the changes to “master” branch, we need to pull the “new_feature” branch changes & merge them into “master” branch
 - To do this pull, we need to be in “master” branch
