@@ -57,7 +57,7 @@ permissions:
 #   may cause associated deployments to fail.
 hooks:
 # For each deployment lifecycle event, specify multiple "location" entries
-#   if you want to run multiple scripts during that event.
+# if you want to run multiple scripts during that event.
 # You can specify "timeout" as the number of seconds to wait until failing the deployment
 #   if the specified scripts do not run within the specified time limit for the
 #   specified event. For example, 900 seconds is 15 minutes. If not specified,
@@ -114,7 +114,7 @@ hooks:
       timeout:
       runas:
 # During the ValidateService deployment lifecycle event, run the commands
-#   in the script specified in "location".
+# in the script specified in "location".
   ValidateService:
     - location:
       timeout:
