@@ -65,9 +65,9 @@ hooks:
 #  Note that the maximum amount of time that all scripts must finish executing
 #  for each individual deployment lifecycle event is 3600 seconds (1 hour).
 #  Otherwise, the deployment will stop and AWS CodeDeploy will consider the deployment
-#   to have failed to the Amazon EC2 instance. Make sure that the total number of seconds
-#   that are specified in "timeout" for all scripts in each individual deployment
-#   lifecycle event does not exceed a combined 3600 seconds (1 hour).
+#  to have failed to the Amazon EC2 instance. Make sure that the total number of seconds
+#  that are specified in "timeout" for all scripts in each individual deployment
+#  lifecycle event does not exceed a combined 3600 seconds (1 hour).
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify "runas" in an event to
 #   run as the specified user. For more information, see the documentation.
