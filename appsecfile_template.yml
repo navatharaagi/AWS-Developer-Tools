@@ -69,12 +69,12 @@ hooks:
 #  that are specified in "timeout" for all scripts in each individual deployment
 #  lifecycle event does not exceed a combined 3600 seconds (1 hour).
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
-#  you can specify "runas" in an event to
-#  run as the specified user. For more information, see the documentation.
-#  If you are deploying to Windows Server instances,
-#  remove "runas" altogether.
+# you can specify "runas" in an event to
+# run as the specified user. For more information, see the documentation.
+# If you are deploying to Windows Server instances,
+# remove "runas" altogether.
 # If you do not want to run any commands during a particular deployment
-#   lifecycle event, remove that event declaration altogether. Blank or
+# lifecycle event, remove that event declaration altogether. Blank or
 #   incomplete event declarations may cause associated deployments to fail.
 # During the ApplicationStop deployment lifecycle event, run the commands
 #  in the script specified in "location" starting from the root of the
