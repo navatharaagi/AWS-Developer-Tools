@@ -70,9 +70,9 @@ hooks:
 #  lifecycle event does not exceed a combined 3600 seconds (1 hour).
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #  you can specify "runas" in an event to
-#   run as the specified user. For more information, see the documentation.
+#  run as the specified user. For more information, see the documentation.
 #  If you are deploying to Windows Server instances,
-#   remove "runas" altogether.
+#  remove "runas" altogether.
 # If you do not want to run any commands during a particular deployment
 #   lifecycle event, remove that event declaration altogether. Blank or
 #   incomplete event declarations may cause associated deployments to fail.
