@@ -75,10 +75,10 @@ hooks:
 # remove "runas" altogether.
 # If you do not want to run any commands during a particular deployment
 # lifecycle event, remove that event declaration altogether. Blank or
-#   incomplete event declarations may cause associated deployments to fail.
+# incomplete event declarations may cause associated deployments to fail.
 # During the ApplicationStop deployment lifecycle event, run the commands
 #  in the script specified in "location" starting from the root of the
-#   revision's file bundle.
+#  revision's file bundle.
   ApplicationStop:
     - location:
       timeout:
@@ -87,7 +87,7 @@ hooks:
       timeout:
       runas:
 # During the BeforeInstall deployment lifecycle event, run the commands
-#  in the script specified in "location".
+# in the script specified in "location".
   BeforeInstall:
     - location:
       timeout:
