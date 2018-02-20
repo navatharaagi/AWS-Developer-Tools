@@ -4,7 +4,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /     #to install all of the contents of src dir
+  - source: /   #to install all of the contents of src dir
     destination: /MyRepo  #dir of our deployment gng to create for us on our EC2
 permissions:
   - object: /MyRepo/html   #permissions setting to html dir
