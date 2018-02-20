@@ -7,7 +7,7 @@ files:
   - source: /   #to install all of the contents of src dir
     destination: /MyRepo  #dir of our deployment gng to create for us on our EC2
 permissions:
-  - object: /MyRepo/html   #permissions setting to html dir
+  - object: /MyRepo/html  #permissions setting to html dir
     pattern: "*.html"      #pattern apply to all files in the html dir
     except: [index.html]   #pattern will apply to all files except "index.html"
     mode: 400
